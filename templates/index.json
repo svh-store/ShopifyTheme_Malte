@@ -903,10 +903,10 @@
       ],
       "custom_css": [
         "div.hotspot.absolute {background: none;}",
-        ".product-features {--hotspot-cross-color: #ffff;}",
+        ".product-features {--hotspot-cross-color: #33302c;}",
         "div {margin-top: 0px;}",
         "@media screen and (max-width: 768px) {{display: none !important; }}",
-        "button.hotspot__btn {border: 3px solid #33302c; background: #ffffff !important; color: #33302c !important; background-image: none !important; box-shadow: none; font-color: #33302c !important;}"
+        "button.hotspot__btn {border: 3px solid #33302c; background: #ffffff !important; color: #33302c !important; background-image: none !important; box-shadow: none;}"
       ],
       "name": "Product features",
       "settings": {
