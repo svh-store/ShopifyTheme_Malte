@@ -2,6 +2,7 @@
   padding: 0;
   border: 0;
 }
+
 .option-selector:not(:last-child) {
   margin-bottom: 2rem;
 }
@@ -460,4 +461,12 @@ quantity-input + .product-info__add-button {
   .product-details .disclosure__content {
     padding-bottom: calc(8 * var(--space-unit));
   }
+}
+
+.product-image.img-fit {
+  width: 100%;
+  height: auto;
+  aspect-ratio: unset !important;
+  object-fit: contain;
+  max-width: 550px;
 }
