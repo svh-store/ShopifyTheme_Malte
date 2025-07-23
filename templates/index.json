@@ -319,7 +319,7 @@
           "settings": {
             "image_desktop": "shopify://shop_images/ChatGPT_Image_23._Juli_2025_12_55_01.png",
             "image_mobile": "shopify://shop_images/ChatGPT_Image_23._Juli_2025_12_55_01.png",
-            "url": "",
+            "url": "shopify://collections/handyhulle",
             "overlay_position": "justify-end items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
