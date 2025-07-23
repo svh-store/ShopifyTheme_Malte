@@ -108,9 +108,9 @@
 }
 
 .media-thumbs__btn {
-  border: 1px solid #d9d9d9;
+  border: 1px solid var(--gallery-border-color);
   background-color: var(--gallery-bg-color);
-  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+  transition: box-shadow 0.2s, transform 0.2s;
 }
 /* Remove underline and use subtle shadow on hover */
 .media-thumbs__btn::after {
@@ -121,8 +121,7 @@
   transform: translateY(-2px);
 }
 .media-thumbs__btn.is-active {
-  border: 2px solid #000;
-  box-shadow: none;
+  box-shadow: 0 0 0 2px rgba(var(--text-color), 0.4);
 }
 
 .media-thumbs__badge {
