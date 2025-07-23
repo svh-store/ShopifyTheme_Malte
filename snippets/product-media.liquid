@@ -138,7 +138,8 @@
       sizes: sizes,
       lazy_load: lazy_load,
       class: img_class,
-      disable_focal_point: true
+      disable_focal_point: true,
+      skip_dimensions: true
     %}
 
     {%- if enable_zoom -%}
@@ -181,7 +182,8 @@
       lazy_load: lazy_load,
       class: img_class,
       alt_text: media.alt,
-      disable_focal_point: true
+      disable_focal_point: true,
+      skip_dimensions: true
     %}
   </button>
 

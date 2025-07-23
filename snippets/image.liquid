@@ -17,6 +17,7 @@
   - disable_focal_point {Boolean} - Disables the focussing of a spot on the image (optional, default is false).
   - section_index {Number} - If passed, image lazy load will be prevented if it's the first section
   - as_mobile_source {Boolean} - Will output <source> instead of <img> for use in <picture> (optional, default is false)
+  - skip_dimensions {Boolean} - Omits width and height attributes on the output element (optional, default is false)
 
   Usage:
   {% render 'image',
@@ -138,6 +139,7 @@
   endif
 
   assign disable_focal_point = disable_focal_point | default: false
+  assign skip_dimensions = skip_dimensions | default: false
 -%}
 
 {%- if image and src_width -%}
@@ -145,8 +147,7 @@
     <picture>
       <source srcset="{{ mobile_srcset }}"
               media="(max-width: 600px)"
-              width="{{ mobile_image_width }}"
-              height="{{ mobile_image_width | divided_by: image.aspect_ratio | round }}">
+              {% unless skip_dimensions %}width="{{ mobile_image_width }}" height="{{ mobile_image_width | divided_by: image.aspect_ratio | round }}"{% endunless %}>
   {%- endif -%}
 
   {%- if as_mobile_source -%}
@@ -157,8 +158,8 @@
          {% if attributes %}{{ attributes }} {% endif -%}
          {% if disable_focal_point == false and image.presentation %}style="object-position: {{ image.presentation.focal_point }}" {% endif -%}
          loading="{% if lazy_load %}lazy{% else %}eager{% endif %}"
-         width="{{ image_width }}"
-         height="{{ image_height }}"
+         {% unless skip_dimensions %}width="{{ image_width }}"{% endunless %}
+         {% unless skip_dimensions %}height="{{ image_height }}"{% endunless %}
          alt="{{ alt_text | default: image.alt | escape }}"
          media="(max-width: 767px)">
   {%- else -%}
@@ -169,8 +170,8 @@
          {% if attributes %}{{ attributes }} {% endif -%}
          {% if disable_focal_point == false and image.presentation %}style="object-position: {{ image.presentation.focal_point }}" {% endif -%}
          loading="{% if lazy_load %}lazy{% else %}eager{% endif %}"
-         width="{{ image_width }}"
-         height="{{ image_height }}"
+         {% unless skip_dimensions %}width="{{ image_width }}"{% endunless %}
+         {% unless skip_dimensions %}height="{{ image_height }}"{% endunless %}
          {% if fetchpriority %}fetchpriority="{{ fetchpriority }}"{% endif %}
          alt="{{ alt_text | default: image.alt | escape }}">
   {%- endif -%}
