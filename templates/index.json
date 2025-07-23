@@ -905,7 +905,8 @@
         "div.hotspot.absolute {background: none;}",
         ".product-features {--hotspot-cross-color: #ffff;}",
         "div {margin-top: 0px;}",
-        "@media screen and (max-width: 768px) {{display: none !important; }}"
+        "@media screen and (max-width: 768px) {{display: none !important; }}",
+        "button.hotspot__btn {border: 3px solid #33302c; background: #ffffff !important; color: #33302c !important; background-image: none !important; box-shadow: none; font-color: #33302c !important;}"
       ],
       "name": "Product features",
       "settings": {
