@@ -24,17 +24,21 @@
   }
   
 .media-thumbs {
-  position: static;
-  transform: none;
-  width: auto;
-  height: auto;
-  overflow: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(90deg);
+  transform-origin: left top;
+  width: 700px;
+  height: 90px;
+  overflow: hidden;
 }
 
 .media-thumbs__item {
-  transform: none;
-  width: auto;
-  margin-right: var(--media-gap);
+  transform: rotate(-90deg);
+  width: 700px;
+  margin-right: 10px;
+  
 }
 .product-details .container.reading-width {
   border-inline-end: none !important;
@@ -45,7 +49,6 @@
 .product-title,
 h1.product-title {
   font-weight: bold;
-  margin-bottom: 1rem;
 }
 
 .shopify-section + .product-main::before,
@@ -64,5 +67,18 @@ h1.product-title {
   height: 0 !important;
   border: none !important;
   box-shadow: none !important;
+}
+  .media-thumbs {
+  /* Bestehende Styles */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(90deg);
+  transform-origin: left top;
+  height: 90px;
+
+  /* Sichtbereich auf 6 Items begrenzen */
+  width: calc((80px + 10px) * 6); /* Höhe = Breite pro Thumb + Abstand */
+  overflow: hidden;
 }
 
