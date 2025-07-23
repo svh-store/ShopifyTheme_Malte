@@ -45,16 +45,14 @@
                           endif
                         -%}
 
-                        <div class="media-thumb__image-wrapper">
-                          {% render 'image',
-                            image: media,
-                            src_width: src_width,
-                            srcset_2x: true,
-                            lazy_load: false,
-                            class: img_class,
-                            disable_focal_point: true
-                          %}
-                        </div>
+                        {% render 'image',
+                          image: media,
+                          src_width: src_width,
+                          srcset_2x: true,
+                          lazy_load: false,
+                          class: img_class,
+                          disable_focal_point: true
+                        %}
                       </button>
                     </li>
                   {%- endfor -%}
