@@ -279,7 +279,12 @@ if (!customElements.get('media-gallery')) {
     addListeners() {
       this.viewer.addEventListener('scroll', this.handleScroll.bind(this));
       if (this.controls) this.controls.addEventListener('click', this.handleNavClick.bind(this));
-      if (this.thumbs) this.thumbs.addEventListener('click', this.handleThumbClick.bind(this));
+      if (this.thumbs) {
+        this.thumbs.addEventListener('click', this.handleThumbClick.bind(this));
+        if (window.matchMedia('(hover: hover)').matches) {
+          this.thumbs.addEventListener('mouseover', this.handleThumbHover.bind(this));
+        }
+      }
       this.resizeHandler = this.resizeHandler || this.handleResize.bind(this);
       window.addEventListener('on:debounced-resize', this.resizeHandler);
     }
@@ -372,15 +377,25 @@ if (!customElements.get('media-gallery')) {
      * Handles 'click' events on the thumbnails container.
      * @param {object} evt - Event object.
      */
-    handleThumbClick(evt) {
-      const thumb = evt.target.closest('[data-media-id]');
-      if (!thumb) return;
+  handleThumbClick(evt) {
+    const thumb = evt.target.closest('[data-media-id]');
+    if (!thumb) return;
 
-      const itemToShow = this.querySelector(`[data-media-id="${thumb.dataset.mediaId}"]`);
-      this.customSetActiveMedia(itemToShow);
+    const itemToShow = this.querySelector(`[data-media-id="${thumb.dataset.mediaId}"]`);
+    this.customSetActiveMedia(itemToShow);
 
-      MediaGallery.playActiveMedia(itemToShow);
-    }
+    MediaGallery.playActiveMedia(itemToShow);
+  }
+
+  handleThumbHover(evt) {
+    const thumb = evt.target.closest('[data-media-id]');
+    if (!thumb) return;
+    const btn = thumb.querySelector('button');
+    if (btn && btn.classList.contains('is-active')) return;
+    const itemToShow = this.querySelector(`[data-media-id="${thumb.dataset.mediaId}"]`);
+    this.customSetActiveMedia(itemToShow);
+    MediaGallery.playActiveMedia(itemToShow);
+  }
 
     /**
      * Handles debounced 'resize' events on the window.
@@ -408,6 +423,7 @@ if (!customElements.get('media-gallery')) {
     customSetActiveMedia(mediaItem, scrollToItem = true) {
       if (mediaItem === this.currentItem) return;
       window.pauseAllMedia(this);
+      this.viewer.classList.add('is-switching');
       this.currentItem = mediaItem;
       this.currentIndex = this.visibleItems.indexOf(this.currentItem);
 
@@ -435,6 +451,9 @@ if (!customElements.get('media-gallery')) {
       }
 
       if (scrollToItem) this.viewer.scrollTo({ left: this.currentItem.offsetLeft });
+      requestAnimationFrame(() => {
+        this.viewer.classList.remove('is-switching');
+      });
       if (this.thumbs) this.setActiveThumb();
 
       if (this.controls) {
