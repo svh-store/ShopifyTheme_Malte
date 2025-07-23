@@ -6,7 +6,7 @@
   }
 
   .product-media {
-    flex: 0 0 32.6%;
+    flex: 0 0 60%;
     position: sticky;
     top: 30px;
     align-self: flex-start;
