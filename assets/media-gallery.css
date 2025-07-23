@@ -367,6 +367,7 @@ product-model[loaded] .media-poster {
   }
   .product-media__inner .media-gallery {
     display: flex;
+    flex-direction: row-reverse;
   }
   .product-media__inner .media-gallery__thumbs {
     width: 80px;
@@ -374,7 +375,7 @@ product-model[loaded] .media-poster {
   }
   .product-media__inner .media-gallery__viewer {
     flex: 1;
-    max-width: 550px;
+    max-width: 600px;
     width: 100%;
   }
   .product-media__inner .media-thumbs {
