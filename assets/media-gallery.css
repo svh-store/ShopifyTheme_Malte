@@ -365,8 +365,10 @@ product-model[loaded] .media-poster {
     align-items: flex-start;
     gap: calc(5 * var(--space-unit));
   }
-  .product-media__inner .media-gallery {
+.product-media__inner .media-gallery {
     display: flex;
+    /* Show thumbnails first, viewer second */
+    flex-direction: row-reverse;
   }
   .product-media__inner .media-gallery__thumbs {
     width: 80px;
