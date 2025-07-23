@@ -442,8 +442,3 @@ quantity-input + .product-info__add-button {
     padding-bottom: calc(8 * var(--space-unit));
   }
 }
-
-/* Ensure product images don't shift when borders are applied */
-.media-gallery__viewer img {
-  box-sizing: border-box;
-}
