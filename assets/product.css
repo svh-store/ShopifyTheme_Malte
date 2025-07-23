@@ -388,14 +388,15 @@ quantity-input + .product-info__add-button {
 /* Harmonize main product image sizing */
 .media-gallery__viewer {
   box-sizing: border-box;
-  max-width: 650px;
   width: 100%;
+  max-width: none;
 }
 
 .media-gallery__viewer img {
   width: 100%;
   height: auto;
   object-fit: contain;
+  aspect-ratio: auto;
 }
 
 .tab-used .product-info__block .media {
