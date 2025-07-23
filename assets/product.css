@@ -388,7 +388,7 @@ quantity-input + .product-info__add-button {
 /* Harmonize main product image sizing */
 .media-gallery__viewer {
   box-sizing: border-box;
-  max-width: 550px;
+  max-width: 600px;
   width: 100%;
   height: auto;
   display: flex;
@@ -402,6 +402,14 @@ quantity-input + .product-info__add-button {
   aspect-ratio: unset !important;
   object-fit: contain;
   max-height: 600px;
+}
+
+.product-image.img-fit {
+  width: 100%;
+  height: auto;
+  aspect-ratio: unset !important;
+  object-fit: contain;
+  max-width: 550px;
 }
 
 .tab-used .product-info__block .media {

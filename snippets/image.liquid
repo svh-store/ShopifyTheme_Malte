@@ -29,6 +29,10 @@
 {%- endcomment -%}
 
 {%- liquid
+  assign omit_dimensions = false
+  if class and class contains 'product-image'
+    assign omit_dimensions = true
+  endif
   if srcset_2x
     assign image_width = src_width
     assign src_width_2x = src_width | times: 2
@@ -143,10 +147,9 @@
 {%- if image and src_width -%}
   {%- if mobile_srcset -%}
     <picture>
-      <source srcset="{{ mobile_srcset }}"
-              media="(max-width: 600px)"
-              width="{{ mobile_image_width }}"
-              height="{{ mobile_image_width | divided_by: image.aspect_ratio | round }}">
+        <source srcset="{{ mobile_srcset }}"
+                media="(max-width: 600px)"
+                {% unless omit_dimensions %}width="{{ mobile_image_width }}" height="{{ mobile_image_width | divided_by: image.aspect_ratio | round }}"{% endunless %}>
   {%- endif -%}
 
   {%- if as_mobile_source -%}
@@ -157,8 +160,7 @@
          {% if attributes %}{{ attributes }} {% endif -%}
          {% if disable_focal_point == false and image.presentation %}style="object-position: {{ image.presentation.focal_point }}" {% endif -%}
          loading="{% if lazy_load %}lazy{% else %}eager{% endif %}"
-         width="{{ image_width }}"
-         height="{{ image_height }}"
+         {% unless omit_dimensions %}width="{{ image_width }}" height="{{ image_height }}"{% endunless %}
          alt="{{ alt_text | default: image.alt | escape }}"
          media="(max-width: 767px)">
   {%- else -%}
@@ -169,8 +171,7 @@
          {% if attributes %}{{ attributes }} {% endif -%}
          {% if disable_focal_point == false and image.presentation %}style="object-position: {{ image.presentation.focal_point }}" {% endif -%}
          loading="{% if lazy_load %}lazy{% else %}eager{% endif %}"
-         width="{{ image_width }}"
-         height="{{ image_height }}"
+         {% unless omit_dimensions %}width="{{ image_width }}" height="{{ image_height }}"{% endunless %}
          {% if fetchpriority %}fetchpriority="{{ fetchpriority }}"{% endif %}
          alt="{{ alt_text | default: image.alt | escape }}">
   {%- endif -%}
