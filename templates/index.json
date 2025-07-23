@@ -412,7 +412,7 @@
           "settings": {
             "image_desktop": "shopify://shop_images/ChatGPT_Image_16._Juli_2025_14_02_49.png",
             "image_mobile": "shopify://shop_images/ChatGPT_Image_16._Juli_2025_14_02_49.png",
-            "url": "",
+            "url": "shopify://collections/schutzfolie-101",
             "overlay_position": "justify-end items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
