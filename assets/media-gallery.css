@@ -91,8 +91,11 @@
 }
 
 .media-gallery__thumbs {
-  /* Reduced space between main image and thumbnails */
-  margin-top: calc(1.5 * var(--space-unit));
+jqu129-codex/polish-thumbnail-styling-and-spacing
+  /* Position thumbnails slightly lower under the main image */
+  margin-top: calc(1.5 * var(--space-unit) + 3px);
+
+ main
 }
 
 /* Center thumbnails horizontally under the main image */
