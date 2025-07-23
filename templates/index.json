@@ -379,7 +379,7 @@
         ".btn--primary.js-quick-add:hover {background-color: #33302c !important; color: #fff !important;}",
         "p {font-size: 12px;}",
         ".slider-nav__btn {border: 3px solid #33302c; background: none !important; color: #33302c !important; background-image: none !important; box-shadow: none;}",
-        ".slider-nav__btn:hover {background-color: #33302C !important; color: #fff !important;}"
+        ".slider-nav__btn:hover {background-color: #33302c !important; color: #fff !important;}"
       ],
       "name": "Product list_ Hüllen und Taschen",
       "settings": {
@@ -469,8 +469,8 @@
       "custom_css": [
         ".os-scrollbar-horizontal {height: 25px !important;}",
         "p {font-size: 12px;}",
-        ".btn--primary {border: 3px solid #594e42; background: none !important; color: #594e42 !important; background-image: none !important; box-shadow: none;}",
-        ".btn--primary:hover {background-color: #594e42 !important; color: #fff !important;}"
+        ".btn--primary {border: 3px solid #33302C; background: none !important; color: #33302C !important; background-image: none !important; box-shadow: none;}",
+        ".btn--primary:hover {background-color: #33302C !important; color: #fff !important;}"
       ],
       "name": "Product list_Schutzglas",
       "settings": {
