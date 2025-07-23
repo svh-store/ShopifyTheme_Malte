@@ -170,7 +170,7 @@
         "fixed_height_mobile": 250,
         "mobile_stacked": true,
         "nav_style": "slideshow_nav_lines",
-        "pagination_color": "#594e42",
+        "pagination_color": "#ffffff",
         "nav_position": "justify-center",
         "transition": "slide-fade",
         "autoplay": true,
