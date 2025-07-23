@@ -503,7 +503,7 @@
           "settings": {
             "image_desktop": "shopify://shop_images/ChatGPT_Image_16._Juli_2025_14_17_39.png",
             "image_mobile": "shopify://shop_images/ChatGPT_Image_16._Juli_2025_14_17_39_ebdebc95-5236-4ad7-ac3b-19b3f5389c41.png",
-            "url": "",
+            "url": "shopify://collections/gadgets-zubehor",
             "overlay_position": "justify-end items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
