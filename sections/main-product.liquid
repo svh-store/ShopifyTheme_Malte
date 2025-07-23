@@ -84,7 +84,8 @@
 
   {%- if section.settings.media_size == 'large' -%}
     @media (min-width: {{ breakpoint_lg }}px) {
-      :root { --product-info-width: 400px !important; }
+      /* Wider information column on large layouts */
+      :root { --product-info-width: 560px !important; }
     }
   {%- endif -%}
 {%- endstyle -%}
@@ -97,7 +98,8 @@
 
 <div class="container">
   <div class="product js-product" data-section="{{ section.id }}">
-    <div id="product-media" class="product-media product-media--{{ section.settings.media_layout }}">
+  <div id="product-media" class="product-media product-media--{{ section.settings.media_layout }}">
+    <div class="product-media__inner">
       {%- if product.media.size > 0 -%}
         {% render 'media-gallery',
           product: product,
@@ -112,12 +114,13 @@
           zoom_mode: section.settings.zoom_mode,
           zoom_level: section.settings.hover_zoom
         %}
-      {%- else -%}
-        <div class="media relative">
-          {{ 'image' | placeholder_svg_tag: 'media__placeholder' }}
-        </div>
-      {%- endif -%}
+        {%- else -%}
+          <div class="media relative">
+            {{ 'image' | placeholder_svg_tag: 'media__placeholder' }}
+          </div>
+        {%- endif -%}
     </div>
+  </div>
 
     <div class="product-info{% if section.settings.stick_on_scroll %} product-info--sticky{% endif %}"
          id="product-info-{{ section.id }}"
