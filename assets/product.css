@@ -168,10 +168,9 @@
 }
 
 :root {
-  /* Reduce default block spacing for a tighter layout */
-  --product-details-block-margin: calc(6 * var(--space-unit));
+  --product-details-block-margin: calc(8 * var(--space-unit));
   --product-details-block-margin-sm: calc(3 * var(--space-unit));
-  --product-info-block-margin: calc(4 * var(--space-unit));
+  --product-info-block-margin: calc(6 * var(--space-unit));
 }
 
 .product-info__block,
@@ -397,9 +396,8 @@ quantity-input + .product-info__add-button {
 }
 @media (min-width: 769px) {
   :root {
-    /* Slightly reduce spacing on larger screens */
-    --product-details-block-margin: calc(10 * var(--space-unit));
-    --product-info-block-margin: calc(6 * var(--space-unit));
+    --product-details-block-margin: calc(12 * var(--space-unit));
+    --product-info-block-margin: calc(8 * var(--space-unit));
   }
   .product-details .disclosure > summary {
     padding-top: calc(5 * var(--space-unit));
