@@ -14,10 +14,10 @@
 
 @media (min-width: 769px) {
   :root {
-    /* Narrow image column and adjust padding */
-    --product-column-padding: calc(6 * var(--space-unit));
-    /* Wider info column for better alignment with gallery */
-    --product-info-width: 56%;
+    /* Reduce gap between image and info column */
+    --product-column-padding: calc(5 * var(--space-unit));
+    /* Slightly narrower info column for compact layout */
+    --product-info-width: 54%;
   }
   .shopify-section:not(.product-details) {
     clear: both;
@@ -109,8 +109,8 @@
 }
 @media (min-width: 1280px) {
   :root {
-    /* Reduce extra-wide padding */
-    --product-column-padding: calc(8 * var(--space-unit));
+    /* Reduce extra-wide padding further */
+    --product-column-padding: calc(7 * var(--space-unit));
   }
   .product-main .product-media,
   .product-main .product-info {

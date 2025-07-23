@@ -97,11 +97,14 @@
 /* Center thumbnails horizontally */
 .media-thumbs {
   justify-content: center;
+  /* Avoid vertical clipping when thumbnails enlarge */
+  overflow-y: visible;
+  padding-bottom: var(--media-gap);
 }
 
-/* Increase thumbnail size */
+/* Larger, uniform thumbnail size */
 .media-thumbs__item {
-  flex: 0 0 100px;
+  flex: 0 0 80px;
 }
 
 .media-thumbs__btn {
@@ -312,7 +315,7 @@ product-model[loaded] .media-poster {
     --media-gutter: calc(6 * var(--space-unit));
   }
   .media-thumbs__item {
-    flex: 0 0 96px;
+    flex: 0 0 80px;
   }
   .product-media--stacked .media-viewer__item:not(.media-viewer__item--single) {
     flex: 0 0 50%;
