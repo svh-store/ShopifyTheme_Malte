@@ -1893,16 +1893,14 @@ if (window.OverlayScrollbarsGlobal) {
   document.addEventListener('shopify:section:load', initMobileScrollbars);
 }
 
-// Ensure product image sizing overrides inline dimensions
+// Ensure product image sizing overrides inline aspect ratios
 document.addEventListener('DOMContentLoaded', () => {
-  const image = document.querySelector('.product-image.img-fit');
-  if (image) {
-    image.removeAttribute('width');
-    image.removeAttribute('height');
-    image.style.width = '100%';
-    image.style.height = 'auto';
-    image.style.aspectRatio = 'unset';
-    image.style.maxWidth = '550px';
-    image.style.objectFit = 'contain';
+  const mainImage = document.querySelector('.media-gallery__viewer img.product-image');
+  if (mainImage) {
+    mainImage.style.aspectRatio = 'unset';
+    mainImage.style.width = '100%';
+    mainImage.style.height = 'auto';
+    mainImage.style.maxHeight = '600px';
+    mainImage.style.objectFit = 'contain';
   }
 }, { once: true });
