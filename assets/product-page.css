@@ -15,7 +15,7 @@
 @media (min-width: 769px) {
   :root {
     /* Horizontal space between gallery and info (~40px) */
-    --product-column-padding: calc(6 * var(--space-unit));
+    --product-column-padding: calc(6.25 * var(--space-unit));
     /* Wider info column for modern layout */
     --product-info-width: 56%;
   }
@@ -110,7 +110,7 @@
 @media (min-width: 1280px) {
   :root {
     /* Reduce extra-wide padding further */
-    --product-column-padding: calc(6 * var(--space-unit));
+    --product-column-padding: calc(6.25 * var(--space-unit));
   }
   .product-main .product-media,
   .product-main .product-info {
