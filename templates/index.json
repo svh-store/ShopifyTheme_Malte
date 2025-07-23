@@ -906,7 +906,9 @@
         ".product-features {--hotspot-cross-color: #33302c;}",
         "div {margin-top: 0px;}",
         "@media screen and (max-width: 768px) {{display: none !important; }}",
-        "button.hotspot__btn {border: 3px solid #33302c; background: #ffffff !important;}"
+        "button.hotspot__btn {border: 3px solid #33302c; background: #ffffff !important;}",
+        ".btn--primary {border: 3px solid #33302c; background: none !important; color: #33302c !important; background-image: none !important; box-shadow: none;}",
+        ".btn--primary:hover {background-color: #33302c !important; color: #fff !important;}"
       ],
       "name": "Product features",
       "settings": {
