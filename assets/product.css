@@ -293,6 +293,10 @@ quantity-input + .product-info__add-button {
   border-radius: var(--btn-border-radius, 0);
 }
 
+.product-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
 .product-title .product-info__weight {
   opacity: 0.7;
 }
