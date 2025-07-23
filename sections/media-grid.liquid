@@ -85,6 +85,17 @@
       .block-{{ block.id }} .media::after {
         background-color: rgba({{ block.settings.tint_color.red }}, {{ block.settings.tint_color.green }}, {{ block.settings.tint_color.blue }}, {{ block.settings.tint_opacity | divided_by: 100.0 }});
       }
+  .btn--primary {
+  border: 3px solid #33302c;
+  background: none !important;
+  color: #33302c !important;
+  background-image: none !important;
+  box-shadow: none;
+}
+.btn--primary:hover {
+  background-color: #33302c !important;
+  color: #fff !important;
+}
     {%- endif -%}
   {% endfor %}
 
