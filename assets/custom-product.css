@@ -66,3 +66,18 @@ h1.product-title {
   box-shadow: none !important;
 }
 
+/* Ensure product images fill their container */
+.product-media,
+.product-media .media-gallery__viewer,
+.media-gallery__viewer img {
+  width: 100% !important;
+  max-width: 650px;
+  height: auto !important;
+}
+
+@media (max-width: 1023.98px) {
+  .product-media {
+    position: relative;
+    top: 0;
+  }
+}
