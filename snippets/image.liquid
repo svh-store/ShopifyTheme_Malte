@@ -15,7 +15,6 @@
   - attributes {String} - Additional attributes (optional).
   - alt_text {String} - Custom text for the 'alt' attribute (optional).
   - disable_focal_point {Boolean} - Disables the focussing of a spot on the image (optional, default is false).
-  - disable_size_attributes {Boolean} - Remove width/height attributes (optional, default is false).
   - section_index {Number} - If passed, image lazy load will be prevented if it's the first section
   - as_mobile_source {Boolean} - Will output <source> instead of <img> for use in <picture> (optional, default is false)
 
@@ -139,7 +138,6 @@
   endif
 
   assign disable_focal_point = disable_focal_point | default: false
-  assign disable_size_attributes = disable_size_attributes | default: false
 -%}
 
 {%- if image and src_width -%}
@@ -159,7 +157,8 @@
          {% if attributes %}{{ attributes }} {% endif -%}
          {% if disable_focal_point == false and image.presentation %}style="object-position: {{ image.presentation.focal_point }}" {% endif -%}
          loading="{% if lazy_load %}lazy{% else %}eager{% endif %}"
-         {% unless disable_size_attributes %}width="{{ image_width }}" height="{{ image_height }}"{% endunless %}
+         width="{{ image_width }}"
+         height="{{ image_height }}"
          alt="{{ alt_text | default: image.alt | escape }}"
          media="(max-width: 767px)">
   {%- else -%}
@@ -170,7 +169,8 @@
          {% if attributes %}{{ attributes }} {% endif -%}
          {% if disable_focal_point == false and image.presentation %}style="object-position: {{ image.presentation.focal_point }}" {% endif -%}
          loading="{% if lazy_load %}lazy{% else %}eager{% endif %}"
-         {% unless disable_size_attributes %}width="{{ image_width }}" height="{{ image_height }}"{% endunless %}
+         width="{{ image_width }}"
+         height="{{ image_height }}"
          {% if fetchpriority %}fetchpriority="{{ fetchpriority }}"{% endif %}
          alt="{{ alt_text | default: image.alt | escape }}">
   {%- endif -%}
