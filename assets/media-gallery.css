@@ -121,44 +121,25 @@
 
 .media-thumbs__btn {
   box-sizing: border-box;
-  padding: 0;
+  overflow: visible; /* Prevent clipping when scaled */
   border: 1px solid #d9d9d9;
   border-radius: 6px;
   overflow: hidden;
   background-color: var(--gallery-bg-color);
-  transition: box-shadow 0.2s, border-color 0.2s;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s, border-color 0.2s;
 }
 /* Remove underline and use subtle shadow on hover */
 .media-thumbs__btn::after {
   display: none;
 }
 .media-thumbs__btn:hover {
-  /* Subtle shadow on hover */
+  /* Enlarge slightly on hover */
   box-shadow: 0 0 0 1px rgba(var(--text-color), 0.3), 0 1px 3px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
 }
 .media-thumbs__btn.is-active {
   border-color: #000;
   box-shadow: none;
-}
-
-.media-thumb__image-wrapper {
-  display: block;
-  line-height: 0;
-  overflow: hidden;
-  border-radius: 6px;
-  box-sizing: border-box;
-}
-
-.media-thumb__image-wrapper img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.2s ease;
-}
-
-.media-thumbs__btn:hover .media-thumb__image-wrapper img,
-.media-thumbs__btn:focus .media-thumb__image-wrapper img {
-  transform: scale(1.05);
 }
 
 .media-thumbs__badge {
