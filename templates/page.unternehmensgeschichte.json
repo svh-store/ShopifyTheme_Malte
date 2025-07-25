@@ -252,8 +252,9 @@
         "media_3QfABB"
       ],
       "custom_css": [
-        ".media {border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 16px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(6px); overflow: hidden; transition: transform 0.3s ease, backdrop-filter 0.3s ease; transform-origin: center; display: block; position: relative;}",
-        ".media:hover {transform: scale(1.05); backdrop-filter: blur(10px);}",
+        ".media {}",
+        ".gallery-block__image {border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 16px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(6px); overflow: hidden; transition: transform 0.3s ease, backdrop-filter 0.3s ease;}",
+        ".media:hover .gallery-block__image {transform: scale(1.05); backdrop-filter: blur(10px);}",
         ".container {margin-top: -30px;}"
       ],
       "name": "Zeitleiste",
