@@ -388,7 +388,6 @@ quantity-input + .product-info__add-button {
 /* Harmonize main product image sizing */
 .media-gallery__viewer {
   box-sizing: border-box;
-  max-width: 600px;
   width: 100%;
   height: auto;
   display: flex;

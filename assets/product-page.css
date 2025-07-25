@@ -58,8 +58,8 @@
       padding-top: calc(6 * var(--space-unit));
       padding-bottom: calc(6 * var(--space-unit));
       padding-inline-end: var(--product-column-padding);
-      /* Limit width so images don't overwhelm the layout */
-      max-width: 650px;
+      /* Allow gallery to fill available space */
+      max-width: none;
     }
     /* Sticky image gallery when there is room */
     .product-media__inner {
