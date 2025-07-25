@@ -357,8 +357,8 @@ product-model[loaded] .media-poster {
   }
   .product-media__inner .media-gallery__viewer {
     flex: 1;
-    max-width: 600px;
     width: 100%;
+    max-width: none;
   }
   .product-media__inner .media-thumbs {
     flex-direction: column;
