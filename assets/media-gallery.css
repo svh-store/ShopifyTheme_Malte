@@ -103,6 +103,8 @@
 }
 
 .media-gallery__thumbs {
+
+ main
   margin-top: calc(1.5 * var(--space-unit) + 3px);
 }
 
