@@ -1,1 +1,77 @@
-{"type":"footer","name":"Footer Group","sections":{"icons_with_text_BKTzCa":{"type":"icons-with-text","blocks":{"item_QwteBP":{"type":"item","settings":{"icon":"truck","heading":"Versandkostenfrei","text":"","link":"shopify:\/\/pages\/versandarten"}},"item_hLUqEx":{"type":"item","settings":{"icon":"credit_card","heading":"Flexible Zahlungsarten","text":"","link":"shopify:\/\/pages\/zahlungsarten"}},"item_MzzhVM":{"type":"item","settings":{"icon":"return","heading":"30 Tage Rückgaberecht","text":"","link":"shopify:\/\/policies\/refund-policy"}},"item_d8mhtp":{"type":"item","settings":{"icon":"chat_bubble","heading":"Persönlicher Support","text":"","link":"shopify:\/\/pages\/kundenservice"}}},"block_order":["item_QwteBP","item_hLUqEx","item_MzzhVM","item_d8mhtp"],"custom_css":["\/* Icon-Größe *\/svg {width: 14px !important; height: 14px !important;}"," \/* Textgröße *\/.icons-with-text__text {font-size: 12px !important;}"," \/* Abstand zwischen den USP-Items *\/.icons-with-text__item {margin-left: 8px !important; margin-right: 8px !important;}"],"settings":{"heading":"","heading_align":"text-start","icon_size":24,"title_type_scale":"medium","text_type_scale":"medium","icon_position":"beside","mobile_stack":false,"section_height":"xsmall","color_scheme":"none","full_width":true,"dividers":"none","prevent_animation":false}},"footer":{"type":"footer","blocks":{"text_YmHdfR":{"type":"text","settings":{"image_width":150,"heading":"CoolGadget","text":"<p>Moin aus dem hohen Norden! Wir sind CoolGadget. Dein Spezialist für hochwertiges Handyzubehör aus Jever.<\/p><p>Noch Fragen? info@coolgadget.de<\/p><p>Das sagen unsere Kunden auf <a href=\"https:\/\/de.trustpilot.com\/review\/coolgadget.de\" target=\"_blank\" title=\"https:\/\/de.trustpilot.com\/review\/coolgadget.de\">Trustpilot<\/a><\/p><p><\/p>","button_label":"","button_link":"","enable_follow_on_shop":false,"show_social":false,"text_align":"text-start"}},"link_list_AgBQAM":{"type":"link_list","settings":{"heading":"Unternehmen","menu":"footer"}},"link-list-2":{"type":"link_list","settings":{"heading":"Service","menu":"service"}},"newsletter":{"type":"newsletter","settings":{"heading":"Newsletter","text":"<p>Melde dich jetzt für unseren Newsletter an und verpasse keine Aktionen und Gutscheine mehr!<\/p>","collapse_mobile":true}}},"block_order":["text_YmHdfR","link_list_AgBQAM","link-list-2","newsletter"],"custom_css":["div {font-size: 12px;}"],"settings":{"show_back_to_top":false,"show_payment_icons":true,"show_powered_by":false,"enable_country_selector":false,"enable_language_selector":false,"secondary_menu":"footer-menu","bg_color":"#f1f1f1","text_color":"#000000"}}},"order":["icons_with_text_BKTzCa","footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "text_YmHdfR": {
+          "type": "text",
+          "settings": {
+            "image_width": 150,
+            "heading": "CoolGadget",
+            "text": "<p>Moin aus dem hohen Norden! Wir sind CoolGadget. Dein Spezialist für hochwertiges Handyzubehör aus Jever.</p><p>Noch Fragen? info@coolgadget.de</p><p>Das sagen unsere Kunden auf <a href=\"https://de.trustpilot.com/review/coolgadget.de\" target=\"_blank\" title=\"https://de.trustpilot.com/review/coolgadget.de\">Trustpilot</a></p><p></p>",
+            "button_label": "",
+            "button_link": "",
+            "enable_follow_on_shop": false,
+            "show_social": false,
+            "text_align": "text-start"
+          }
+        },
+        "link_list_AgBQAM": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Unternehmen",
+            "menu": "footer"
+          }
+        },
+        "link-list-2": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Service",
+            "menu": "service"
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "Newsletter",
+            "text": "<p>Melde dich jetzt für unseren Newsletter an und verpasse keine Aktionen und Gutscheine mehr!</p>",
+            "collapse_mobile": true
+          }
+        }
+      },
+      "block_order": [
+        "text_YmHdfR",
+        "link_list_AgBQAM",
+        "link-list-2",
+        "newsletter"
+      ],
+      "custom_css": [
+        "div {font-size: 12px;}"
+      ],
+      "settings": {
+        "show_back_to_top": false,
+        "show_payment_icons": true,
+        "show_powered_by": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "secondary_menu": "footer-menu",
+        "bg_color": "#f1f1f1",
+        "text_color": "#000000"
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
