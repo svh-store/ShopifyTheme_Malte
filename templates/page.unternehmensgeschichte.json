@@ -272,18 +272,6 @@
         "transparent_content_color": "#ffffff"
       }
     },
-    "custom_liquid_i33rKJ": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "name": "Custom HTML/Liquid",
-      "settings": {
-        "custom_liquid": "<!-- AOS (Fade-In) CSS & JS -->\n<link href=\"https://unpkg.com/aos@2.3.1/dist/aos.css\" rel=\"stylesheet\">\n<script src=\"https://unpkg.com/aos@2.3.1/dist/aos.js\"></script>\n<script>AOS.init();</script>\n\n<style>\n  .timeline-wrapper {\n    max-width: 100%;\n    padding: 60px 20px;\n    overflow-x: auto;\n    position: relative;\n  }\n\n  .timeline-track {\n    display: grid;\n    grid-template-columns: repeat(8, 1fr);\n    position: relative;\n    align-items: center;\n    height: 200px;\n  }\n\n  .timeline-line {\n    position: absolute;\n    top: 50%;\n    left: 0;\n    width: 100%;\n    height: 4px;\n    background-color: #F19222;\n    transform: translateY(-50%);\n    z-index: 1;\n  }\n\n  .timeline-point {\n    position: relative;\n    text-align: center;\n    z-index: 3;\n  }\n\n  .timeline-point .dot {\n    width: 20px;\n    height: 20px;\n    background: white;\n    border: 4px solid #F19222;\n    border-radius: 50%;\n    margin: 0 auto;\n    position: relative;\n    top: 50%;\n    transform: translateY(-50%);\n    transition: transform 0.3s ease, box-shadow 0.3s ease;\n    z-index: 2;\n  }\n\n  .timeline-point .dot:hover {\n    transform: scale(1.2);\n    box-shadow: 0 0 10px #f19222;\n  }\n\n  .timeline-point .tooltip {\n    position: absolute;\n    top: -90px;\n    left: 50%;\n    transform: translateX(-50%);\n    background: #F19222;\n    color: white;\n    font-size: 14px;\n    padding: 8px 12px;\n    border-radius: 6px;\n    white-space: nowrap;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);\n    display: block;\n    opacity: 1;\n    z-index: 3;\n  }\n\n  .timeline-point .year {\n    margin-top: 12px;\n    font-weight: bold;\n    font-size: 16px;\n    color: #111827;\n  }\n\n  /* Mobile Optimierung */\n  @media screen and (max-width: 768px) {\n    .timeline-track {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      height: auto;\n      gap: 40px;\n    }\n\n    .timeline-line {\n      display: none;\n    }\n\n    .timeline-point {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      text-align: center;\n      max-width: 90%;\n    }\n\n    .timeline-point .tooltip {\n      position: static;\n      transform: none;\n      background: transparent;\n      color: #374151;\n      font-size: 14px;\n      padding: 4px 0;\n      box-shadow: none;\n      white-space: normal;\n      margin-bottom: 12px; /* Erhöhter Abstand zur dot */\n    }\n\n    .timeline-point .dot {\n      margin-bottom: 12px; /* Erhöhter Abstand zur year */\n    }\n\n    .timeline-point .year {\n      font-size: 15px;\n    }\n  }\n</style>\n\n<div class=\"timeline-wrapper\" data-aos=\"fade-up\">\n  <div class=\"timeline-track\">\n    <div class=\"timeline-line\"></div>\n\n    <div class=\"timeline-point\">\n      <div class=\"tooltip\">Gründung in Blomberg<br>eBay-Verkäufe starten</div>\n      <div class=\"dot\"></div>\n      <div class=\"year\">2010</div>\n    </div>\n\n    <div class=\"timeline-point\">\n      <div class=\"tooltip\">Eröffnung Ladengeschäft in Jever</div>\n      <div class=\"dot\"></div>\n      <div class=\"year\">2012</div>\n    </div>\n\n    <div class=\"timeline-point\">\n      <div class=\"tooltip\">Umzug nach Schortens<br>mehr Lagerfläche</div>\n      <div class=\"dot\"></div>\n      <div class=\"year\">2014</div>\n    </div>\n\n    <div class=\"timeline-point\">\n      <div class=\"tooltip\">Start des eigenen Online-Shops</div>\n      <div class=\"dot\"></div>\n      <div class=\"year\">2016</div>\n    </div>\n\n    <div class=\"timeline-point\">\n      <div class=\"tooltip\">900m² Büro & Lagerfläche</div>\n      <div class=\"dot\"></div>\n      <div class=\"year\">2018</div>\n    </div>\n\n    <div class=\"timeline-point\">\n      <div class=\"tooltip\">Wachstum über Amazon & eBay</div>\n      <div class=\"dot\"></div>\n      <div class=\"year\">2020</div>\n    </div>\n\n    <div class=\"timeline-point\">\n      <div class=\"tooltip\">19 Mitarbeitende<br>Planung Neubau</div>\n      <div class=\"dot\"></div>\n      <div class=\"year\">2023</div>\n    </div>\n\n    <div class=\"timeline-point\">\n      <div class=\"tooltip\">Einzug in neues Firmengebäude</div>\n      <div class=\"dot\"></div>\n      <div class=\"year\">2025</div>\n    </div>\n  </div>\n</div>",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "prevent_animation": false
-      }
-    },
     "custom_liquid_cwQCCV": {
       "type": "custom-liquid",
       "custom_css": [
@@ -297,55 +285,6 @@
         "dividers": "none",
         "prevent_animation": false
       }
-    },
-    "custom_liquid_C7cAaJ": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<!-- Google Fonts: Roboto -->\n<link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap\" rel=\"stylesheet\">\n\n<style>\n  .about-box {\n    max-width: 1500px;\n    margin: 40px auto;\n    padding: 30px;\n    background-color: #fff;\n    color: #000;\n    border-left: 5px solid #F19222;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);\n    border-radius: 12px;\n    font-family: 'Roboto', sans-serif;\n    animation: fadeIn 1s ease-in-out;\n  }\n\n  .about-box h2,\n  .about-box h3 {\n    color: #F19222;\n    margin-top: 1.5em;\n    margin-bottom: 0.5em;\n  }\n\n  .about-box h2 {\n    margin-top: 0;\n    font-size: 1.8rem;\n  }\n\n  .about-box ul {\n    padding-left: 0;\n    list-style: none;\n    margin-top: 1em;\n  }\n\n  .about-box ul li {\n    position: relative;\n    padding-left: 28px;\n    margin-bottom: 12px;\n    line-height: 1.6;\n  }\n\n  .about-box ul li::before {\n    content: '';\n    position: absolute;\n    left: 0;\n    top: 8px;\n    width: 10px;\n    height: 10px;\n    background-color: #F19222;\n    border-radius: 50%;\n  }\n\n  @keyframes fadeIn {\n    from {\n      opacity: 0;\n      transform: translateY(20px);\n    }\n\n    to {\n      opacity: 1;\n      transform: translateY(0);\n    }\n  }\n</style>\n\n<div class=\"about-box\">\n  <h2>Wir sind die SVH-Store GmbH – das Team hinter CoolGadget</h2>\n\n  <p>Vielleicht kennst du uns schon von eBay oder Amazon? Seit 2016 findest du unsere Produkte aber auch in unserem eigenen Online-Shop, wo wir dir eine große Auswahl an Handyzubehör bieten – von Schutzhüllen bis hin zu Schutzfolien und vielem mehr.</p>\n\n  <p>Unsere Geschichte begann bereits 2010, als unsere Geschäftsführer <strong>Artur Gerein</strong> und <strong>Sascha von Höveling</strong> das Unternehmen in einem kleinen 10-Quadratmeter-Kellerbüro in Blomberg gründeten – mit den ersten Verkäufen auf eBay.</p>\n\n  <p>Seitdem sind wir stetig gewachsen: Erst kam ein kleines Ladengeschäft in Jever, dann der Umzug nach Schortens mit immer mehr Platz – bis wir schließlich auf stolze <strong>900 Quadratmeter Büro- und Lagerfläche</strong> anwuchsen.</p>\n\n  <p>Heute sind wir in unserem eigenen Firmengebäude in Jever angekommen – mit <strong>1.250 Quadratmetern im Herzen von Friesland</strong>. Hier arbeitet unser engagiertes Team aus mittlerweile <strong>19 Mitarbeitenden</strong> jeden Tag daran, dir ein rundum tolles Einkaufserlebnis zu bieten.</p>\n\n  <p><strong>Schön, dass du da bist!</strong></p>\n\n  <h3>Unsere Werte – Qualität, Fairness und Kundennähe</h3>\n\n  <p>Wir glauben daran, dass hochwertiges Zubehör nicht teuer sein muss. Bei uns findest du erstklassige Produkte zu fairen Preisen – denn für uns gehören Qualität und Fairness einfach zusammen.</p>\n\n  <ul>\n    <li>Qualität zu fairen Preisen</li>\n    <li>Verlässlicher Kundenservice und ehrliche Kommunikation</li>\n    <li>Produkte mit Mehrwert – von Menschen für Menschen</li>\n    <li>Ein Team, das täglich mit Herz bei der Sache ist</li>\n  </ul>\n\n  <p>Außerdem ist es uns besonders wichtig, dass du dich bei uns gut aufgehoben fühlst – ganz gleich, ob du Fragen hast, etwas wissen möchtest oder einfach nur durch unseren Online-Shop stöberst.</p>\n\n  <p><strong>Deine Zufriedenheit und dein Vertrauen sind das, was uns jeden Tag antreibt.</strong></p>\n\n  <p>Danke, dass du dich für CoolGadget entschieden hast – wir freuen uns darauf, dich mit unseren Produkten und unserem Service zu begeistern!</p>\n\n  <p style=\"margin-top: 2em;\"><strong>Herzliche Grüße<br>Dein CoolGadget-Team</strong></p>\n</div>",
-        "section_height": "default",
-        "full_width": true,
-        "dividers": "none",
-        "prevent_animation": false
-      }
-    },
-    "newsletter_CPAHz8": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_eMjMtM": {
-          "type": "heading",
-          "settings": {
-            "heading": "Newsletter",
-            "heading_size": "h3"
-          }
-        },
-        "text_R3KBCH": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Melde dich für unseren Newsletter an und erhalte Zugang zu exklusiven Rabatten & Aktionen</p>",
-            "enlarge_text": false
-          }
-        },
-        "form_8HwAQV": {
-          "type": "form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_eMjMtM",
-        "text_R3KBCH",
-        "form_8HwAQV"
-      ],
-      "name": "Email signup",
-      "settings": {
-        "overlay_position": "justify-center",
-        "text_align": "text-center",
-        "color_scheme": "default",
-        "full_width": true,
-        "transparent_content_color": "#ffffff",
-        "tint_color": "#000000",
-        "tint_opacity": 0
-      }
     }
   },
   "order": [
@@ -353,9 +292,6 @@
     "main",
     "custom_liquid_TX6BHW",
     "media_grid_jLp4RA",
-    "custom_liquid_i33rKJ",
-    "custom_liquid_cwQCCV",
-    "custom_liquid_C7cAaJ",
-    "newsletter_CPAHz8"
+    "custom_liquid_cwQCCV"
   ]
 }
