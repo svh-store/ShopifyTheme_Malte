@@ -71,7 +71,7 @@ h1.product-title {
 .product-media .media-gallery__viewer,
 .media-gallery__viewer img {
   width: 100% !important;
-  max-width: 650px;
+  max-width: none;
   height: auto !important;
 }
 
