@@ -188,7 +188,7 @@
       "type": "custom-slideshow",
       "custom_css": [
         ".container--quick-nav {margin-top: 60px;}",
-        ".container {background: linear-gradient(to bottom, #2d4e5a, #222629, #ffffff); box-shadow: none;}",
+        ".container {background: linear-gradient(to bottom, #2d4e5a, #222629, #ffffff, #ffffff); box-shadow: none;}",
         ".quick-nav {background-color: #f9f9f9; border: 1px solid #33302c; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);}",
         ".quick-nav__heading {font-size: 28px; font-weight: 600; text-align: center; margin-bottom: 10px;}",
         ".quick-nav__subtext {font-size: 16px; color: #666; text-align: center; margin-bottom: 24px; max-width: 500px; margin-left: auto; margin-right: auto; line-height: 1.4;}"
