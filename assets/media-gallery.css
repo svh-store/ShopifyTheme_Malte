@@ -357,6 +357,7 @@ product-model[loaded] .media-poster {
   }
   .product-media__inner .media-gallery__viewer {
     flex: 1;
+    max-width: 600px;
     width: 100%;
   }
   .product-media__inner .media-thumbs {
