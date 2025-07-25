@@ -1,1 +1,449 @@
-{"type":"header","name":"Header Group","sections":{"announcement":{"type":"announcement","blocks":{"announcement_BkxWJb":{"type":"announcement","settings":{"text":"<p>Melde dich für unseren Newsletter an und erhalte Zugang zu exklusiven Rabatten & Aktionen<\/p>"}},"announcement_rPhafd":{"type":"announcement","settings":{"text":"<p>Sei anderen einen Schritt voraus – entdecke neue Hüllen, Kabel & Must-Haves vor allen anderen<\/p>"}},"announcement_jQipVN":{"type":"announcement","settings":{"text":"<p>Jetzt im Newsletter anmelden – kostenlos & jederzeit kündbar!<\/p>"}}},"block_order":["announcement_BkxWJb","announcement_rPhafd","announcement_jQipVN"],"custom_css":["{font-size: 12px !important;}"],"name":"Slider - Pre Header","settings":{"link1":"","link1_label":"","link2":"","link2_label":"","enable_country_selector":false,"enable_language_selector":false,"bg_color":"#33302c","text_color":"#ffffff","text_type_scale":"medium","read_time":6}},"icons_with_text_fmyNdg":{"type":"icons-with-text","blocks":{"item_Lk9Qmk":{"type":"item","settings":{"icon":"truck","heading":"","text":"<p>Versandkostenfrei<\/p>","link":"shopify:\/\/pages\/versandarten"}},"item_cEhkMD":{"type":"item","settings":{"icon":"credit_card","heading":"","text":"<p>Flexible Zahlungsarten<\/p>","link":"shopify:\/\/pages\/zahlungsarten"}},"item_WiqXdm":{"type":"item","settings":{"icon":"return","heading":"","text":"<p>30 Tage Rückgaberecht<\/p>","link":"shopify:\/\/policies\/refund-policy"}},"item_KrpGVz":{"type":"item","settings":{"icon":"chat_bubble","heading":"","text":"<p>Persönlicher Support<\/p>","link":"shopify:\/\/pages\/kundenservice"}}},"block_order":["item_Lk9Qmk","item_cEhkMD","item_WiqXdm","item_KrpGVz"],"custom_css":["\/* Icon-Größe *\/svg {width: 14px !important; height: 14px !important;}"," \/* Textgröße *\/.icons-with-text__text {font-size: 12px !important;}"," \/* Abstand zwischen den USP-Items *\/.icons-with-text__item {margin-left: 8px !important; margin-right: 8px !important;}"],"name":"Icons with text","settings":{"heading":"","heading_align":"text-start","icon_size":24,"title_type_scale":"extra_small","text_type_scale":"small","icon_position":"beside","mobile_stack":false,"section_height":"xsmall","color_scheme":"none","full_width":true,"dividers":"none","prevent_animation":false}},"header":{"type":"header","blocks":{"sidebar_ckg3zE":{"type":"sidebar","settings":{"title":"Handyhüllen","collection_images":"none","collection_use_product_image":false,"collection_circle_image":false,"show_underline":true,"show_collection_images":true,"sidebar_link_use_product_image":false,"show_product_images":false,"aspect_ratio":"1","badge1_color":"#007e12","badge1_link":"Wallet Style, Flip Style, Security Wallet, Farbig, Transparent, MagSafe, Outdoor, Motiv, zum Umhängen, 360 Grad","badge1_text":"-15% RABATT","badge2_color":"#000000","badge2_link":"","badge2_text":"","badge3_color":"#000000","badge3_link":"","badge3_text":""}},"columns_tbQ4nc":{"type":"columns","settings":{"title":"Handyhüllen","collection_images":"large","collection_use_product_image":false,"collection_circle_image":false,"show_underline":true,"promo_position":"bottom","promo_min_height":200,"promo_text_color":"#ffffff","promo_tint_color":"#000000","promo_tint_opacity":20,"promo1_content":"","promo1_link_url":"","promo1_text_size":16,"promo1_text_width":100,"promo1_text_alignment":"justify-center items-center text-center","promo2_content":"","promo2_link_url":"","promo2_text_size":16,"promo2_text_width":100,"promo2_text_alignment":"justify-center items-center text-center","promo3_content":"","promo3_link_url":"","promo3_text_size":16,"promo3_text_width":100,"promo3_text_alignment":"justify-center items-center text-center","badge1_color":"#2c7e3f","badge1_link":"Wallet Style, Flip Style, Security Wallet, Farbig, Transparent, Magsafe, Outdoor, Motiv, Zum Umhängen, 360 Grad","badge1_text":"-15% RABATT","badge2_color":"#f19222","badge2_link":"","badge2_text":"","badge3_color":"#000000","badge3_link":"","badge3_text":""}},"sidebar_CiDr8w":{"type":"sidebar","settings":{"title":"Tablethüllen","collection_images":"none","collection_use_product_image":false,"collection_circle_image":false,"show_underline":true,"show_collection_images":true,"sidebar_link_use_product_image":false,"show_product_images":true,"aspect_ratio":"1","badge1_color":"#007e12","badge1_link":"Wallet Style, Smart Cover, Transparent, Outdoor, Schwarz","badge1_text":"15% RABATT","badge2_color":"#000000","badge2_link":"","badge2_text":"","badge3_color":"#000000","badge3_link":"","badge3_text":""}},"columns_ciWF7C":{"type":"columns","settings":{"title":"Tablethüllen","collection_images":"large","collection_use_product_image":true,"collection_circle_image":false,"show_underline":true,"promo_position":"bottom","promo_min_height":200,"promo_text_color":"#ffffff","promo_tint_color":"#000000","promo_tint_opacity":20,"promo1_content":"","promo1_link_url":"","promo1_text_size":16,"promo1_text_width":100,"promo1_text_alignment":"justify-center items-center text-center","promo2_content":"","promo2_link_url":"","promo2_text_size":16,"promo2_text_width":100,"promo2_text_alignment":"justify-center items-center text-center","promo3_content":"","promo3_link_url":"","promo3_text_size":16,"promo3_text_width":100,"promo3_text_alignment":"justify-center items-center text-center","badge1_color":"#2c7e3f","badge1_link":"Wallet Style, Smart Cover, Transparent, Outdoor, Schwarz","badge1_text":"","badge2_color":"#000000","badge2_link":"","badge2_text":"","badge3_color":"#000000","badge3_link":"","badge3_text":""}},"sidebar_U6ThgU":{"type":"sidebar","settings":{"title":"Schutzfolien","collection_images":"none","collection_use_product_image":false,"collection_circle_image":false,"show_underline":true,"show_collection_images":true,"sidebar_link_use_product_image":false,"show_product_images":true,"aspect_ratio":"1","badge1_color":"#007e12","badge1_link":"9H Panzerfolie, 9H Display & Kameraschutz Set, Anti Spy","badge1_text":"15% Rabatt","badge2_color":"#e222f1","badge2_link":"9H Premiumglas","badge2_text":"PREMIUM","badge3_color":"#000000","badge3_link":"9H Premiumglas","badge3_text":"Unsere Empfehlung!"}},"columns_7LfF7m":{"type":"columns","settings":{"title":"Schutzfolien","collection_images":"large","collection_use_product_image":true,"collection_circle_image":false,"show_underline":true,"promo_position":"bottom","promo_min_height":200,"promo_text_color":"#ffffff","promo_tint_color":"#000000","promo_tint_opacity":20,"promo1_content":"","promo1_link_url":"","promo1_text_size":16,"promo1_text_width":100,"promo1_text_alignment":"justify-center items-center text-center","promo2_content":"","promo2_link_url":"","promo2_text_size":16,"promo2_text_width":100,"promo2_text_alignment":"justify-center items-center text-center","promo3_content":"","promo3_link_url":"","promo3_text_size":16,"promo3_text_width":100,"promo3_text_alignment":"justify-center items-center text-center","badge1_color":"#2c7e3f","badge1_link":"","badge1_text":"","badge2_color":"#000000","badge2_link":"","badge2_text":"","badge3_color":"#000000","badge3_link":"","badge3_text":""}},"columns_kkhxK7":{"type":"columns","settings":{"title":"Elektronik & Zubehör","collection_images":"large","collection_use_product_image":false,"collection_circle_image":false,"show_underline":true,"promo_position":"right","promo_min_height":200,"promo_text_color":"#ffffff","promo_tint_color":"#000000","promo_tint_opacity":20,"promo1_content":"","promo1_link_url":"","promo1_text_size":16,"promo1_text_width":100,"promo1_text_alignment":"justify-center items-center text-center","promo2_content":"","promo2_link_url":"","promo2_text_size":16,"promo2_text_width":100,"promo2_text_alignment":"justify-center items-center text-center","promo3_content":"","promo3_link_url":"","promo3_text_size":16,"promo3_text_width":100,"promo3_text_alignment":"justify-center items-center text-center","badge1_color":"#f19222","badge1_link":"USB-C Kabel,","badge1_text":"","badge2_color":"#000000","badge2_link":"","badge2_text":"","badge3_color":"#000000","badge3_link":"","badge3_text":""}}},"block_order":["sidebar_ckg3zE","columns_tbQ4nc","sidebar_CiDr8w","columns_ciWF7C","sidebar_U6ThgU","columns_7LfF7m","columns_kkhxK7"],"custom_css":["main-menu {font-size: 12px; margin: -20px 0 10px; width: 100vw;}","main-menu svg {width: 14px !important; height: 14px !important;}"],"settings":{"enable_sticky":true,"mobile_menu_position":"burger-left","logo_text":"Coolgadget - Dein Spezialist für Handy- und Tabletzubehör","logo_type_scale":"2","logo":"shopify:\/\/shop_images\/Kein_Titel_768_x_330_px.svg","logo_width":180,"logo_h1":true,"logo_center":false,"enable_search":true,"minimise_search_mobile":false,"minimise_search_desktop":false,"menu":"main-menu","menu_center":true,"repeat_links":true,"menu_featured_link":"Sale","quicklinks_menu":"","cta_show":false,"cta_icon":"eye","cta_label":"04461 967910","cta_link":"","cta_border_color":"#000000","cta_bg_color":"#000000","cta_text_color":"#ffffff","bg_color":"#ffffff","text_color":"#000000","accent_color":"#f19222"}},"promo_strip_P63EmJ":{"type":"promo-strip","blocks":{"heading_wCaBN9":{"type":"heading","settings":{"heading":"Willkommen bei CoolGadget","heading_size":"h6","show_on_mobile":true,"show_on_desktop":true}},"text_bNgrwC":{"type":"text","settings":{"text":"<p>Wir freuen uns, den Start unseres neuen Shops bekanntzugeben! Sicher Dir jetzt 15% Rabatt auf Deinen gesamten Warenkorb – ausgenommen Elektronik.<\/p>","enlarge_text":false,"show_on_mobile":true,"show_on_desktop":true}},"discount_6zQrJb":{"type":"discount","settings":{"discount_code":"CG2025"}}},"block_order":["heading_wCaBN9","text_bNgrwC","discount_6zQrJb"],"disabled":true,"custom_css":[".promo {font-size: 0.85em; \/* Oder z. B. 12px *\/ opacity: 0.8; \/* Optional: etwas dezenter *\/}"],"settings":{"section_height":"xsmall","color_scheme":"3","full_width":true,"dividers":"none","prevent_animation":false}}},"order":["announcement","icons_with_text_fmyNdg","header","promo_strip_P63EmJ"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement": {
+      "type": "announcement",
+      "blocks": {
+        "announcement_BkxWJb": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>⭐️⭐️⭐️⭐️⭐️ Über 3,5 Millionen zufriedene Kunden</p>"
+          }
+        },
+        "announcement_rPhafd": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Sei anderen einen Schritt voraus – entdecke neue Hüllen, Kabel & Must-Haves vor allen anderen</p>"
+          }
+        },
+        "announcement_jQipVN": {
+          "type": "announcement",
+          "settings": {
+            "text": "<p>🧠💡No-brainer: Melde dich in unserem Newsletter an</p>"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_BkxWJb",
+        "announcement_rPhafd",
+        "announcement_jQipVN"
+      ],
+      "custom_css": [
+        "{font-size: 12px !important;}"
+      ],
+      "name": "Slider - Pre Header",
+      "settings": {
+        "link1": "",
+        "link1_label": "",
+        "link2": "",
+        "link2_label": "",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "bg_color": "#33302c",
+        "text_color": "#ffffff",
+        "text_type_scale": "medium",
+        "read_time": 6
+      }
+    },
+    "icons_with_text_fmyNdg": {
+      "type": "icons-with-text",
+      "blocks": {
+        "item_Lk9Qmk": {
+          "type": "item",
+          "settings": {
+            "icon": "truck",
+            "heading": "",
+            "text": "<p>Versandkostenfrei</p>",
+            "link": "shopify://pages/versandarten"
+          }
+        },
+        "item_cEhkMD": {
+          "type": "item",
+          "settings": {
+            "icon": "credit_card",
+            "heading": "",
+            "text": "<p>Flexible Zahlungsarten</p>",
+            "link": "shopify://pages/zahlungsarten"
+          }
+        },
+        "item_WiqXdm": {
+          "type": "item",
+          "settings": {
+            "icon": "return",
+            "heading": "",
+            "text": "<p>30 Tage Rückgaberecht</p>",
+            "link": "shopify://policies/refund-policy"
+          }
+        },
+        "item_KrpGVz": {
+          "type": "item",
+          "settings": {
+            "icon": "chat_bubble",
+            "heading": "",
+            "text": "<p>Persönlicher Support</p>",
+            "link": "shopify://pages/kundenservice"
+          }
+        }
+      },
+      "block_order": [
+        "item_Lk9Qmk",
+        "item_cEhkMD",
+        "item_WiqXdm",
+        "item_KrpGVz"
+      ],
+      "custom_css": [
+        "/* Icon-Größe */svg {width: 14px !important; height: 14px !important;}",
+        " /* Textgröße */.icons-with-text__text {font-size: 12px !important;}",
+        " /* Abstand zwischen den USP-Items */.icons-with-text__item {margin-left: 8px !important; margin-right: 8px !important;}"
+      ],
+      "name": "Icons with text",
+      "settings": {
+        "heading": "",
+        "heading_align": "text-start",
+        "icon_size": 24,
+        "title_type_scale": "extra_small",
+        "text_type_scale": "small",
+        "icon_position": "beside",
+        "mobile_stack": false,
+        "section_height": "xsmall",
+        "color_scheme": "none",
+        "full_width": true,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "sidebar_ckg3zE": {
+          "type": "sidebar",
+          "settings": {
+            "title": "Handyhüllen",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "collection_circle_image": false,
+            "show_underline": true,
+            "show_collection_images": true,
+            "sidebar_link_use_product_image": false,
+            "show_product_images": false,
+            "aspect_ratio": "1",
+            "badge1_color": "#007e12",
+            "badge1_link": "Wallet Style, Flip Style, Security Wallet, Farbig, Transparent, MagSafe, Outdoor, Motiv, zum Umhängen, 360 Grad",
+            "badge1_text": "-15% RABATT",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": "",
+            "badge3_color": "#000000",
+            "badge3_link": "",
+            "badge3_text": ""
+          }
+        },
+        "columns_tbQ4nc": {
+          "type": "columns",
+          "settings": {
+            "title": "Handyhüllen",
+            "collection_images": "large",
+            "collection_use_product_image": false,
+            "collection_circle_image": false,
+            "show_underline": true,
+            "promo_position": "bottom",
+            "promo_min_height": 200,
+            "promo_text_color": "#ffffff",
+            "promo_tint_color": "#000000",
+            "promo_tint_opacity": 20,
+            "promo1_content": "",
+            "promo1_link_url": "",
+            "promo1_text_size": 16,
+            "promo1_text_width": 100,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "promo3_content": "",
+            "promo3_link_url": "",
+            "promo3_text_size": 16,
+            "promo3_text_width": 100,
+            "promo3_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#2c7e3f",
+            "badge1_link": "Wallet Style, Flip Style, Security Wallet, Farbig, Transparent, Magsafe, Outdoor, Motiv, Zum Umhängen, 360 Grad",
+            "badge1_text": "-15% RABATT",
+            "badge2_color": "#f19222",
+            "badge2_link": "",
+            "badge2_text": "",
+            "badge3_color": "#000000",
+            "badge3_link": "",
+            "badge3_text": ""
+          }
+        },
+        "sidebar_CiDr8w": {
+          "type": "sidebar",
+          "settings": {
+            "title": "Tablethüllen",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "collection_circle_image": false,
+            "show_underline": true,
+            "show_collection_images": true,
+            "sidebar_link_use_product_image": false,
+            "show_product_images": true,
+            "aspect_ratio": "1",
+            "badge1_color": "#007e12",
+            "badge1_link": "Wallet Style, Smart Cover, Transparent, Outdoor, Schwarz",
+            "badge1_text": "15% RABATT",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": "",
+            "badge3_color": "#000000",
+            "badge3_link": "",
+            "badge3_text": ""
+          }
+        },
+        "columns_ciWF7C": {
+          "type": "columns",
+          "settings": {
+            "title": "Tablethüllen",
+            "collection_images": "large",
+            "collection_use_product_image": true,
+            "collection_circle_image": false,
+            "show_underline": true,
+            "promo_position": "bottom",
+            "promo_min_height": 200,
+            "promo_text_color": "#ffffff",
+            "promo_tint_color": "#000000",
+            "promo_tint_opacity": 20,
+            "promo1_content": "",
+            "promo1_link_url": "",
+            "promo1_text_size": 16,
+            "promo1_text_width": 100,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "promo3_content": "",
+            "promo3_link_url": "",
+            "promo3_text_size": 16,
+            "promo3_text_width": 100,
+            "promo3_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#2c7e3f",
+            "badge1_link": "Wallet Style, Smart Cover, Transparent, Outdoor, Schwarz",
+            "badge1_text": "",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": "",
+            "badge3_color": "#000000",
+            "badge3_link": "",
+            "badge3_text": ""
+          }
+        },
+        "sidebar_U6ThgU": {
+          "type": "sidebar",
+          "settings": {
+            "title": "Schutzfolien",
+            "collection_images": "none",
+            "collection_use_product_image": false,
+            "collection_circle_image": false,
+            "show_underline": true,
+            "show_collection_images": true,
+            "sidebar_link_use_product_image": false,
+            "show_product_images": true,
+            "aspect_ratio": "1",
+            "badge1_color": "#007e12",
+            "badge1_link": "9H Panzerfolie, 9H Display & Kameraschutz Set, Anti Spy",
+            "badge1_text": "15% Rabatt",
+            "badge2_color": "#e222f1",
+            "badge2_link": "9H Premiumglas",
+            "badge2_text": "PREMIUM",
+            "badge3_color": "#000000",
+            "badge3_link": "9H Premiumglas",
+            "badge3_text": "Unsere Empfehlung!"
+          }
+        },
+        "columns_7LfF7m": {
+          "type": "columns",
+          "settings": {
+            "title": "Schutzfolien",
+            "collection_images": "large",
+            "collection_use_product_image": true,
+            "collection_circle_image": false,
+            "show_underline": true,
+            "promo_position": "bottom",
+            "promo_min_height": 200,
+            "promo_text_color": "#ffffff",
+            "promo_tint_color": "#000000",
+            "promo_tint_opacity": 20,
+            "promo1_content": "",
+            "promo1_link_url": "",
+            "promo1_text_size": 16,
+            "promo1_text_width": 100,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "promo3_content": "",
+            "promo3_link_url": "",
+            "promo3_text_size": 16,
+            "promo3_text_width": 100,
+            "promo3_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#2c7e3f",
+            "badge1_link": "",
+            "badge1_text": "",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": "",
+            "badge3_color": "#000000",
+            "badge3_link": "",
+            "badge3_text": ""
+          }
+        },
+        "columns_kkhxK7": {
+          "type": "columns",
+          "settings": {
+            "title": "Elektronik & Zubehör",
+            "collection_images": "large",
+            "collection_use_product_image": false,
+            "collection_circle_image": false,
+            "show_underline": true,
+            "promo_position": "right",
+            "promo_min_height": 200,
+            "promo_text_color": "#ffffff",
+            "promo_tint_color": "#000000",
+            "promo_tint_opacity": 20,
+            "promo1_content": "",
+            "promo1_link_url": "",
+            "promo1_text_size": 16,
+            "promo1_text_width": 100,
+            "promo1_text_alignment": "justify-center items-center text-center",
+            "promo2_content": "",
+            "promo2_link_url": "",
+            "promo2_text_size": 16,
+            "promo2_text_width": 100,
+            "promo2_text_alignment": "justify-center items-center text-center",
+            "promo3_content": "",
+            "promo3_link_url": "",
+            "promo3_text_size": 16,
+            "promo3_text_width": 100,
+            "promo3_text_alignment": "justify-center items-center text-center",
+            "badge1_color": "#f19222",
+            "badge1_link": "USB-C Kabel,",
+            "badge1_text": "",
+            "badge2_color": "#000000",
+            "badge2_link": "",
+            "badge2_text": "",
+            "badge3_color": "#000000",
+            "badge3_link": "",
+            "badge3_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "sidebar_ckg3zE",
+        "columns_tbQ4nc",
+        "sidebar_CiDr8w",
+        "columns_ciWF7C",
+        "sidebar_U6ThgU",
+        "columns_7LfF7m",
+        "columns_kkhxK7"
+      ],
+      "custom_css": [
+        "main-menu {font-size: 12px; margin: -20px 0 10px; width: 100vw;}",
+        "main-menu svg {width: 14px !important; height: 14px !important;}"
+      ],
+      "settings": {
+        "enable_sticky": true,
+        "mobile_menu_position": "burger-left",
+        "logo_text": "Coolgadget - Dein Spezialist für Handy- und Tabletzubehör",
+        "logo_type_scale": "2",
+        "logo": "shopify://shop_images/Kein_Titel_768_x_330_px.svg",
+        "logo_width": 180,
+        "logo_h1": true,
+        "logo_center": false,
+        "enable_search": true,
+        "minimise_search_mobile": false,
+        "minimise_search_desktop": false,
+        "menu": "main-menu",
+        "menu_center": true,
+        "repeat_links": true,
+        "menu_featured_link": "Sale",
+        "quicklinks_menu": "",
+        "cta_show": false,
+        "cta_icon": "eye",
+        "cta_label": "04461 967910",
+        "cta_link": "",
+        "cta_border_color": "#000000",
+        "cta_bg_color": "#000000",
+        "cta_text_color": "#ffffff",
+        "bg_color": "#ffffff",
+        "text_color": "#000000",
+        "accent_color": "#f19222"
+      }
+    },
+    "promo_strip_P63EmJ": {
+      "type": "promo-strip",
+      "blocks": {
+        "heading_wCaBN9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Willkommen bei CoolGadget",
+            "heading_size": "h6",
+            "show_on_mobile": true,
+            "show_on_desktop": true
+          }
+        },
+        "text_bNgrwC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wir freuen uns, den Start unseres neuen Shops bekanntzugeben! Sicher Dir jetzt 15% Rabatt auf Deinen gesamten Warenkorb – ausgenommen Elektronik.</p>",
+            "enlarge_text": false,
+            "show_on_mobile": true,
+            "show_on_desktop": true
+          }
+        },
+        "discount_6zQrJb": {
+          "type": "discount",
+          "settings": {
+            "discount_code": "CG2025"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wCaBN9",
+        "text_bNgrwC",
+        "discount_6zQrJb"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".promo {font-size: 0.85em; /* Oder z. B. 12px */ opacity: 0.8; /* Optional: etwas dezenter */}"
+      ],
+      "settings": {
+        "section_height": "xsmall",
+        "color_scheme": "3",
+        "full_width": true,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "icons_with_text_fmyNdg",
+    "header",
+    "promo_strip_P63EmJ"
+  ]
+}

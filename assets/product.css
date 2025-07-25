@@ -385,6 +385,25 @@ quantity-input + .product-info__add-button {
   margin-bottom: 0;
 }
 
+/* Harmonize main product image sizing */
+.media-gallery__viewer {
+  box-sizing: border-box;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-gallery__viewer img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: unset !important;
+  object-fit: contain;
+  max-height: 600px;
+}
+
 .tab-used .product-info__block .media {
   overflow: visible;
 }

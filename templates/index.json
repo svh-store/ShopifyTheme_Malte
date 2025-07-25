@@ -159,7 +159,9 @@
         "slide_d6QMwR"
       ],
       "custom_css": [
-        "h2 {font-size: 28px; font-weight: 600;}"
+        "h2 {font-size: 28px; font-weight: 600;}",
+        ".btn--primary {border: 3px solid #33302c; background: none !important; color: #33302c !important; background-image: none !important; box-shadow: none;}",
+        ".btn--primary:hover {background-color: #33302c !important; color: #fff !important;}"
       ],
       "name": "Hauptbanner",
       "settings": {
@@ -167,8 +169,8 @@
         "fixed_height_desktop": 600,
         "fixed_height_mobile": 250,
         "mobile_stacked": true,
-        "nav_style": "slideshow_nav_lines",
-        "pagination_color": "#594e42",
+        "nav_style": "slideshow_nav_dots",
+        "pagination_color": "#ffffff",
         "nav_position": "justify-center",
         "transition": "slide-fade",
         "autoplay": true,
@@ -186,7 +188,7 @@
       "type": "custom-slideshow",
       "custom_css": [
         ".container--quick-nav {margin-top: 60px;}",
-        ".container {background: none; box-shadow: none;}",
+        ".container {background: linear-gradient( to bottom, #33302c, #2d4e5a, #33302c, #ffffff, #ffffff ); box-shadow: none;}",
         ".quick-nav {background-color: #f9f9f9; border: 1px solid #33302c; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);}",
         ".quick-nav__heading {font-size: 28px; font-weight: 600; text-align: center; margin-bottom: 10px;}",
         ".quick-nav__subtext {font-size: 16px; color: #666; text-align: center; margin-bottom: 24px; max-width: 500px; margin-left: auto; margin-right: auto; line-height: 1.4;}"
@@ -291,7 +293,9 @@
       ],
       "custom_css": [
         ".gallery-block__image {border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 16px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(6px); overflow: hidden; transition: transform 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;}",
-        ".hover\\:grow-media:hover .gallery-block__image {transform: scale(1.05);"
+        ".hover\\:grow-media:hover .gallery-block__image {transform: scale(1.05);}",
+        "button {border: 3px solid #33302c; background: none !important; background-color: #ffffff !important; color: #33302c !important;}",
+        "button:hover {background-color: #33302c !important; color: #fff !important;}"
       ],
       "name": "Kacheln Hauptkategorien ",
       "settings": {
@@ -315,9 +319,9 @@
         "slide_FCFaXC": {
           "type": "slide",
           "settings": {
-            "image_desktop": "shopify://shop_images/ChatGPT_Image_16._Juli_2025_13_56_57.png",
-            "image_mobile": "shopify://shop_images/ChatGPT_Image_16._Juli_2025_13_56_57.png",
-            "url": "",
+            "image_desktop": "shopify://shop_images/ChatGPT_Image_23._Juli_2025_12_55_01.png",
+            "image_mobile": "shopify://shop_images/ChatGPT_Image_23._Juli_2025_12_55_01.png",
+            "url": "shopify://collections/handyhulle",
             "overlay_position": "justify-end items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
@@ -379,7 +383,7 @@
         ".btn--primary.js-quick-add:hover {background-color: #33302c !important; color: #fff !important;}",
         "p {font-size: 12px;}",
         ".slider-nav__btn {border: 3px solid #33302c; background: none !important; color: #33302c !important; background-image: none !important; box-shadow: none;}",
-        ".slider-nav__btn:hover {background-color: #33302C !important; color: #fff !important;}"
+        ".slider-nav__btn:hover {background-color: #33302c !important; color: #fff !important;}"
       ],
       "name": "Product list_ Hüllen und Taschen",
       "settings": {
@@ -410,7 +414,7 @@
           "settings": {
             "image_desktop": "shopify://shop_images/ChatGPT_Image_16._Juli_2025_14_02_49.png",
             "image_mobile": "shopify://shop_images/ChatGPT_Image_16._Juli_2025_14_02_49.png",
-            "url": "",
+            "url": "shopify://collections/schutzfolie-101",
             "overlay_position": "justify-end items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
@@ -469,8 +473,8 @@
       "custom_css": [
         ".os-scrollbar-horizontal {height: 25px !important;}",
         "p {font-size: 12px;}",
-        ".btn--primary {border: 3px solid #594e42; background: none !important; color: #594e42 !important; background-image: none !important; box-shadow: none;}",
-        ".btn--primary:hover {background-color: #594e42 !important; color: #fff !important;}"
+        ".btn--primary {border: 3px solid #33302c; background: none !important; color: #33302c !important; background-image: none !important; box-shadow: none;}",
+        ".btn--primary:hover {background-color: #33302c !important; color: #fff !important;}"
       ],
       "name": "Product list_Schutzglas",
       "settings": {
@@ -501,7 +505,7 @@
           "settings": {
             "image_desktop": "shopify://shop_images/ChatGPT_Image_16._Juli_2025_14_17_39.png",
             "image_mobile": "shopify://shop_images/ChatGPT_Image_16._Juli_2025_14_17_39_ebdebc95-5236-4ad7-ac3b-19b3f5389c41.png",
-            "url": "",
+            "url": "shopify://collections/gadgets-zubehor",
             "overlay_position": "justify-end items-center",
             "overlay_text_align": "text-center",
             "mob_center_text": false,
@@ -559,11 +563,11 @@
       "type": "product-list",
       "custom_css": [
         ".os-scrollbar-horizontal {height: 25px !important;}",
-        ".btn--primary.js-quick-add {border: 3px solid #594e42; background: none !important; color: #594e42 !important;}",
-        ".btn--primary.js-quick-add:hover {background-color: #594e42 !important; color: #fff !important;}",
+        ".btn--primary.js-quick-add {border: 3px solid #33302c; background: none !important; color: #33302c !important;}",
+        ".btn--primary.js-quick-add:hover {background-color: #33302c !important; color: #fff !important;}",
         "p {font-size: 12px;}",
-        ".slider-nav__btn {border: 3px solid #594e42; background: none !important; color: #594e42 !important; background-image: none !important; box-shadow: none;}",
-        ".slider-nav__btn:hover {background-color: #594e42 !important; color: #fff !important;}"
+        ".slider-nav__btn {border: 3px solid #33302c; background: none !important; color: #33302c !important; background-image: none !important; box-shadow: none;}",
+        ".slider-nav__btn:hover {background-color: #33302c !important; color: #fff !important;}"
       ],
       "name": "Product list_Gadgets",
       "settings": {
@@ -770,7 +774,9 @@
       "custom_css": [
         ".media {}",
         ".gallery-block__image {border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 16px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(6px); overflow: hidden; transition: transform 0.3s ease, backdrop-filter 0.3s ease;}",
-        ".hover\\:grow-media:hover .gallery-block__image {transform: scale(1.05); backdrop-filter: blur(10px);}"
+        ".hover\\:grow-media:hover .gallery-block__image {transform: scale(1.05); backdrop-filter: blur(10px);}",
+        "button {border: 3px solid #33302c; background: none !important; background-color: #ffffff !important; color: #33302c !important;}",
+        "button:hover {background-color: #33302c !important; color: #fff !important;}"
       ],
       "settings": {
         "title": "",
@@ -784,7 +790,7 @@
         "fixed_height_mobile": 300,
         "section_color_scheme": "1",
         "color_scheme": "white",
-        "transparent_content_color": "#594e42"
+        "transparent_content_color": "#33302c"
       }
     },
     "media_grid_3THhfd": {
@@ -834,9 +840,10 @@
         "media_twzMkE"
       ],
       "custom_css": [
-        ".media {}",
         ".gallery-block__image {border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 16px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(6px); overflow: hidden; transition: transform 0.3s ease, backdrop-filter 0.3s ease;}",
-        ".hover\\:grow-media:hover .gallery-block__image {transform: scale(1.05); backdrop-filter: blur(10px);}"
+        ".hover\\:grow-media:hover .gallery-block__image {transform: scale(1.05); backdrop-filter: blur(10px);}",
+        "button {border: 3px solid #33302c; background: none !important; background-color: #ffffff !important; color: #33302c !important;}",
+        "button:hover {background-color: #33302c !important; color: #fff !important;}"
       ],
       "settings": {
         "title": "",
@@ -850,7 +857,7 @@
         "fixed_height_mobile": 300,
         "section_color_scheme": "1",
         "color_scheme": "white",
-        "transparent_content_color": "#594e42"
+        "transparent_content_color": "#33302c"
       }
     },
     "custom_liquid_aFtKdW": {
@@ -901,9 +908,12 @@
       ],
       "custom_css": [
         "div.hotspot.absolute {background: none;}",
-        ".product-features {--hotspot-cross-color: #ffff;}",
+        ".product-features {--hotspot-cross-color: #33302c;}",
         "div {margin-top: 0px;}",
-        "@media screen and (max-width: 768px) {{display: none !important; }}"
+        "@media screen and (max-width: 768px) {{display: none !important; }}",
+        "button.hotspot__btn {border: 3px solid #33302c; background: #ffffff !important;}",
+        ".btn--primary {border: 3px solid #33302c; background: none !important; color: #33302c !important; background-image: none !important; box-shadow: none;}",
+        ".btn--primary:hover {background-color: #33302c !important; color: #fff !important;}"
       ],
       "name": "Product features",
       "settings": {
@@ -919,7 +929,7 @@
         "description": "",
         "button_label": "Jetzt ansehen",
         "button_link": "https://df6282-d9.myshopify.com/search?options%5Bprefix%5D=last&q=zoya&page=2&limit=12",
-        "hotspot_color": "#f19222",
+        "hotspot_color": "#594e42",
         "color_scheme": "3",
         "button_style": "btn btn--primary"
       }

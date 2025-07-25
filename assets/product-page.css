@@ -14,8 +14,8 @@
 
 @media (min-width: 769px) {
   :root {
-    /* Horizontal space between gallery and info (~40px) */
-    --product-column-padding: calc(6 * var(--space-unit));
+    /* Horizontal space between gallery and info (~32px) */
+    --product-column-padding: 32px;
     /* Wider info column for modern layout */
     --product-info-width: 56%;
   }
@@ -59,7 +59,7 @@
       padding-bottom: calc(6 * var(--space-unit));
       padding-inline-end: var(--product-column-padding);
       /* Limit width so images don't overwhelm the layout */
-      max-width: 620px;
+      max-width: 650px;
     }
     /* Sticky image gallery when there is room */
     .product-media__inner {
@@ -110,7 +110,7 @@
 @media (min-width: 1280px) {
   :root {
     /* Reduce extra-wide padding further */
-    --product-column-padding: calc(6 * var(--space-unit));
+    --product-column-padding: calc(6.25 * var(--space-unit));
   }
   .product-main .product-media,
   .product-main .product-info {

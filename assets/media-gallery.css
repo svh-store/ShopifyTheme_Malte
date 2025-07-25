@@ -37,6 +37,18 @@
 .media-gallery__viewer {
   border: 1px solid var(--gallery-border-color);
   background-color: var(--gallery-bg-color);
+  transition: opacity 0.3s ease;
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 100%;
+}
+.media-gallery__viewer img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.media-gallery__viewer.is-switching {
+  opacity: 0;
 }
 
 .media-viewer,
@@ -91,7 +103,8 @@
 }
 
 .media-gallery__thumbs {
-  /* Position thumbnails slightly lower under the main image */
+
+ main
   margin-top: calc(1.5 * var(--space-unit) + 3px);
 }
 
@@ -113,6 +126,7 @@
   overflow: visible; /* Prevent clipping when scaled */
   border: 1px solid #d9d9d9;
   border-radius: 6px;
+  overflow: hidden;
   background-color: var(--gallery-bg-color);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s, border-color 0.2s;
 }
@@ -325,5 +339,59 @@ product-model[loaded] .media-poster {
   }
   .product-media--stacked .media-viewer__item:not(.media-viewer__item--single) {
     flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 769px) {
+  .product-media__inner {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .product-media__inner .media-gallery {
+    display: flex;
+    gap: 32px;
+  }
+  .product-media__inner .media-gallery__thumbs {
+    width: 80px;
+  }
+  .product-media__inner .media-gallery__viewer {
+    flex: 1;
+    max-width: 600px;
+    width: 100%;
+  }
+  .product-media__inner .media-thumbs {
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .product-media__inner .media-thumbs__item:not(:last-child) {
+    margin-inline-end: 0;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .product-media__inner .media-gallery {
+    display: block;
+  }
+  .product-media__inner .media-gallery__thumbs {
+    width: 100%;
+    margin-right: 0;
+    margin-top: var(--media-gap);
+  }
+  .product-media__inner .media-gallery__viewer {
+    max-width: 100%;
+    width: 100%;
+  }
+  .product-media__inner .media-thumbs {
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .product-media__inner .media-thumbs__item:not(:last-child) {
+    margin-inline-end: var(--media-gap);
+    margin-bottom: 0;
   }
 }
