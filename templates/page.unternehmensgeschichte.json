@@ -88,12 +88,12 @@
     "media_grid_jLp4RA": {
       "type": "media-grid",
       "blocks": {
-        "media_aeCYXw": {
+        "media_BbByke": {
           "type": "media",
           "settings": {
             "link_url": "",
-            "columns": 2,
-            "rows": 2,
+            "columns": 1,
+            "rows": 1,
             "subheading": "",
             "title": "<p>Media heading</p>",
             "heading_size": "h4",
@@ -106,7 +106,97 @@
             "tint_opacity": 25
           }
         },
-        "media_BbByke": {
+        "media_9J9Fk7": {
+          "type": "media",
+          "settings": {
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>Media heading</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 25
+          }
+        },
+        "media_MtXpH4": {
+          "type": "media",
+          "settings": {
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>Media heading</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 25
+          }
+        },
+        "media_LgiJza": {
+          "type": "media",
+          "settings": {
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>Media heading</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 25
+          }
+        },
+        "media_6FG9HB": {
+          "type": "media",
+          "settings": {
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>Media heading</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 25
+          }
+        },
+        "media_Hm4jJj": {
+          "type": "media",
+          "settings": {
+            "link_url": "",
+            "columns": 1,
+            "rows": 1,
+            "subheading": "",
+            "title": "<p>Media heading</p>",
+            "heading_size": "h4",
+            "button_label": "",
+            "button_link": "",
+            "overlay_position": "justify-start items-end",
+            "text_alignment": "text-start",
+            "button_style": "btn btn--primary",
+            "tint_color": "#000000",
+            "tint_opacity": 25
+          }
+        },
+        "media_BjkGyt": {
           "type": "media",
           "settings": {
             "link_url": "",
@@ -141,31 +231,17 @@
             "tint_color": "#000000",
             "tint_opacity": 25
           }
-        },
-        "media_TakQCK": {
-          "type": "media",
-          "settings": {
-            "link_url": "",
-            "columns": 2,
-            "rows": 1,
-            "subheading": "",
-            "title": "<p>Media heading</p>",
-            "heading_size": "h4",
-            "button_label": "",
-            "button_link": "",
-            "overlay_position": "justify-start items-end",
-            "text_alignment": "text-start",
-            "button_style": "btn btn--primary",
-            "tint_color": "#000000",
-            "tint_opacity": 25
-          }
         }
       },
       "block_order": [
-        "media_aeCYXw",
         "media_BbByke",
-        "media_3QfABB",
-        "media_TakQCK"
+        "media_9J9Fk7",
+        "media_MtXpH4",
+        "media_LgiJza",
+        "media_6FG9HB",
+        "media_Hm4jJj",
+        "media_BjkGyt",
+        "media_3QfABB"
       ],
       "custom_css": [
         ".media {}",
