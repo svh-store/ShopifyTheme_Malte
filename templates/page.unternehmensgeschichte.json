@@ -71,6 +71,11 @@
     },
     "custom_liquid_TX6BHW": {
       "type": "custom-liquid",
+      "custom_css": [
+        "h2 {font-size: 28px; font-weight: 600;}",
+        "div {margin-top: 0px; margin-bottom: 0px; padding-top: 0; padding-bottom: 0;}",
+        "@media screen and (max-width: 768px) {{display: none !important; }}"
+      ],
       "settings": {
         "custom_liquid": "<!DOCTYPE html>\n<html lang=\"de\">\n<head>\n  <meta charset=\"UTF-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  <title>Shopify Sektion</title>\n  <style>\n    /* Container für den Titel */\n    .section-wrapper {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      flex-direction: column;\n      width: 100%;\n      margin: 60px auto; /* angepasst laut div margin-top */\n      padding-top: 0;\n      padding-bottom: 0;\n      text-align: center;\n      position: relative;\n    }\n\n    /* Überschrift */\n    .section-title,\n    h2 {\n      font-size: 28px;     /* laut Vorgabe */\n      font-weight: 600;    /* laut Vorgabe */\n      color: #333;\n    }\n  </style>\n</head>\n<body>\n\n  <!-- Sektion ohne Linie, mit integriertem Styling -->\n  <div class=\"section-wrapper\">\n    <h2 class=\"section-title\">Unsere Unternehmensgeschichte</h2>\n  </div>\n\n</body>\n</html>",
         "section_height": "default",
