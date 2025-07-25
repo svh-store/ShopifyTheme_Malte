@@ -16,12 +16,14 @@
       "blocks": {
         "announcement_BkxWJb": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "<p>⭐️⭐️⭐️⭐️⭐️ Über 3,5 Millionen zufriedene Kunden</p>"
           }
         },
         "announcement_rPhafd": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "<p>Sei anderen einen Schritt voraus – entdecke neue Hüllen, Kabel & Must-Haves vor allen anderen</p>"
           }
@@ -29,7 +31,7 @@
         "announcement_jQipVN": {
           "type": "announcement",
           "settings": {
-            "text": "<p>Jetzt im Newsletter anmelden – kostenlos & jederzeit kündbar!</p>"
+            "text": "<p>🧠💡No-brainer: Melde dich in unserem Newsletter an</p>"
           }
         }
       },
