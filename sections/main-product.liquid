@@ -2,8 +2,6 @@
 {%- comment -%}Build: bg-info-bg text-info-text{%- endcomment -%}
 {{ 'product.css' | asset_url | stylesheet_tag }}
 {{ 'product-page.css' | asset_url | stylesheet_tag }}
-{{ 'custom-product.css' | asset_url | stylesheet_tag }}
-
 
 {%- assign messages = section.blocks | where: "type", "message" -%}
 {%- if messages -%}
@@ -86,7 +84,7 @@
 
   {%- if section.settings.media_size == 'large' -%}
     @media (min-width: {{ breakpoint_lg }}px) {
-      :root { --product-info-width: 800px !important; }
+      :root { --product-info-width: 400px !important; }
     }
   {%- endif -%}
 {%- endstyle -%}
@@ -122,6 +120,7 @@
     </div>
 
     <div class="product-info{% if section.settings.stick_on_scroll %} product-info--sticky{% endif %}"
+         id="product-info-{{ section.id }}"
          {% if section.settings.stick_on_scroll %}data-sticky-height-elems="#product-media,.cc-main-product + .cc-product-details .container"{% endif %}>
       {%- if section.settings.stick_on_scroll -%}
       <script src="{{ 'sticky-scroll-direction.js' | asset_url }}" defer="defer"></script>
@@ -219,7 +218,7 @@
 
           {%- when 'price' -%}
             <div class="product-info__block product-info__block--sm product-price" {{ block.shopify_attributes }}>
-              <div class="product-info__price">
+              <div class="product-info__price" role="status">
                 {% render 'price', product: product, use_variant: true %}
               </div>
 
@@ -309,7 +308,7 @@
 
                   <div class="alert mb-8 bg-error-bg text-error-text js-form-error text-start" role="alert" hidden></div>
 
-                  <input type="hidden" name="id" value="{{ current_variant.id }}" disabled>
+                  <input type="hidden" name="id" value="{{ current_variant.id }}">
                   <div class="product-info__add-to-cart flex{% if enable_dynamic_checkout %} qty-input--secondary-btn{% endif %}">
                     {%- if block.settings.show_qty_selector -%}
                       {% render 'quantity-input', layout_style: "combined" %}
@@ -485,7 +484,13 @@
             <div class="product-info__block" {{ block.shopify_attributes }}>
               <div class="social-share flex items-center">
                 <p class="social-share__heading mb-0 font-bold">{{ 'general.social.share_heading' | t }}:</p>
-                {% render 'social-share', share_title: product.title, share_url: product.url, share_image: product %}
+                {% render 'social-share', 
+                  share_twitter: block.settings.show_twitter,
+                  share_facebook: block.settings.show_facebook,
+                  share_pinterest: block.settings.show_pinterest,
+                  share_title: product.title, 
+                  share_url: product.url, 
+                  share_image: product %}
               </div>
             </div>
 
@@ -622,6 +627,12 @@
                   </div>
                 {%- endif -%}
               {%- endfor -%}
+
+              {%- if section.settings.select_first_variant == false -%}
+                <div class="variant-label js-variant-label" hidden data-variant-id="">
+                  {% render 'product-label', product: product, is_product_card: false, limit: 99, show_variant_icon: block.settings.show_variant_icon %}
+                </div>
+              {%- endif -%}
             {%- endcapture -%}
 
             {%- if variant_labels != blank -%}
@@ -1753,6 +1764,26 @@
     {
       "type": "share",
       "name": "Share",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_twitter",
+          "label": "Show X (formerly Twitter)",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_facebook",
+          "label": "Show Facebook",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_pinterest",
+          "label": "Show Pinterest",
+          "default": true
+        }
+      ],
       "limit": 1
     },
     {
