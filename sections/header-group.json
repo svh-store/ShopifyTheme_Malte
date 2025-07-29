@@ -363,7 +363,9 @@
       ],
       "custom_css": [
         "main-menu {font-size: 12px; margin: -20px 0 10px; width: 100vw;}",
-        "main-menu svg {width: 14px !important; height: 14px !important;}"
+        "main-menu svg {width: 14px !important; height: 14px !important;}",
+        ".grandchild-nav__item {display: flex; flex-direction: column; align-items: center; text-align: center;}",
+        ".grandchild-nav__item .grandchild-nav__image {margin-bottom: 8px;}"
       ],
       "settings": {
         "enable_sticky": true,
