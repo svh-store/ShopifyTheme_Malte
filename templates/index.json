@@ -203,11 +203,11 @@
         "quick_nav_color_scheme": "default",
         "quick_nav_show_price": false,
         "menu_1_text": "1. Hersteller",
-        "menu_1_display": "large_text",
+        "menu_1_display": "small_text",
         "menu_2_text": "2. Serie",
-        "menu_2_display": "large_text",
+        "menu_2_display": "small_text",
         "menu_3_text": "3. Modell",
-        "menu_3_display": "large_text"
+        "menu_3_display": "small_text"
       }
     },
     "custom_liquid_igUcW4": {
