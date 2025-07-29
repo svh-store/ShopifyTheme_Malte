@@ -1,4 +1,4 @@
-product-main:has(custom-select.is-open) {
+.product-main:has(custom-select.is-open) {
   position: relative;
   z-index: 4;
 }
