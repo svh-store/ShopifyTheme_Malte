@@ -120,7 +120,11 @@
         "complementary_rx84bf",
         "buy-buttons"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".product {box-sizing: none !important;}",
+        ".product-media {border-inline-end: none !important;}",
+        " /* Nur die ersten 5 Media Thumbnails anzeigen */.product-media-thumb:nth-child(n + 5) {display: none !important;}"
+      ],
       "settings": {
         "stick_on_scroll": true,
         "select_first_variant": true,
@@ -181,7 +185,6 @@
       "block_order": [
         "tabs"
       ],
-      "disabled": false,
       "custom_css": [
         ".product-details__block {border-inline-end: none !important;}"
       ],
