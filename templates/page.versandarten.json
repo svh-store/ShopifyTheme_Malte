@@ -46,6 +46,17 @@
         "prevent_animation": false
       }
     },
+    "custom_liquid_fMYYmK": {
+      "type": "custom-liquid",
+      "name": "Custom HTML/Liquid",
+      "settings": {
+        "custom_liquid": "Add HTML or Liquid code to create advanced customizations.",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
     "media_with_text_8jCE6e": {
       "type": "media-with-text",
       "blocks": {
@@ -147,6 +158,7 @@
     "main",
     "custom_liquid_APrNnc",
     "custom_liquid_F3KAD7",
+    "custom_liquid_fMYYmK",
     "media_with_text_8jCE6e",
     "background_video_H3FagH"
   ]
