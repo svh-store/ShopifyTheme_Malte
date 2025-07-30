@@ -78,6 +78,7 @@
         "text_NX6b7D",
         "button_ErPUdW"
       ],
+      "disabled": true,
       "custom_css": [],
       "name": "Media with text",
       "settings": {
@@ -93,12 +94,24 @@
         "color_scheme": "none",
         "only_content_color_scheme": false
       }
+    },
+    "custom_liquid_Hrif7K": {
+      "type": "custom-liquid",
+      "name": "Custom HTML/Liquid",
+      "settings": {
+        "custom_liquid": "<section class=\"shipping-section\">\n  <div class=\"shipping-header\">\n    <img src=\"dp-logo-image-text-varianten-1.png\" alt=\"Deutsche Post Logo\" class=\"shipping-logo\" />\n    <h2>Versandarten</h2>\n  </div>\n\n  <div class=\"shipping-description\">\n    <p>\n      Alle Bestellungen werden per <strong>Deutsche Post Warenpost</strong> verschickt –\n      <strong>inklusive Sendungsverfolgung</strong>, zuverlässig, kostenlos und auf Wunsch auch an eine\n      <strong>DHL Packstation</strong>. So weißt du immer genau, wo sich dein Paket gerade befindet – vom Versand bis zur Zustellung.\n    </p>\n    <p>\n      Wir setzen auf diese Versandart, weil sie besonders kundenfreundlich ist. Deine Bestellung ist in der Regel\n      <strong>innerhalb von 1–3 Werktagen</strong> bei dir. Du kannst sie jederzeit online tracken und flexibel empfangen –\n      ob an der Haustür, in der Packstation oder in der Postfiliale.\n    </p>\n  </div>\n\n  <div class=\"shipping-benefits\">\n    <div class=\"benefit-card\">\n      <img src=\"/icons/free-shipping.svg\" alt=\"Kostenloser Versand Icon\" />\n      <p><strong>Kostenloser Versand</strong><br />für alle Bestellungen – ohne Mindestbestellwert</p>\n    </div>\n    <div class=\"benefit-card\">\n      <img src=\"/icons/tracking.svg\" alt=\"Tracking Icon\" />\n      <p><strong>Sendungsverfolgung inklusive</strong><br />du weißt immer, wo deine Lieferung ist</p>\n    </div>\n    <div class=\"benefit-card\">\n      <img src=\"/icons/speed.svg\" alt=\"Schnelle Zustellung Icon\" />\n      <p><strong>Schnelle Zustellung</strong><br />meist in 1–3 Werktagen</p>\n    </div>\n    <div class=\"benefit-card\">\n      <img src=\"/icons/packstation.svg\" alt=\"Packstation Icon\" />\n      <p><strong>Zustellung an DHL Packstation möglich</strong><br />rund um die Uhr abholbar</p>\n    </div>\n    <div class=\"benefit-card\">\n      <img src=\"/icons/options.svg\" alt=\"Flexible Empfangsoptionen Icon\" />\n      <p><strong>Flexible Empfangsoptionen</strong><br />auch Wunsch-Ablageort oder Nachbarzustellung</p>\n    </div>\n  </div>\n</section>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
     }
   },
   "order": [
     "main",
     "custom_liquid_APrNnc",
     "custom_liquid_F3KAD7",
-    "media_with_text_8jCE6e"
+    "media_with_text_8jCE6e",
+    "custom_liquid_Hrif7K"
   ]
 }
