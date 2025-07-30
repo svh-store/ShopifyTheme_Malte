@@ -81,6 +81,7 @@
       "custom_css": [],
       "name": "Media with text",
       "settings": {
+        "image": "shopify://shop_images/Red_Cream_Minimalist_Free_Shipping_Instagram_Post.png",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -92,12 +93,61 @@
         "color_scheme": "none",
         "only_content_color_scheme": false
       }
+    },
+    "background_video_H3FagH": {
+      "type": "background-video",
+      "blocks": {
+        "heading_dYxpmz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Background Video",
+            "heading_size": "h1",
+            "heading_h1": false
+          }
+        },
+        "text_cii3ra": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Add text to a video to showcase a detail of your brand or product line.</p>",
+            "enlarge_text": true
+          }
+        },
+        "button_xYyfzJ": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn btn--secondary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dYxpmz",
+        "text_cii3ra",
+        "button_xYyfzJ"
+      ],
+      "name": "Background video",
+      "settings": {
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "video_height": "md",
+        "overlay_text_align": "text-center",
+        "overlay_position": "justify-center items-center",
+        "mob_center_text": true,
+        "color_scheme": "white",
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "lazyload": true,
+        "prevent_animation": false
+      }
     }
   },
   "order": [
     "main",
     "custom_liquid_APrNnc",
     "custom_liquid_F3KAD7",
-    "media_with_text_8jCE6e"
+    "media_with_text_8jCE6e",
+    "background_video_H3FagH"
   ]
 }
