@@ -81,7 +81,7 @@
       "custom_css": [],
       "name": "Media with text",
       "settings": {
-        "image": "shopify://shop_images/Red_Cream_Minimalist_Free_Shipping_Instagram_Post.png",
+        "image": "shopify://shop_images/Red_Cream_Minimalist_Free_Shipping_Instagram_Post_1.png",
         "video_external": "",
         "video_description": "",
         "video_autoplay": false,
@@ -100,7 +100,7 @@
         "heading_dYxpmz": {
           "type": "heading",
           "settings": {
-            "heading": "Background Video",
+            "heading": "",
             "heading_size": "h1",
             "heading_h1": false
           }
@@ -108,7 +108,7 @@
         "text_cii3ra": {
           "type": "text",
           "settings": {
-            "text": "<p>Add text to a video to showcase a detail of your brand or product line.</p>",
+            "text": "",
             "enlarge_text": true
           }
         },
@@ -128,7 +128,7 @@
       ],
       "name": "Background video",
       "settings": {
-        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_external": "https://www.youtube.com/watch?v=pdkOvBheVyY",
         "video_description": "",
         "video_height": "md",
         "overlay_text_align": "text-center",
