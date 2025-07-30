@@ -78,9 +78,7 @@
         "text_NX6b7D",
         "button_ErPUdW"
       ],
-      "custom_css": [
-        "div.media-with-text__media.relative.flex.flex-col.justify-center.overflow-hidden {margin-top: 0px;}"
-      ],
+      "custom_css": [],
       "name": "Media with text",
       "settings": {
         "image": "shopify://shop_images/dp-logo-image-text-varianten-1.png",
