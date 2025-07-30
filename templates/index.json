@@ -563,10 +563,10 @@
       "type": "product-list",
       "custom_css": [
         ".os-scrollbar-horizontal {height: 25px !important;}",
-        ".btn--primary.js-quick-add {border: 3px solid #33302c; background: none !important; color: #33302c !important;}",
+        ".btn--primary.js-quick-add {border: 1px solid #33302c; background: none !important; color: #33302c !important;}",
         ".btn--primary.js-quick-add:hover {background-color: #33302c !important; color: #fff !important;}",
         "p {font-size: 12px;}",
-        ".slider-nav__btn {border: 3px solid #33302c; background: none !important; color: #33302c !important; background-image: none !important; box-shadow: none;}",
+        ".slider-nav__btn {border: 1px solid #33302c; background: none !important; color: #33302c !important; background-image: none !important; box-shadow: none;}",
         ".slider-nav__btn:hover {background-color: #33302c !important; color: #fff !important;}"
       ],
       "name": "Product list_Gadgets",
