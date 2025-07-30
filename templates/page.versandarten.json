@@ -60,7 +60,7 @@
         "text_NX6b7D": {
           "type": "text",
           "settings": {
-            "text": "<p>Bei uns kaufst du sorgenfrei ein: Alle Bestellungen werden per <strong>Deutsche Post Warenpost</strong> verschickt –  <strong>inklusive Sendungsverfolgung</strong>, zuverlässig, kostenlos und auf Wunsch auch an eine  <strong>DHL Packstation</strong>. So weißt du immer genau, wo sich dein Paket gerade befindet – vom Versand bis zur Zustellung.</p><p>Wir setzen auf diese Versandart, weil sie nicht nur bequem, sondern auch besonders kundenfreundlich ist.  Deine Bestellung ist in der Regel <strong>innerhalb von 1–3 Werktagen</strong> bei dir.  </p><p>Du kannst sie jederzeit online tracken und flexibel empfangen – ob an der Haustür, im Briefkasten, an deiner Wunsch-Packstation oder in der nächsten Postfiliale. So einfach und transparent kann Online-Shopping sein.</p><ul><li><strong>Kostenloser Versand</strong> für alle Bestellungen – ohne Mindestbestellwert</li><li><strong>Sendungsverfolgung inklusive</strong> – du weißt immer, wo deine Lieferung ist</li><li><strong>Schnelle Zustellung</strong> – meist in 1–3 Werktagen</li><li><strong>Zustellung an DHL Packstation möglich</strong> – rund um die Uhr abholbar</li><li><strong>Flexible Empfangsoptionen</strong> – auch Wunsch-Ablageort oder Nachbarzustellung</li></ul>",
+            "text": "<p>Alle Bestellungen werden per <strong>Deutsche Post Warenpost</strong> verschickt –  <strong>inklusive Sendungsverfolgung</strong>, zuverlässig, kostenlos und auf Wunsch auch an eine  <strong>DHL Packstation</strong>. So weißt du immer genau, wo sich dein Paket gerade befindet.</p><p>Wir setzen auf diese Versandart, weil sie  besonders kundenfreundlich ist.  Deine Bestellung ist in der Regel <strong>innerhalb von 1–3 Werktagen</strong> bei dir.  </p><p>Du kannst sie jederzeit online tracken und flexibel empfangen – ob an der Haustür, an deiner Wunsch-Packstation oder in der nächsten Postfiliale.</p><ul><li><strong>Kostenloser Versand</strong> für alle Bestellungen – ohne Mindestbestellwert</li><li><strong>Sendungsverfolgung inklusive</strong> – du weißt immer, wo deine Lieferung ist</li><li><strong>Schnelle Zustellung</strong> – meist in 1–3 Werktagen</li><li><strong>Zustellung an DHL Packstation möglich</strong> – rund um die Uhr abholbar</li><li><strong>Flexible Empfangsoptionen</strong> – auch Wunsch-Ablageort oder Nachbarzustellung</li></ul>",
             "enlarge_text": false
           }
         },
@@ -79,7 +79,7 @@
         "button_ErPUdW"
       ],
       "custom_css": [
-        "div.media.w-full.relative {margin-top: 0px;}"
+        "div.media-with-text__media.relative.flex.flex-col.justify-center.overflow-hidden {margin-top: 0px;}"
       ],
       "name": "Media with text",
       "settings": {
