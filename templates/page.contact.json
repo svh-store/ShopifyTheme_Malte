@@ -114,9 +114,9 @@
       "settings": {
         "heading": "",
         "heading_align": "text-start",
-        "icon_size": 48,
-        "title_type_scale": "medium",
-        "text_type_scale": "medium",
+        "icon_size": 24,
+        "title_type_scale": "small",
+        "text_type_scale": "extra_small",
         "icon_position": "beside",
         "mobile_stack": false,
         "section_height": "medium",
