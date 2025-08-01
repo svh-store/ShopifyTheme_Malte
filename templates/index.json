@@ -473,8 +473,8 @@
       "custom_css": [
         ".os-scrollbar-horizontal {height: 25px !important;}",
         "p {font-size: 12px;}",
-        ".btn--primary {border: 1px solid #F19222; background: none !important; color: #F19222 !important; background-image: none !important; box-shadow: none;}",
-        ".btn--primary:hover {background-color: #F19222 !important; color: #fff !important;}"
+        ".btn--primary {border: 1px solid #f19222; background: none !important; color: #f19222 !important; background-image: none !important; box-shadow: none;}",
+        ".btn--primary:hover {background-color: #f19222 !important; color: #fff !important;}"
       ],
       "name": "Product list_Schutzglas",
       "settings": {
@@ -563,11 +563,11 @@
       "type": "product-list",
       "custom_css": [
         ".os-scrollbar-horizontal {height: 25px !important;}",
-        ".btn--primary.js-quick-add {border: 1px solid #33302c; background: none !important; color: #33302c !important;}",
-        ".btn--primary.js-quick-add:hover {background-color: #33302c !important; color: #fff !important;}",
+        ".btn--primary.js-quick-add {border: 1px solid #F19222; background: none !important; color: #F19222 !important;}",
+        ".btn--primary.js-quick-add:hover {background-color: #F19222 !important; color: #fff !important;}",
         "p {font-size: 12px;}",
-        ".slider-nav__btn {border: 1px solid #33302c; background: none !important; color: #33302c !important; background-image: none !important; box-shadow: none;}",
-        ".slider-nav__btn:hover {background-color: #33302c !important; color: #fff !important;}"
+        ".slider-nav__btn {border: 1px solid #F19222; background: none !important; color: #F19222 !important; background-image: none !important; box-shadow: none;}",
+        ".slider-nav__btn:hover {background-color: #F19222 !important; color: #fff !important;}"
       ],
       "name": "Product list_Gadgets",
       "settings": {
