@@ -366,7 +366,7 @@
         "main-menu svg {width: 14px !important; height: 14px !important;}",
         ".grandchild-nav__item {display: flex; flex-direction: column; align-items: center; text-align: center;}",
         ".grandchild-nav__item .grandchild-nav__image {margin-bottom: 8px;}",
-        ".child-nav__collection-image {display: flex !important; flex-direction: column; align-items: center; justify-content: center; text-align: center;}"
+        ".child-nav__collection-image {display: flex !important; align-items: center; margin-left: -20px; justify-content: center; text-align: center;}"
       ],
       "settings": {
         "enable_sticky": true,
