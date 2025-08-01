@@ -160,8 +160,8 @@
       ],
       "custom_css": [
         "h2 {font-size: 28px; font-weight: 600;}",
-        ".btn--primary {border: 1px solid #33302c; background: none !important; color: #33302c !important; background-image: none !important; box-shadow: none;}",
-        ".btn--primary:hover {background-color: #33302c !important; color: #fff !important;}"
+        ".btn--primary {border: 1px solid #f19222; background: none !important; color: #000000 !important; background-image: none !important; box-shadow: none;}",
+        ".btn--primary:hover {background-color: #f19222 !important; color: #fff !important;}"
       ],
       "name": "Hauptbanner",
       "settings": {
