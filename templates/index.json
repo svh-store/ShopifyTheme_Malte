@@ -474,7 +474,9 @@
         ".os-scrollbar-horizontal {height: 25px !important;}",
         "p {font-size: 12px;}",
         ".btn--primary {border: 1px solid #f19222; background: none !important; color: #000000 !important; background-image: none !important; box-shadow: none;}",
-        ".btn--primary:hover {background-color: #f19222 !important; color: #fff !important;}"
+        ".btn--primary:hover {background-color: #f19222 !important; color: #fff !important;}",
+        ".slider-nav__btn {border: 1px solid #f19222; background: none !important; color: #f19222 !important; background-image: none !important; box-shadow: none;}",
+        ".slider-nav__btn:hover {background-color: #f19222 !important; color: #fff !important;}"
       ],
       "name": "Product list_Schutzglas",
       "settings": {
