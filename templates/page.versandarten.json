@@ -127,8 +127,9 @@
       ],
       "name": "Background video",
       "settings": {
-        "video_external": "https://www.youtube.com/watch?v=pdkOvBheVyY",
-        "video_description": "",
+        "video_shopify": "shopify://files/videos/Jürgen Vogel checkt – Jürgen Vogel als Checker.mp4",
+        "video_external": "",
+        "video_description": "Erklärvideo DHL",
         "video_height": "md",
         "overlay_text_align": "text-center",
         "overlay_position": "justify-center items-center",
