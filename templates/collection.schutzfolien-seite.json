@@ -53,7 +53,9 @@
         "collection_QAiTAi",
         "collection_DDE4Dx"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "carousel-slider {margin: -50px;}"
+      ],
       "name": "Collection list",
       "settings": {
         "title": "",
