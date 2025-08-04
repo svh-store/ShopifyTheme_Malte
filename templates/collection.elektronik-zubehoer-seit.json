@@ -75,7 +75,8 @@
         "collection_NJDTe4"
       ],
       "custom_css": [
-        "carousel-slider {margin: -50px;}"
+        ".carousel-slider {margin: 0 auto; /* Zentriert den Slider horizontal */ max-width: 60%; /* Optional: begrenzt die Breite */}",
+        ".carousel-slider img {max-width: 100%; height: auto; width: 50%; display: block; margin: 0 auto;}"
       ],
       "name": "Collection list",
       "settings": {
