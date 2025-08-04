@@ -98,7 +98,7 @@
         "p,h1,h2,h3,h4,h5,h6,div {width: 100%; max-width: 100%; box-sizing: border-box; overflow-wrap: break-word; text-align: left;}"
       ],
       "settings": {
-        "show_collection_title": true,
+        "show_collection_title": false,
         "show_product_count": true,
         "show_collection_description": true,
         "text_align": "text-start",
