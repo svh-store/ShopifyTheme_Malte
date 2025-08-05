@@ -340,7 +340,10 @@
   }
 }
 {% endschema %}
+
 {%- comment -%}
-  Binde das scoped Stylesheet nur bei dieser Section mit ein
+  Binde das scoped Stylesheet nur auf Collection-Seiten ein
 {%- endcomment -%}
-{{ 'custom-collection-list.css' | asset_url | stylesheet_tag }}
+{% if template.suffix == 'collection' %}
+  {{ 'custom-collection-list.css' | asset_url | stylesheet_tag }}
+{% endif %}
