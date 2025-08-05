@@ -888,7 +888,7 @@
             "heading": "Schlanker Schutz & volle Funktion",
             "text": "<p><strong>Integrierter Kameraschutz</strong></p><p><strong>Eingebettete Flexbuttons</strong></p><p><strong>Präzise Aussparungen</strong></p><p><strong>Leicht erhöhter Rahmen</strong></p>",
             "content_align": "text-start",
-            "hotspot_x": 40,
+            "hotspot_x": 27,
             "hotspot_y": 50
           }
         },
@@ -899,14 +899,25 @@
             "heading": "MagSafe-Hülle für dein Smartphone",
             "text": "<p>Der integrierte Magnetring macht die Hülle vollständig MagSafe-kompatibel<br/><br/>Du kannst kabellos laden oder magnetisches Zubehör wie Halterungen oder Kartenhalter bequem verwenden</p>",
             "content_align": "text-start",
-            "hotspot_x": 60,
+            "hotspot_x": 49,
+            "hotspot_y": 50
+          }
+        },
+        "feature_gXUBRc": {
+          "type": "feature",
+          "settings": {
+            "heading": "Feature name",
+            "text": "<p>Add some text describing the product feature.</p>",
+            "content_align": "text-start",
+            "hotspot_x": 75,
             "hotspot_y": 50
           }
         }
       },
       "block_order": [
         "feature_M4RNW9",
-        "feature_9fmWP3"
+        "feature_9fmWP3",
+        "feature_gXUBRc"
       ],
       "custom_css": [
         "div.hotspot.absolute {background: none;}",
