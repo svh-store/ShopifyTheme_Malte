@@ -59,7 +59,7 @@
 .cc-collection-list .card__info .card__collection--arrow {
   display: inline-flex;      /* Icon und Text nebeneinander */
   align-items: center;
-  font-size: 0.875rem;       /* entspricht 14px */
+  font-size: 0.975rem;       /* entspricht 14px */
   margin-top: 1.0rem;       /* Abstand zum Titel */
   line-height: 1.3;
 }
