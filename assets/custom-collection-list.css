@@ -69,3 +69,20 @@
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
+div {
+  font-size: 15px;
+}
+p {
+  font-size: 12px;
+}
+.slider-nav__btn {
+  border: 1px solid #f19222;
+  background: none !important;
+  color: #f19222 !important;
+  background-image: none !important;
+  box-shadow: none;
+}
+.slider-nav__btn:hover {
+  background-color: #f19222 !important;
+  color: #fff !important;
+}
