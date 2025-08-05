@@ -4,10 +4,26 @@
     font-size: 9.6rem;
     line-height: 1;
   }
+
+  .error-image {
+    width: 1000px;
+    height: 1000px;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 40px auto;
+    display: block;
+  }
 </style>
 
 <div class="container text-center">
   <p class="error-code mb-0 font-bold">404</p>
+
+  <img
+    src="{{ 'hund-404.png' | asset_url }}"
+    alt="Fehlerbild"
+    class="error-image"
+  >
+
   <h1 class="h4 text-center">{{ 'templates.404.title' | t }}</h1>
   <p>{{ 'templates.404.subtext' | t }}</p>
   <p class="mt-12">
