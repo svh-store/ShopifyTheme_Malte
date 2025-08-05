@@ -60,7 +60,7 @@
   display: inline-flex;      /* Icon und Text nebeneinander */
   align-items: center;
   font-size: 0.875rem;       /* entspricht 14px */
-  margin-top: 0.35rem;       /* Abstand zum Titel */
+  margin-top: 1.0rem;       /* Abstand zum Titel */
   line-height: 1.3;
 }
 
