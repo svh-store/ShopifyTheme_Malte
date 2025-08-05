@@ -340,3 +340,7 @@
   }
 }
 {% endschema %}
+{%- comment -%}
+  Binde das scoped Stylesheet nur bei dieser Section mit ein
+{%- endcomment -%}
+{{ 'custom-collection-list.css' | asset_url | stylesheet_tag }}
