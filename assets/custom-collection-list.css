@@ -50,7 +50,7 @@
 
 /* 7. Titel („Collection-Name“) formatieren */
 .cc-collection-list .card__info .card__title {
-  font-size: 1.125rem;       /* entspricht 18px */
+  font-size: 1.325rem;       /* entspricht 18px */
   line-height: 1.2;
   margin: 0;                 /* Standard-Abstände entfernen */
 }
