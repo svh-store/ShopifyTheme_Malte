@@ -45,7 +45,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;        /* Fallback für Inline-Elemente */
-  margin-top: 1.6rem;        /* Abstand oberhalb der Textarea */
+  margin-top: 2.0rem;        /* Abstand oberhalb der Textarea */
 }
 
 /* 7. Titel („Collection-Name“) formatieren */
