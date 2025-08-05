@@ -895,7 +895,7 @@
           "type": "feature",
           "settings": {
             "heading": "Hoco USB Kabel - X20 Type C - 3M",
-            "text": "<ul><li><strong>3 Meter Länge</strong> </li><li><strong>USB-C zu USB-A Anschluss</strong> </li><li><strong>Langlebige Konstruktion</strong></li><li><strong>Schnelles Laden</strong> </li></ul>",
+            "text": "<ul><li><em>3 Meter Länge </em></li><li><em>USB-C zu USB-A Anschluss </em></li><li><em>Langlebige Konstruktion</em></li><li><em>Schnelles Laden </em></li></ul>",
             "content_align": "text-start",
             "hotspot_x": 49,
             "hotspot_y": 50
@@ -904,8 +904,8 @@
         "feature_gXUBRc": {
           "type": "feature",
           "settings": {
-            "heading": "Feature name",
-            "text": "<p>Add some text describing the product feature.</p>",
+            "heading": "Joyroom - MagSafe JR-W020 - 10000 mAh",
+            "text": "<ul><li><em>MagSafe Kompatibilität</em></li><li><em>Hohe Kapazität </em></li><li><em>Kabelloses Laden </em></li><li><em>Mehrere Ladeanschlüsse </em></li><li><em>Kompaktes und leichtes Design </em></li><li><em>LED-Anzeige </em></li></ul>",
             "content_align": "text-start",
             "hotspot_x": 75,
             "hotspot_y": 50
