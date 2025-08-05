@@ -926,7 +926,7 @@
         "mob_center_text": false,
         "heading_size": "h1",
         "enlarge_text": false,
-        "image": "shopify://shop_images/Showcase_der_Woche_Zoya.webp",
+        "image": "shopify://shop_images/Bundle_der_Woche_16.07.2025.webp",
         "title": "",
         "description": "",
         "button_label": "Jetzt ansehen",
@@ -1418,8 +1418,8 @@
         ".os-scrollbar-horizontal {height: 25px !important;}",
         "div {font-size: 15px;}",
         "p {font-size: 12px;}",
-        ".slider-nav__btn {border: 1px solid #F19222; background: none !important; color: #F19222 !important; background-image: none !important; box-shadow: none;}",
-        ".slider-nav__btn:hover {background-color: #F19222 !important; color: #fff !important;}"
+        ".slider-nav__btn {border: 1px solid #f19222; background: none !important; color: #f19222 !important; background-image: none !important; box-shadow: none;}",
+        ".slider-nav__btn:hover {background-color: #f19222 !important; color: #fff !important;}"
       ],
       "settings": {
         "title": "",
