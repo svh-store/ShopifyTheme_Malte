@@ -342,8 +342,6 @@
 {% endschema %}
 
 {%- comment -%}
-  Binde das scoped Stylesheet nur auf Collection-Seiten ein
+  Binde das scoped Stylesheet nur bei dieser Section mit ein
 {%- endcomment -%}
-{% if template.suffix == 'collection' %}
-  {{ 'custom-collection-list.css' | asset_url | stylesheet_tag }}
-{% endif %}
+{{ 'custom-collection-list.css' | asset_url | stylesheet_tag }}
