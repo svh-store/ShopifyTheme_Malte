@@ -4,45 +4,42 @@
    Collection-List-Section (Scope: .cc-collection-list)
    =================================================================== */
 
-/* 0. Carousel: feste Spaltenbreite erzwingen */
+/* 1. Carousel-Grid: feste Spaltenbreite, Column-Flow und Align-Start */
 .cc-collection-list .slider__grid {
-  /* entspricht der Breite deiner Karten (hier 12 rem) */
-  grid-auto-columns: 12rem !important;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 12rem !important;    /* Breite deiner Karten */
+  column-gap: 1rem;                        /* Lücke zwischen den Slides */
+  padding-inline: 1rem;                   /* Innenabstand links/rechts */
+  justify-content: start !important;      /* Track ganz links beginnen */
+  justify-items: start !important;        /* Items linksbündig im Cell */
+  align-items: start;                     /* Items oben ausrichten */
 }
 
-/* 1. Carousel-Wrapper: Negativen Margin entfernen */
+/* 2. Carousel-Wrapper: negativen Margin entfernen */
 .cc-collection-list carousel-slider {
   margin: 0;
 }
 
-/* 2. Slider-Viewport: Overflow sichtbar machen und horizontales Padding */
+/* 3. Slider-Viewport: Overflow sichtbar machen und horizontales Padding */
 .cc-collection-list carousel-slider > .container.relative {
   overflow: visible;
-  padding-inline: 2rem;   /* verhindert Anschnitt der ersten/letzten Karte */
-}
-
-/* 3. Grid/Carousel zentrieren */
-.cc-collection-list .slider__grid {
-  display: grid;             /* sicherstellen, dass es ein Grid ist */
-  justify-content: center;   /* zentriert den Grid-Track im Container */
-  justify-items: center;     /* zentriert jedes Item in seiner Zelle */
-  gap: 1rem;                 /* Abstand zwischen den Karten */
-  padding-inline: 1rem;      /* optionaler Innenabstand */
+  padding-inline: 2rem;  /* verhindert Anschnitt der ersten/letzten Karte */
 }
 
 /* 4. Bild-Wrapper in fixe Box und Zuschnitt */
 .cc-collection-list .card__media.relative {
   padding-top: 0 !important; /* Inline-Padding aufheben */
-  width: 12rem;              /* ~192px Breite */
-  height: 12rem;             /* ~192px Höhe */
-  overflow: hidden;          /* schneidet überstehende Bildteile ab */
+  width: 12rem;              /* feste Breite */
+  height: 12rem;             /* feste Höhe */
+  overflow: hidden;          /* Überstand abschneiden */
 }
 
 /* 5. Bild passt sich dem Wrapper an */
 .cc-collection-list .card__media.relative img {
   width: 100%;
   height: 100%;
-  object-fit: cover !important;  /* Zuschnitt, um den Container vollständig zu füllen */
+  object-fit: cover !important;  /* füllt Container vollständig */
 }
 
 /* 6. Text unter dem Bild sauber zentrieren */
@@ -50,23 +47,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;        /* Fallback für Inline-Elemente */
-  margin-top: 2.0rem;        /* Abstand oberhalb der Textarea */
+  text-align: center;       /* Fallback für Inline-Elemente */
+  margin-top: 2rem;         /* Abstand oberhalb der Textarea */
 }
 
 /* 7. Titel („Collection-Name“) formatieren */
 .cc-collection-list .card__info .card__title {
-  font-size: 1.3rem;       /* entspricht 18px */
+  font-size: 1.3rem;   /* ≈18px */
   line-height: 1.2;
-  margin: 0;                 /* Standard-Abstände entfernen */
+  margin: 0;           /* Standard-Abstände entfernen */
 }
 
 /* 8. Link „Kategorie anzeigen“ formatieren */
 .cc-collection-list .card__info .card__collection--arrow {
-  display: inline-flex;      /* Icon und Text nebeneinander */
+  display: inline-flex; /* Icon und Text nebeneinander */
   align-items: center;
-  font-size: 0.975rem;       /* entspricht 14px */
-  margin-top: 1.0rem;       /* Abstand zum Titel */
+  font-size: 0.975rem;  /* ≈14px */
+  margin-top: 1rem;     /* Abstand zum Titel */
   line-height: 1.3;
 }
 
