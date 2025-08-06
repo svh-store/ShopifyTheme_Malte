@@ -76,31 +76,30 @@
   object-fit: cover;              /* füllt Container vollständig */
 }
 
-/* 9. Text unter dem Bild sauber zentrieren */
+/* 9. Text unter dem Bild sauber zentrieren und Abstände anpassen */
 .cc-collection-list .card__info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;        /* zentriert den Inhalt vertikal */
   text-align: center;
-  margin: 2rem auto 0;            /* Abstände und horizontale Zentrierung */
+  margin: 1rem auto 0;            /* Abstand oberhalb der Textarea */
+  gap: 0.5rem;                    /* Abstand zwischen Titel und Link */
   width: 12rem;                   /* gleiche Breite wie Bild */
 }
 
 /* 10. Titel („Collection-Name“) formatieren */
 .cc-collection-list .card__info .card__title {
-  font-size: 1.3rem;
+  font-size: 1.3rem;              /* entspricht 18px */
   line-height: 1.2;
-  margin: 0;
+  margin: 0;                      /* kein zusätzlicher Abstand */
 }
 
-/* 11. Link „Kategorie anzeigen“ formatieren */
+/* 11. Link „Kategorie anzeigen“ direkt unter dem Titel */
 .cc-collection-list .card__info .card__collection--arrow {
-  display: inline-flex;
+  display: inline-flex;           /* Icon und Text nebeneinander */
   align-items: center;
-  font-size: 0.975rem;
-  margin-top: 1rem;
-  line-height: 1.3;
+  font-size: 0.975rem;            /* entspricht 14px */
+  margin: 0;                      /* kein zusätzlicher Abstand */
 }
 
 /* 12. Optional: Hover-Effekt für die Karte */
