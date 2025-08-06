@@ -108,9 +108,9 @@
         "logo_XHUPYB"
       ],
       "custom_css": [
-        "/* Hover-Zoom auf Logos */.logo-list__logo {overflow: hidden; /* stellt sicher, dass das Bild nicht aus dem Container ragt */}",
-        ".logo-list__logo img {transition: transform 0.4s ease; /* weiche Übergangsanimation */}",
-        ".logo-list__logo:hover img {transform: scale(1.1); /* Zoom-Faktor, hier 10 % Vergrößerung */}"
+        ".logo-list__logo {overflow: hidden; }",
+        ".logo-list__logo img {transition: transform 0.4s ease; }",
+        ".logo-list__logo:hover img {transform: scale(1.1); }"
       ],
       "name": "Logo list",
       "settings": {
