@@ -60,7 +60,7 @@
 
 /* 10. Schriftgrößen anpassen: Titel etwas größer, Link in Basisgröße */
 .cc-collection-list .card__info .card__title {
-  font-size: 1.125em !important;   /* ca. 14–15 px, je nach Basisschrift */
+  font-size: 1em !important;   /* ca. 14–15 px, je nach Basisschrift */
   line-height: 1.2;
 }
 
