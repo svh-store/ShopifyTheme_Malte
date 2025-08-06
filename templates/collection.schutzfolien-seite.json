@@ -57,13 +57,23 @@
             "logo_width": 155,
             "text": "Premium"
           }
+        },
+        "logo_BR7ceV": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/TabletschutzfolieIcon.png",
+            "url": "shopify://collections/tablet-schutzfolie-101",
+            "logo_width": 155,
+            "text": "Tablet"
+          }
         }
       },
       "block_order": [
         "logo_yAcjYR",
         "logo_8x3YWc",
         "logo_CqCCT8",
-        "logo_x4VLjW"
+        "logo_x4VLjW",
+        "logo_BR7ceV"
       ],
       "name": "Logo list",
       "settings": {
