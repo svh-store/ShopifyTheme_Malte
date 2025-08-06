@@ -75,7 +75,7 @@
         "circle_image": false,
         "show_border": false,
         "color_scheme": "none",
-        "full_width": true
+        "full_width": false
       }
     },
     "collection-products": {
