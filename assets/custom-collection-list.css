@@ -59,4 +59,16 @@
 .cc-collection-list .card__media.relative:hover img {
   transform: scale(1.05);
   transition: transform 0.3s ease;
+  
+/* 10. Schriftgrößen anpassen: Titel etwas größer, Link in Basisgröße */
+.cc-collection-list .card__info .card__title {
+  font-size: 1.125em !important;   /* ca. 14–15 px, je nach Basisschrift */
+  line-height: 1.2;
+}
+
+.cc-collection-list .card__info .card__collection--arrow {
+  font-size: 1em !important;       /* entspricht der allgemeinen Basisgröße (ca. 13–14 px) */
+  line-height: 1.3;
+}
+
 }
