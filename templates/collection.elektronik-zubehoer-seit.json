@@ -19,6 +19,125 @@
         "prevent_animation": false
       }
     },
+    "logo_list_UeEdEM": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_QtNppA": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/LadegeraeteundnetzteileIcon.png",
+            "url": "shopify://collections/wallet-style",
+            "logo_width": 155,
+            "text": "Ladegeräte & Netzteile"
+          }
+        },
+        "logo_itUACY": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/KabelIcon2.png",
+            "url": "shopify://collections/kabel",
+            "logo_width": 155,
+            "text": "Flip Style"
+          }
+        },
+        "logo_UPaGRJ": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/HalterungenIcon.png",
+            "url": "shopify://collections/halterungen-1",
+            "logo_width": 155,
+            "text": "Halterungen"
+          }
+        },
+        "logo_3Cw84j": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/SoundIcon1.png",
+            "url": "shopify://collections/sound",
+            "logo_width": 155,
+            "text": "Sound"
+          }
+        },
+        "logo_8xjaeN": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/MagSafeIcon.png",
+            "url": "shopify://collections/smartwatch-zubehor-1",
+            "logo_width": 155,
+            "text": "Smartwatch Zubehör"
+          }
+        },
+        "logo_6dDmeM": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/OutdoorIcon4.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "Outdoor"
+          }
+        },
+        "logo_p6rKrP": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/FarbigIcon_5aad22d5-f128-4482-99d4-03cbafdca67c.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "Farbige Hüllen"
+          }
+        },
+        "logo_zGUkGQ": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Motiv_Icon_92aca091-fb3c-412e-9f94-8948fd0b10a2.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "Motiv"
+          }
+        },
+        "logo_y7rb7k": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/zumUmhaengenIcon_699f0a9b-6643-4ee8-80a8-15947dac7f2d.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "Zum Umhängen"
+          }
+        },
+        "logo_JMNeTq": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/360Icon.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "360 Grad"
+          }
+        }
+      },
+      "block_order": [
+        "logo_QtNppA",
+        "logo_itUACY",
+        "logo_UPaGRJ",
+        "logo_3Cw84j",
+        "logo_8xjaeN",
+        "logo_6dDmeM",
+        "logo_p6rKrP",
+        "logo_zGUkGQ",
+        "logo_y7rb7k",
+        "logo_JMNeTq"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "spacing": 40,
+        "logo_grid_align": "justify-center",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
     "collection_list_eNRa6L": {
       "type": "collection-list",
       "blocks": {
@@ -154,6 +273,7 @@
   },
   "order": [
     "custom_liquid_n3yUBQ",
+    "logo_list_UeEdEM",
     "collection_list_eNRa6L",
     "1742389071a541eca3",
     "collection-banner",
