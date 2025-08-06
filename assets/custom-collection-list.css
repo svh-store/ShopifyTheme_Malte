@@ -1,73 +1,61 @@
-/* ===================================================================
-   custom-collection-list.css
-   Vollständig angepasste und optimierte Styles für die
-   Collection-List-Section (Scope: .cc-collection-list)
-   =================================================================== */
+/* -------------------------------------------------------------------
+   cc-collection-list: Flex-Carousel mit fixes Slide-Sizing
+   ------------------------------------------------------------------- */
 
-/* 0. Carousel: feste Spaltenbreite erzwingen */
-.cc-collection-list .slider__grid {
-  grid-auto-flow: column;
-  grid-auto-columns: 12rem !important;  /* Breite deiner Karten */
-  column-gap: 1rem;                      /* Lücke zwischen den Slides */
-  padding-inline: 1rem;                  /* Innenabstand links/rechts */
-  justify-content: start !important;     /* Track ganz links beginnen */
-  justify-items: start !important;       /* Items linksbündig in der Zelle */
-  align-items: start;                    /* Items oben ausrichten */
-  display: grid;
-}
-
-/* 1. Carousel-Wrapper: Negativen Margin entfernen */
-.cc-collection-list carousel-slider {
-  margin: 0;
-}
-
-/* 2. Slider-Viewport: Overflow sichtbar machen und horizontales Padding */
+/* Carousel-Viewport overflow und Padding (kommt vor den Flex-Container) */
 .cc-collection-list carousel-slider > .container.relative {
   overflow: visible;
-  padding-inline: 2rem;   /* verhindert Anschnitt der ersten/letzten Karte */
+  padding-inline: 2rem;
 }
 
-/* 3. Grid/Carousel zentrieren */
+/* Flex-Container statt Grid */
 .cc-collection-list .slider__grid {
-  /* voila, siehe Punkt 0 für alle notwendigen Einstellungen */
+  display: flex !important;
+  gap: 1rem !important;
+  padding-inline: 1rem;
 }
 
-/* 3.1 Einheitliche Höhe im Textbereich und Arrow-Baseline */
-.cc-collection-list .card__info {
+/* Jede Slide als flexibles, aber fixes Box-Item */
+.cc-collection-list .slider__item {
+  flex: 0 0 auto;
+  width: 12rem;                 /* fix Breite */
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;          /* Fallback für Inline-Elemente */
-  min-height: 4.5rem;          /* sorgt für gleichhohe Info-Blöcke */
-  margin-top: 2rem;            /* Abstand oberhalb der Textarea */
-}
-.cc-collection-list .card__info .card__collection--arrow {
-  margin-top: auto;            /* drückt den Link ans Ende des Info-Blocks */
 }
 
-/* 4. Bild-Wrapper in fixe Box und Zuschnitt */
+/* Bild-Wrapper: fixe Box und Zuschnitt */
 .cc-collection-list .card__media.relative {
-  padding-top: 0 !important;   /* Inline-Padding aufheben */
-  width: 12rem;                 /* feste Breite */
-  height: 12rem;                /* feste Höhe */
-  overflow: hidden;             /* Überstand abschneiden */
+  padding-top: 0 !important;
+  width: 12rem;
+  height: 12rem;
+  overflow: hidden;
 }
 
-/* 5. Bild passt sich dem Wrapper an */
+/* Bild füllt Wrapper */
 .cc-collection-list .card__media.relative img {
   width: 100%;
   height: 100%;
-  object-fit: cover !important; /* füllt Container vollständig */
+  object-fit: cover !important;
 }
 
-/* 6. Titel („Collection-Name“) formatieren */
-.cc-collection-list .card__info .card__title {
-  font-size: 1.3rem;            /* entspricht 18px */
-  line-height: 1.2;
-  margin: 0;                    /* Standard-Abstände entfernen */
+/* Info-Block: gleich hoch und Link immer unten */
+.cc-collection-list .card__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
 }
 
-/* 7. Hover-Effekt für die Karte */
+/* Arrow-Link ans Ende des Info-Blocks drücken */
+.cc-collection-list .card__collection--arrow {
+  margin-top: auto;
+}
+
+/* Optionaler Hover-Effekt bleibt erhalten */
 .cc-collection-list .card__media.relative:hover img {
   transform: scale(1.05);
   transition: transform 0.3s ease;
