@@ -9,6 +9,125 @@
  */
 {
   "sections": {
+    "logo_list_NdgdaN": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_f6reLt": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/WalletStyleIcon.png",
+            "url": "shopify://collections/wallet-style",
+            "logo_width": 155,
+            "text": "Wallet Style"
+          }
+        },
+        "logo_Ey393e": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/FlipStyleIcon_1a4948de-f336-44b2-9b71-ad80bd7108f2.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "Flip Style"
+          }
+        },
+        "logo_BCJ6nY": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/SecurityStyleIcon.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "Security Wallet"
+          }
+        },
+        "logo_9VeUWH": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/TransparentIcon.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "Transparente Hüllen"
+          }
+        },
+        "logo_LEHbpV": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/MagSafeIcon.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "MagSafe"
+          }
+        },
+        "logo_bQzhjF": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/OutdoorIcon4.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "Outdoor"
+          }
+        },
+        "logo_KCm6Rc": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/FarbigIcon_5aad22d5-f128-4482-99d4-03cbafdca67c.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "Farbige Hüllen"
+          }
+        },
+        "logo_kwBiWt": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Motiv_Icon_92aca091-fb3c-412e-9f94-8948fd0b10a2.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "Motiv"
+          }
+        },
+        "logo_Vk4YQ4": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/zumUmhaengenIcon_699f0a9b-6643-4ee8-80a8-15947dac7f2d.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "Zum Umhängen"
+          }
+        },
+        "logo_FRRAJa": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/360Icon.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "360 Grad"
+          }
+        }
+      },
+      "block_order": [
+        "logo_f6reLt",
+        "logo_Ey393e",
+        "logo_BCJ6nY",
+        "logo_9VeUWH",
+        "logo_LEHbpV",
+        "logo_bQzhjF",
+        "logo_KCm6Rc",
+        "logo_kwBiWt",
+        "logo_Vk4YQ4",
+        "logo_FRRAJa"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "spacing": 40,
+        "logo_grid_align": "justify-center",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
     "custom_liquid_n3yUBQ": {
       "type": "custom-liquid",
       "settings": {
@@ -17,65 +136,6 @@
         "full_width": false,
         "dividers": "none",
         "prevent_animation": false
-      }
-    },
-    "collection_list_eNRa6L": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_P8a3pE": {
-          "type": "collection",
-          "settings": {
-            "collection": "tablet-wallet-style"
-          }
-        },
-        "collection_3EaxGy": {
-          "type": "collection",
-          "settings": {
-            "collection": "smart-book-cover"
-          }
-        },
-        "collection_QAiTAi": {
-          "type": "collection",
-          "settings": {
-            "collection": "transparente-tablet-hullen"
-          }
-        },
-        "collection_GNktM7": {
-          "type": "collection",
-          "settings": {
-            "collection": "tablet-outdoor-hullen"
-          }
-        },
-        "collection_gnLHYx": {
-          "type": "collection",
-          "settings": {
-            "collection": "tablet-hullen-schwarz"
-          }
-        }
-      },
-      "block_order": [
-        "collection_P8a3pE",
-        "collection_3EaxGy",
-        "collection_QAiTAi",
-        "collection_GNktM7",
-        "collection_gnLHYx"
-      ],
-      "custom_css": [
-        "carousel-slider {margin: -50px;}"
-      ],
-      "name": "Collection list",
-      "settings": {
-        "title": "",
-        "heading_align": "text-center",
-        "button_label": "",
-        "button_link": "",
-        "layout": "carousel",
-        "card_size": "small",
-        "use_product_image": false,
-        "circle_image": false,
-        "show_border": false,
-        "color_scheme": "none",
-        "full_width": false
       }
     },
     "collection-products": {
@@ -141,8 +201,8 @@
     }
   },
   "order": [
+    "logo_list_NdgdaN",
     "custom_liquid_n3yUBQ",
-    "collection_list_eNRa6L",
     "collection-products",
     "1742389071a541eca3",
     "collection-banner"
