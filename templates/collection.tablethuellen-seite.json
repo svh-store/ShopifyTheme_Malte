@@ -27,7 +27,7 @@
             "image": "shopify://shop_images/FlipStyleIcon_1a4948de-f336-44b2-9b71-ad80bd7108f2.png",
             "url": "",
             "logo_width": 155,
-            "text": "Flip Style"
+            "text": "Smart Cover"
           }
         },
         "logo_BCJ6nY": {
@@ -36,7 +36,7 @@
             "image": "shopify://shop_images/SecurityStyleIcon.png",
             "url": "",
             "logo_width": 155,
-            "text": "Security Wallet"
+            "text": "Transparent"
           }
         },
         "logo_9VeUWH": {
@@ -45,7 +45,7 @@
             "image": "shopify://shop_images/TransparentIcon.png",
             "url": "",
             "logo_width": 155,
-            "text": "Transparente Hüllen"
+            "text": "Outdoor"
           }
         },
         "logo_LEHbpV": {
@@ -54,52 +54,7 @@
             "image": "shopify://shop_images/MagSafeIcon.png",
             "url": "",
             "logo_width": 155,
-            "text": "MagSafe"
-          }
-        },
-        "logo_bQzhjF": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/OutdoorIcon4.png",
-            "url": "",
-            "logo_width": 155,
-            "text": "Outdoor"
-          }
-        },
-        "logo_KCm6Rc": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/FarbigIcon_5aad22d5-f128-4482-99d4-03cbafdca67c.png",
-            "url": "",
-            "logo_width": 155,
-            "text": "Farbige Hüllen"
-          }
-        },
-        "logo_kwBiWt": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/Motiv_Icon_92aca091-fb3c-412e-9f94-8948fd0b10a2.png",
-            "url": "",
-            "logo_width": 155,
-            "text": "Motiv"
-          }
-        },
-        "logo_Vk4YQ4": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/zumUmhaengenIcon_699f0a9b-6643-4ee8-80a8-15947dac7f2d.png",
-            "url": "",
-            "logo_width": 155,
-            "text": "Zum Umhängen"
-          }
-        },
-        "logo_FRRAJa": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/360Icon.png",
-            "url": "",
-            "logo_width": 155,
-            "text": "360 Grad"
+            "text": "Schwarz"
           }
         }
       },
@@ -108,12 +63,7 @@
         "logo_Ey393e",
         "logo_BCJ6nY",
         "logo_9VeUWH",
-        "logo_LEHbpV",
-        "logo_bQzhjF",
-        "logo_KCm6Rc",
-        "logo_kwBiWt",
-        "logo_Vk4YQ4",
-        "logo_FRRAJa"
+        "logo_LEHbpV"
       ],
       "name": "Logo list",
       "settings": {
