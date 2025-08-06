@@ -25,7 +25,7 @@
         "logo_yAcjYR": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/WalletStyleIcon.png",
+            "image": "shopify://shop_images/9HPanzerfolieIcon.png",
             "url": "shopify://collections/9h-panzerfolie",
             "logo_width": 155,
             "text": "2in1"
@@ -34,7 +34,7 @@
         "logo_8x3YWc": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/FlipStyleIcon_1a4948de-f336-44b2-9b71-ad80bd7108f2.png",
+            "image": "shopify://shop_images/9HDisplayundKameraSetIcon.png",
             "url": "",
             "logo_width": 155,
             "text": "4in1"
@@ -43,7 +43,7 @@
         "logo_CqCCT8": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/SecurityStyleIcon.png",
+            "image": "shopify://shop_images/AntiSpyGlaeserIcon.png",
             "url": "",
             "logo_width": 155,
             "text": "Anti Spy"
@@ -52,7 +52,7 @@
         "logo_x4VLjW": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/TransparentIcon.png",
+            "image": "shopify://shop_images/EZ.BoxIcon1.png",
             "url": "shopify://collections/ez-box",
             "logo_width": 155,
             "text": "Premium"
@@ -72,64 +72,8 @@
         "button_label": "",
         "button_link": "",
         "layout": "carousel",
-        "spacing": 40,
+        "spacing": 32,
         "logo_grid_align": "justify-center",
-        "color_scheme": "none",
-        "full_width": true
-      }
-    },
-    "collection_list_eNRa6L": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_P8a3pE": {
-          "type": "collection",
-          "settings": {
-            "collection": "9h-panzerfolie"
-          }
-        },
-        "collection_WgMjmT": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "collection_3EaxGy": {
-          "type": "collection",
-          "settings": {
-            "collection": "9h-display-kameraschutz-set"
-          }
-        },
-        "collection_QAiTAi": {
-          "type": "collection",
-          "settings": {
-            "collection": "anti-spy-glaser"
-          }
-        },
-        "collection_DDE4Dx": {
-          "type": "collection",
-          "settings": {
-            "collection": "tablet-schutzfolie-101"
-          }
-        }
-      },
-      "block_order": [
-        "collection_P8a3pE",
-        "collection_WgMjmT",
-        "collection_3EaxGy",
-        "collection_QAiTAi",
-        "collection_DDE4Dx"
-      ],
-      "name": "Collection list",
-      "settings": {
-        "title": "",
-        "heading_align": "text-center",
-        "button_label": "",
-        "button_link": "",
-        "layout": "carousel",
-        "card_size": "small",
-        "use_product_image": false,
-        "circle_image": false,
-        "show_border": false,
         "color_scheme": "none",
         "full_width": true
       }
@@ -199,7 +143,6 @@
   "order": [
     "custom_liquid_n3yUBQ",
     "logo_list_eYKNHH",
-    "collection_list_eNRa6L",
     "collection-products",
     "1742389071a541eca3",
     "collection-banner"
