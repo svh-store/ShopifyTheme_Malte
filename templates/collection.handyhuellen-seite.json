@@ -34,65 +34,82 @@
         "logo_7HYhr3": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/FlipStyleIcon_1a4948de-f336-44b2-9b71-ad80bd7108f2.png",
             "url": "",
-            "logo_width": 120,
-            "text": ""
+            "logo_width": 155,
+            "text": "Flip Style"
           }
         },
         "logo_WWUUWL": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/SecurityStyleIcon.png",
             "url": "",
-            "logo_width": 120,
-            "text": ""
+            "logo_width": 155,
+            "text": "Security Wallet"
           }
         },
         "logo_qLgVPb": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/TransparentIcon.png",
             "url": "",
-            "logo_width": 120,
-            "text": ""
+            "logo_width": 155,
+            "text": "Transparente Hüllen"
           }
         },
         "logo_i9T3xt": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/MagSafeIcon.png",
             "url": "",
-            "logo_width": 120,
-            "text": ""
+            "logo_width": 155,
+            "text": "MagSafe"
           }
         },
         "logo_ncbnqC": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/OutdoorIcon4.png",
             "url": "",
-            "logo_width": 120,
-            "text": ""
+            "logo_width": 155,
+            "text": "Outdoor"
           }
         },
         "logo_Mp3dQi": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/FarbigIcon_5aad22d5-f128-4482-99d4-03cbafdca67c.png",
             "url": "",
-            "logo_width": 120,
-            "text": ""
+            "logo_width": 155,
+            "text": "Farbige Hüllen"
           }
         },
         "logo_MBbURr": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/Motiv_Icon_92aca091-fb3c-412e-9f94-8948fd0b10a2.png",
             "url": "",
-            "logo_width": 120,
-            "text": ""
+            "logo_width": 155,
+            "text": "Motiv"
           }
         },
         "logo_XHUPYB": {
           "type": "logo",
           "settings": {
+            "image": "shopify://shop_images/zumUmhaengenIcon_699f0a9b-6643-4ee8-80a8-15947dac7f2d.png",
             "url": "",
-            "logo_width": 120,
-            "text": ""
+            "logo_width": 155,
+            "text": "Zum Umhängen"
+          }
+        },
+        "logo_jj9aNC": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/360Icon.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "360 Grad"
           }
         }
       },
@@ -105,12 +122,13 @@
         "logo_ncbnqC",
         "logo_Mp3dQi",
         "logo_MBbURr",
-        "logo_XHUPYB"
+        "logo_XHUPYB",
+        "logo_jj9aNC"
       ],
       "custom_css": [
-        ".logo-list__logo {overflow: hidden; }",
-        ".logo-list__logo img {transition: transform 0.4s ease; }",
-        ".logo-list__logo:hover img {transform: scale(1.1); }"
+        ".logo-list__logo {overflow: hidden;}",
+        ".logo-list__logo img {transition: transform 0.4s ease;}",
+        ".logo-list__logo:hover img {transform: scale(1.1);}"
       ],
       "name": "Logo list",
       "settings": {
