@@ -143,100 +143,6 @@
         "full_width": true
       }
     },
-    "collection_list_eNRa6L": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_P8a3pE": {
-          "type": "collection",
-          "settings": {
-            "collection": "wallet-style"
-          }
-        },
-        "collection_3EaxGy": {
-          "type": "collection",
-          "settings": {
-            "collection": "flip-style"
-          }
-        },
-        "collection_QAiTAi": {
-          "type": "collection",
-          "settings": {
-            "collection": "security-wallet"
-          }
-        },
-        "collection_GNktM7": {
-          "type": "collection",
-          "settings": {
-            "collection": "transparente-hullen-1"
-          }
-        },
-        "collection_gnLHYx": {
-          "type": "collection",
-          "settings": {
-            "collection": "magsafe"
-          }
-        },
-        "collection_CjLVTy": {
-          "type": "collection",
-          "settings": {
-            "collection": "outdoor"
-          }
-        },
-        "collection_zGPzmi": {
-          "type": "collection",
-          "settings": {
-            "collection": "farbige-hullen-1"
-          }
-        },
-        "collection_nBkpdc": {
-          "type": "collection",
-          "settings": {
-            "collection": "motiv"
-          }
-        },
-        "collection_4VbaT7": {
-          "type": "collection",
-          "settings": {
-            "collection": "zum-umhangen"
-          }
-        },
-        "collection_FNVBYX": {
-          "type": "collection",
-          "settings": {
-            "collection": "360-grad"
-          }
-        }
-      },
-      "block_order": [
-        "collection_P8a3pE",
-        "collection_3EaxGy",
-        "collection_QAiTAi",
-        "collection_GNktM7",
-        "collection_gnLHYx",
-        "collection_CjLVTy",
-        "collection_zGPzmi",
-        "collection_nBkpdc",
-        "collection_4VbaT7",
-        "collection_FNVBYX"
-      ],
-      "custom_css": [
-        "carousel-slider {margin: -50px;}"
-      ],
-      "name": "Collection list",
-      "settings": {
-        "title": "",
-        "heading_align": "text-center",
-        "button_label": "",
-        "button_link": "",
-        "layout": "carousel",
-        "card_size": "small",
-        "use_product_image": false,
-        "circle_image": false,
-        "show_border": false,
-        "color_scheme": "none",
-        "full_width": true
-      }
-    },
     "collection-products": {
       "type": "main-collection-products",
       "disabled": true,
@@ -302,7 +208,6 @@
   "order": [
     "custom_liquid_n3yUBQ",
     "logo_list_UFgdDm",
-    "collection_list_eNRa6L",
     "collection-products",
     "1742389071a541eca3",
     "collection-banner"
