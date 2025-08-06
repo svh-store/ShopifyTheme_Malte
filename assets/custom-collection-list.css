@@ -36,6 +36,7 @@
 .cc-collection-list .slider-nav,
 .cc-collection-list .slider-nav.no-js-hidden {
   display: flex !important;
+  flex-direction: row-reverse;     /* Buttons tauschen */
   align-items: center;
   justify-content: space-between;
   position: absolute;
@@ -80,8 +81,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;        /* zentriert den Inhalt vertikal */
   text-align: center;
-  margin-top: 2rem;
+  margin: 2rem auto 0;            /* Abstände und horizontale Zentrierung */
+  width: 12rem;                   /* gleiche Breite wie Bild */
 }
 
 /* 10. Titel („Collection-Name“) formatieren */
