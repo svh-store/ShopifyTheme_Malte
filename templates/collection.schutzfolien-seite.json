@@ -26,9 +26,9 @@
           "type": "logo",
           "settings": {
             "image": "shopify://shop_images/WalletStyleIcon.png",
-            "url": "shopify://collections/wallet-style",
+            "url": "shopify://collections/9h-panzerfolie",
             "logo_width": 155,
-            "text": "Wallet Style"
+            "text": "2in1"
           }
         },
         "logo_8x3YWc": {
@@ -37,7 +37,7 @@
             "image": "shopify://shop_images/FlipStyleIcon_1a4948de-f336-44b2-9b71-ad80bd7108f2.png",
             "url": "",
             "logo_width": 155,
-            "text": "Flip Style"
+            "text": "4in1"
           }
         },
         "logo_CqCCT8": {
@@ -46,70 +46,16 @@
             "image": "shopify://shop_images/SecurityStyleIcon.png",
             "url": "",
             "logo_width": 155,
-            "text": "Security Wallet"
+            "text": "Anti Spy"
           }
         },
         "logo_x4VLjW": {
           "type": "logo",
           "settings": {
             "image": "shopify://shop_images/TransparentIcon.png",
-            "url": "",
+            "url": "shopify://collections/ez-box",
             "logo_width": 155,
-            "text": "Transparente Hüllen"
-          }
-        },
-        "logo_nGkCnK": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/MagSafeIcon.png",
-            "url": "",
-            "logo_width": 155,
-            "text": "MagSafe"
-          }
-        },
-        "logo_CxhCG7": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/OutdoorIcon4.png",
-            "url": "",
-            "logo_width": 155,
-            "text": "Outdoor"
-          }
-        },
-        "logo_QGnUwi": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/FarbigIcon_5aad22d5-f128-4482-99d4-03cbafdca67c.png",
-            "url": "",
-            "logo_width": 155,
-            "text": "Farbige Hüllen"
-          }
-        },
-        "logo_JhBci6": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/Motiv_Icon_92aca091-fb3c-412e-9f94-8948fd0b10a2.png",
-            "url": "",
-            "logo_width": 155,
-            "text": "Motiv"
-          }
-        },
-        "logo_3WXncR": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/zumUmhaengenIcon_699f0a9b-6643-4ee8-80a8-15947dac7f2d.png",
-            "url": "",
-            "logo_width": 155,
-            "text": "Zum Umhängen"
-          }
-        },
-        "logo_VfkAbX": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/360Icon.png",
-            "url": "",
-            "logo_width": 155,
-            "text": "360 Grad"
+            "text": "Premium"
           }
         }
       },
@@ -117,13 +63,7 @@
         "logo_yAcjYR",
         "logo_8x3YWc",
         "logo_CqCCT8",
-        "logo_x4VLjW",
-        "logo_nGkCnK",
-        "logo_CxhCG7",
-        "logo_QGnUwi",
-        "logo_JhBci6",
-        "logo_3WXncR",
-        "logo_VfkAbX"
+        "logo_x4VLjW"
       ],
       "name": "Logo list",
       "settings": {
@@ -147,6 +87,12 @@
             "collection": "9h-panzerfolie"
           }
         },
+        "collection_WgMjmT": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
         "collection_3EaxGy": {
           "type": "collection",
           "settings": {
@@ -168,6 +114,7 @@
       },
       "block_order": [
         "collection_P8a3pE",
+        "collection_WgMjmT",
         "collection_3EaxGy",
         "collection_QAiTAi",
         "collection_DDE4Dx"
