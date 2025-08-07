@@ -185,9 +185,7 @@
       "block_order": [
         "tabs"
       ],
-      "custom_css": [
-        ".product-details__block {border-inline-end: none !important;}"
-      ],
+      "custom_css": [],
       "settings": {}
     },
     "recommendations": {
