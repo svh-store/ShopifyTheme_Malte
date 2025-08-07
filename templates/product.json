@@ -97,7 +97,9 @@
         "product-labels",
         "complementary_rx84bf"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "h1 {font-weight: 700; font-size: 3.2rem; letter-spacing: -0.02em; color: #181c32; margin-bottom: 2px; /* optional für Abstand nach unten */ line-height: 1.15;}"
+      ],
       "settings": {
         "stick_on_scroll": true,
         "select_first_variant": true,
