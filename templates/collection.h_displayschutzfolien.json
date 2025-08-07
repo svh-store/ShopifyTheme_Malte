@@ -19,6 +19,65 @@
         "prevent_animation": false
       }
     },
+    "logo_list_3d3wMi": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_PmmcxA": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/9HPanzerfolieIcon.png",
+            "url": "shopify://collections/9h-panzerfolie",
+            "logo_width": 155,
+            "text": "2in1"
+          }
+        },
+        "logo_GQPmHg": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/9HDisplayundKameraSetIcon.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "4in1"
+          }
+        },
+        "logo_eP4VMA": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/AntiSpyGlaeserIcon.png",
+            "url": "",
+            "logo_width": 155,
+            "text": "Anti Spy"
+          }
+        },
+        "logo_zRAjkf": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/EZ.BoxIcon1.png",
+            "url": "shopify://collections/ez-box",
+            "logo_width": 155,
+            "text": "Premium"
+          }
+        }
+      },
+      "block_order": [
+        "logo_PmmcxA",
+        "logo_GQPmHg",
+        "logo_eP4VMA",
+        "logo_zRAjkf"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "spacing": 32,
+        "logo_grid_align": "justify-center",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
     "collection-products": {
       "type": "main-collection-products",
       "disabled": true,
@@ -83,6 +142,7 @@
   },
   "order": [
     "custom_liquid_n3yUBQ",
+    "logo_list_3d3wMi",
     "collection-products",
     "1742389071a541eca3",
     "collection-banner"
