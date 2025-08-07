@@ -29,6 +29,7 @@ if (!customElements.get('variant-picker')) {
       setTimeout(() => {
         this.updateAvailability();
         this.updateAddToCartButton();
+        if (this.variant) this.updateVariantInput();
       });
     }
 
@@ -405,6 +406,8 @@ if (!customElements.get('variant-picker')) {
 
       this.forms.forEach((form) => {
         const input = form.querySelector('input[name="id"]');
+        input.disabled = false;
+        input.removeAttribute('disabled');
         input.value = this.variant.id;
         input.dispatchEvent(new Event('change', { bubbles: true }));
       });
