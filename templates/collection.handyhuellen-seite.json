@@ -137,7 +137,7 @@
         "button_label": "",
         "button_link": "",
         "layout": "carousel",
-        "spacing": 36,
+        "spacing": 32,
         "logo_grid_align": "justify-center",
         "color_scheme": "none",
         "full_width": true
