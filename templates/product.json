@@ -154,14 +154,21 @@
         "media_grouping_option": "Color,Colour,Couleur,Farbe"
       }
     },
+    "fbt": {
+      "type": "frequently-bought-together",
+      "settings": {
+        "product_1": "",
+        "product_2": ""
+      }
+    },
     "details": {
       "type": "product-details",
       "blocks": {
         "tabs": {
           "type": "tabs",
           "settings": {
-            "style": "tabs",
-            "open_first": false,
+            "style": "collapsible",
+            "open_first": true,
             "show_description": true,
             "show_reviews": false,
             "custom_reviews": "",
@@ -219,6 +226,7 @@
   },
   "order": [
     "main",
+    "fbt",
     "details",
     "recommendations",
     "1743585275ab058f49"
