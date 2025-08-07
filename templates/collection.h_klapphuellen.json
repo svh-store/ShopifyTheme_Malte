@@ -44,7 +44,7 @@
           "type": "logo",
           "settings": {
             "image": "shopify://shop_images/SecurityStyleIcon.png",
-            "url": "",
+            "url": "shopify://collections/security-wallet",
             "logo_width": 155,
             "text": "Security Wallet"
           }
