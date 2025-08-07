@@ -97,11 +97,7 @@
         "product-labels",
         "complementary_rx84bf"
       ],
-      "custom_css": [
-        ".product {box-sizing: none !important;}",
-        ".product-media {border-inline-end: none !important;}",
-        " /* Nur die ersten 5 Media Thumbnails anzeigen */.product-media-thumb:nth-child(n + 5) {display: none !important;}"
-      ],
+      "custom_css": [],
       "settings": {
         "stick_on_scroll": true,
         "select_first_variant": true,
