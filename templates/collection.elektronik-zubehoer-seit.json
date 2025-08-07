@@ -27,7 +27,7 @@
           "settings": {
             "image": "shopify://shop_images/LadegeraeteundnetzteileIcon.png",
             "url": "shopify://collections/wallet-style",
-            "logo_width": 155,
+            "logo_width": 150,
             "text": "Ladegeräte"
           }
         },
@@ -36,7 +36,7 @@
           "settings": {
             "image": "shopify://shop_images/KabelIcon2.png",
             "url": "shopify://collections/kabel",
-            "logo_width": 155,
+            "logo_width": 150,
             "text": "Flip Style"
           }
         },
@@ -45,7 +45,7 @@
           "settings": {
             "image": "shopify://shop_images/HalterungenIcon.png",
             "url": "shopify://collections/halterungen-1",
-            "logo_width": 155,
+            "logo_width": 150,
             "text": "Halterungen"
           }
         },
@@ -54,7 +54,7 @@
           "settings": {
             "image": "shopify://shop_images/SoundIcon1.png",
             "url": "shopify://collections/sound",
-            "logo_width": 155,
+            "logo_width": 150,
             "text": "Sound"
           }
         },
@@ -63,7 +63,7 @@
           "settings": {
             "image": "shopify://shop_images/SmartwatchZubehoerIcon.png",
             "url": "shopify://collections/smartwatch-zubehor-1",
-            "logo_width": 155,
+            "logo_width": 150,
             "text": "Smartwatch"
           }
         },
@@ -72,7 +72,7 @@
           "settings": {
             "image": "shopify://shop_images/FreizeitundReisenIcon.png",
             "url": "shopify://collections/sonstiges",
-            "logo_width": 155,
+            "logo_width": 150,
             "text": "Reisen"
           }
         },
@@ -81,7 +81,7 @@
           "settings": {
             "image": "shopify://shop_images/PCZubehoerIcon.png",
             "url": "shopify://collections/pc-zubehor-1",
-            "logo_width": 155,
+            "logo_width": 150,
             "text": "PC-Zubehör"
           }
         }
