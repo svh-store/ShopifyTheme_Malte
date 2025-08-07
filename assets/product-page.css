@@ -135,3 +135,22 @@
 .product-info-card > .product-info__block:last-child {
   margin-bottom: 0;
 }
+
+/* Product tabs */
+.product-info__tab:first-of-type .product-tab-btn {
+  border-top: 1px solid rgba(var(--text-color)/0.15);
+}
+.product-tab-btn {
+  width: 100%;
+  padding: 12px 0;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid rgba(var(--text-color)/0.15);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.product-tab-btn:hover,
+.product-tab-btn:focus {
+  color: rgb(var(--link-color));
+}
