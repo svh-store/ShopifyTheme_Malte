@@ -1,2 +1,0 @@
-require_relative 'service_icons_test'
-require_relative 'frequently_bought_together_test'
