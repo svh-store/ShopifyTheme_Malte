@@ -1,0 +1,45 @@
+{{ 'fbt.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign p1 = all_products[section.settings.product_1]
+  assign p2 = all_products[section.settings.product_2]
+  assign total = 0
+  if p1 and p1.selected_or_first_available_variant
+    assign total = total | plus: p1.selected_or_first_available_variant.price
+  endif
+  if p2 and p2.selected_or_first_available_variant
+    assign total = total | plus: p2.selected_or_first_available_variant.price
+  endif
+-%}
+<div class="fbt-section container">
+  <h2 class="h3">Frequently Bought Together</h2>
+  <div class="fbt-items">
+    {% if p1 %}
+      <div class="fbt-item">{% render 'product-card', product: p1 %}</div>
+    {% endif %}
+    <div class="fbt-sign">+</div>
+    {% if p2 %}
+      <div class="fbt-item">{% render 'product-card', product: p2 %}</div>
+    {% endif %}
+    <div class="fbt-sign">=</div>
+    <div class="fbt-summary">
+      <div class="fbt-total">{{ total | money }}</div>
+      {% if p1 and p2 %}
+      <form method="post" action="/cart/add">
+        <input type="hidden" name="id[]" value="{{ p1.selected_or_first_available_variant.id }}">
+        <input type="hidden" name="id[]" value="{{ p2.selected_or_first_available_variant.id }}">
+        <button type="submit" class="btn btn--primary">Beide in den Warenkorb</button>
+      </form>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Frequently bought together",
+  "settings": [
+    {"type": "product", "id": "product_1", "label": "Product 1"},
+    {"type": "product", "id": "product_2", "label": "Product 2"}
+  ]
+}
+{% endschema %}

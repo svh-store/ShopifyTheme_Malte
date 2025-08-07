@@ -2,6 +2,7 @@
 {%- comment -%}Build: bg-info-bg text-info-text{%- endcomment -%}
 {{ 'product.css' | asset_url | stylesheet_tag }}
 {{ 'product-page.css' | asset_url | stylesheet_tag }}
+{{ 'product-service-icons.css' | asset_url | stylesheet_tag }}
 
 
 
@@ -349,6 +350,7 @@
               {%- if block.settings.show_pickup_availability -%}
                 {% render 'pickup-availability', current_variant: current_variant %}
               {%- endif -%}
+              {% render 'service-icons' %}
             </div>
 
           {%- when 'complementary' -%}
