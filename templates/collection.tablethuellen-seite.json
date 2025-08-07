@@ -15,8 +15,8 @@
         "logo_f6reLt": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/WalletStyleIcon.png",
-            "url": "shopify://collections/wallet-style",
+            "image": "shopify://shop_images/WalletStyleTabletIcon.png",
+            "url": "shopify://collections/tablet-wallet-style",
             "logo_width": 155,
             "text": "Wallet Style"
           }
@@ -24,8 +24,8 @@
         "logo_Ey393e": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/FlipStyleIcon_1a4948de-f336-44b2-9b71-ad80bd7108f2.png",
-            "url": "",
+            "image": "shopify://shop_images/SmartBookCoverIcon.png",
+            "url": "shopify://collections/smart-book-cover",
             "logo_width": 155,
             "text": "Smart Cover"
           }
