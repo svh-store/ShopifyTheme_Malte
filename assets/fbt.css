@@ -1,0 +1,4 @@
+.fbt-section{background:#fff;padding:2rem 0}
+.fbt-items{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap}
+.fbt-sign{font-size:2rem;font-weight:700}
+.fbt-summary{padding:1rem;border:1px solid #eee;border-radius:4px;text-align:center}
