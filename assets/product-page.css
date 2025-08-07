@@ -127,3 +127,25 @@
     padding-top: calc(12 * var(--space-unit));
   }
 }
+
+.product-main .product-info {
+  background-color: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.product-info-card {
+  text-align: left;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.product-info-card > .product-info__block {
+  margin: 0 0 22px;
+}
+
+.product-info-card > .product-info__block:last-child {
+  margin-bottom: 0;
+}
