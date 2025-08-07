@@ -19,6 +19,55 @@
         "prevent_animation": false
       }
     },
+    "logo_list_TVDh9a": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_ryjd9c": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/TransparenteTabletHuellenIcon.png",
+            "url": "shopify://collections/transparente-tablet-hullen",
+            "logo_width": 155,
+            "text": "Transparent"
+          }
+        },
+        "logo_MmNpKR": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/TabletOutdoorHuellenIcon.png",
+            "url": "shopify://collections/tablet-outdoor-hullen",
+            "logo_width": 155,
+            "text": "Outdoor"
+          }
+        },
+        "logo_79dCHp": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/TabletHuellenSchwarzIcon.png",
+            "url": "shopify://collections/tablet-hullen-schwarz",
+            "logo_width": 155,
+            "text": "Schwarz"
+          }
+        }
+      },
+      "block_order": [
+        "logo_ryjd9c",
+        "logo_MmNpKR",
+        "logo_79dCHp"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "spacing": 36,
+        "logo_grid_align": "justify-center",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
     "collection-products": {
       "type": "main-collection-products",
       "disabled": true,
@@ -83,6 +132,7 @@
   },
   "order": [
     "custom_liquid_n3yUBQ",
+    "logo_list_TVDh9a",
     "collection-products",
     "1742389071a541eca3",
     "collection-banner"
