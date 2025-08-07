@@ -133,6 +133,7 @@
         <a class="product-options--anchor" id="product-info" rel="nofollow"></a>
       {%- endif -%}
 
+      <div class="product-info-card">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when '@app' -%}
@@ -681,6 +682,7 @@
             {%- endif -%}
         {%- endcase -%}
       {%- endfor -%}
+      </div>
 
       {%- if section.settings.stick_on_scroll -%}
         </div>
