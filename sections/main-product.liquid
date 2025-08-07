@@ -121,7 +121,7 @@
       {%- endif -%}
     </div>
 
-    <div class="product-info product-info-card{% if section.settings.stick_on_scroll %} product-info--sticky{% endif %}"
+    <div class="product-info{% if section.settings.stick_on_scroll %} product-info--sticky{% endif %}"
          {% if section.settings.stick_on_scroll %}data-sticky-height-elems="#product-media,.cc-main-product + .cc-product-details .container"{% endif %}>
       {%- if section.settings.stick_on_scroll -%}
       <script src="{{ 'sticky-scroll-direction.js' | asset_url }}" defer="defer"></script>
@@ -687,24 +687,9 @@
         </div>
       </sticky-scroll-direction>
       {%- endif -%}
+    </div>
   </div>
 </div>
-</div>
-
-{% render 'frequently-bought-together', product: product %}
-
-<div class="product-accordions">
-  <details class="product-accordion" open>
-    <summary class="product-accordion__summary">Product description</summary>
-    <div class="product-accordion__content">{{ product.description }}</div>
-  </details>
-  <details class="product-accordion">
-    <summary class="product-accordion__summary">Manufacturer</summary>
-    <div class="product-accordion__content">{{ product.vendor }}</div>
-  </details>
-</div>
-
-{% render 'recommendations', heading: 'You may also like', products_to_show: 4 %}
 
 {%- render 'product-popups' -%}
 
