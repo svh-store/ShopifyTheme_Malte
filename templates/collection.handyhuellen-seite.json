@@ -89,7 +89,7 @@
           "type": "logo",
           "settings": {
             "image": "shopify://shop_images/Motiv_Icon_92aca091-fb3c-412e-9f94-8948fd0b10a2.png",
-            "url": "",
+            "url": "shopify://collections/motiv",
             "logo_width": 155,
             "text": "Motiv"
           }
