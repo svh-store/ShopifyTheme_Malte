@@ -543,7 +543,7 @@
       ".cg-usps-row {display: flex; gap: 48px; width: 100%; justify-content: center;}",
       ".cg-usp {display: flex; flex-direction: column; align-items: center; min-width: 100px;}",
       ".cg-usp-icon {width: 75px; height: 75px; margin-bottom: 8px; display: block;}",
-      ".cg-usp-text {font-size: 1rem; color: #181c32; font-weight: 500; text-align: center; margin-top: 0; }"
+      ".cg-usp-text {font-size: 1rem; color: #181c32; font-weight: 500; text-align: center; margin-top: 0;}"
     ]
   }
 }
