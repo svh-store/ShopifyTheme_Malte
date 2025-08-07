@@ -19,34 +19,6 @@
         "prevent_animation": false
       }
     },
-    "collection_list_8WfxEq": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_G7Bzgw": {
-          "type": "collection",
-          "settings": {
-            "collection": "tablet-schutzfolie-101"
-          }
-        }
-      },
-      "block_order": [
-        "collection_G7Bzgw"
-      ],
-      "name": "Collection list",
-      "settings": {
-        "title": "",
-        "heading_align": "text-start",
-        "button_label": "",
-        "button_link": "",
-        "layout": "carousel",
-        "card_size": "small",
-        "use_product_image": false,
-        "circle_image": false,
-        "show_border": false,
-        "color_scheme": "none",
-        "full_width": true
-      }
-    },
     "collection-products": {
       "type": "main-collection-products",
       "disabled": true,
@@ -111,7 +83,6 @@
   },
   "order": [
     "custom_liquid_n3yUBQ",
-    "collection_list_8WfxEq",
     "collection-products",
     "1742389071a541eca3",
     "collection-banner"
