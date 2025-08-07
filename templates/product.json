@@ -154,10 +154,6 @@
         "media_grouping_option": "Color,Colour,Couleur,Farbe"
       }
     },
-    "fbt": {
-      "type": "frequently-bought-together",
-      "settings": {}
-    },
     "details": {
       "type": "product-details",
       "blocks": {
@@ -223,7 +219,6 @@
   },
   "order": [
     "main",
-    "fbt",
     "details",
     "recommendations",
     "1743585275ab058f49"
