@@ -45,6 +45,11 @@
         "logo_9DbXdf",
         "logo_WgeqNe"
       ],
+      "custom_css": [
+        ".logo-list__logo {overflow: hidden;}",
+        ".logo-list__logo img {transition: transform 0.4s ease;}",
+        ".logo-list__logo:hover img {transform: scale(1.1);}"
+      ],
       "name": "Logo list",
       "settings": {
         "title": "",
