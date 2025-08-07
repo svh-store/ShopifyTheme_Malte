@@ -538,9 +538,6 @@
     }
   },
   "platform_customizations": {
-    "custom_css": [
-      ".sidebar-menu a,.mega-menu a,.navigation-sidebar a {font-weight: normal !important;}",
-      ".sidebar-menu .menu-item,.mega-menu .menu-item {font-weight: 400 !important;}"
-    ]
+    "custom_css": []
   }
 }
