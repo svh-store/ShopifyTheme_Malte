@@ -44,7 +44,7 @@
           "type": "logo",
           "settings": {
             "image": "shopify://shop_images/SecurityStyleIcon.png",
-            "url": "",
+            "url": "shopify://collections/security-wallet",
             "logo_width": 155,
             "text": "Security Wallet"
           }
@@ -53,7 +53,7 @@
           "type": "logo",
           "settings": {
             "image": "shopify://shop_images/TransparentIcon.png",
-            "url": "",
+            "url": "shopify://collections/transparente-hullen-1",
             "logo_width": 155,
             "text": "Transparente Hüllen"
           }
@@ -62,7 +62,7 @@
           "type": "logo",
           "settings": {
             "image": "shopify://shop_images/MagSafeIcon.png",
-            "url": "",
+            "url": "shopify://collections/magsafe",
             "logo_width": 155,
             "text": "MagSafe"
           }
