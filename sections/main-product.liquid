@@ -121,7 +121,7 @@
       {%- endif -%}
     </div>
 
-    <div class="product-info card{% if section.settings.stick_on_scroll %} product-info--sticky{% endif %}"
+    <div class="product-info{% if section.settings.stick_on_scroll %} product-info--sticky{% endif %}"
          {% if section.settings.stick_on_scroll %}data-sticky-height-elems="#product-media,.cc-main-product + .cc-product-details .container"{% endif %}>
       {%- if section.settings.stick_on_scroll -%}
       <script src="{{ 'sticky-scroll-direction.js' | asset_url }}" defer="defer"></script>
@@ -682,8 +682,6 @@
             {%- endif -%}
         {%- endcase -%}
       {%- endfor -%}
-
-      {% render 'service-icons' %}
 
       {%- if section.settings.stick_on_scroll -%}
         </div>
