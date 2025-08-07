@@ -19,6 +19,35 @@
         "prevent_animation": false
       }
     },
+    "logo_list_ciNFy9": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_Wz9bRQ": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/TabletschutzfolieIcon.png",
+            "url": "shopify://collections/tablet-schutzfolie-101",
+            "logo_width": 155,
+            "text": "Tablet"
+          }
+        }
+      },
+      "block_order": [
+        "logo_Wz9bRQ"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "spacing": 32,
+        "logo_grid_align": "justify-center",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
     "collection-products": {
       "type": "main-collection-products",
       "disabled": true,
@@ -83,6 +112,7 @@
   },
   "order": [
     "custom_liquid_n3yUBQ",
+    "logo_list_ciNFy9",
     "collection-products",
     "1742389071a541eca3",
     "collection-banner"
