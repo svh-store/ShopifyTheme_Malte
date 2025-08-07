@@ -71,7 +71,7 @@
           "type": "logo",
           "settings": {
             "image": "shopify://shop_images/OutdoorIcon4.png",
-            "url": "",
+            "url": "shopify://collections/outdoor",
             "logo_width": 155,
             "text": "Outdoor"
           }
