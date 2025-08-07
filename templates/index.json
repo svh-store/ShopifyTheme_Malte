@@ -1220,7 +1220,8 @@
       "custom_css": [
         ".os-scrollbar-horizontal {height: 25px !important;}",
         ".slider-nav__btn {border: 1px solid #f19222; background: none !important; color: #f19222 !important; background-image: none !important; box-shadow: none;}",
-        ".slider-nav__btn:hover {background-color: #f19222 !important; color: #fff !important;}"
+        ".slider-nav__btn:hover {background-color: #f19222 !important; color: #fff !important;}",
+        "p {font-size: 12px;}"
       ],
       "settings": {
         "title": "",
@@ -1333,7 +1334,8 @@
       "custom_css": [
         ".os-scrollbar-horizontal {height: 25px !important;}",
         ".slider-nav__btn {border: 1px solid #f19222; background: none !important; color: #f19222 !important; background-image: none !important; box-shadow: none;}",
-        ".slider-nav__btn:hover {background-color: #f19222 !important; color: #fff !important;}"
+        ".slider-nav__btn:hover {background-color: #f19222 !important; color: #fff !important;}",
+        "p {font-size: 12px;}"
       ],
       "settings": {
         "title": "",
@@ -1422,7 +1424,8 @@
       "custom_css": [
         ".os-scrollbar-horizontal {height: 25px !important;}",
         ".slider-nav__btn {border: 1px solid #f19222; background: none !important; color: #f19222 !important; background-image: none !important; box-shadow: none;}",
-        ".slider-nav__btn:hover {background-color: #f19222 !important; color: #fff !important;}"
+        ".slider-nav__btn:hover {background-color: #f19222 !important; color: #fff !important;}",
+        "p {font-size: 12px;}"
       ],
       "settings": {
         "title": "",
