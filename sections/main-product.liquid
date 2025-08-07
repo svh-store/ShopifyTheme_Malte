@@ -631,6 +631,47 @@
               <script src="{{ 'variant-label.js' | asset_url }}" defer="defer"></script>
             {%- endif -%}
 
+          {%- when 'tabs' -%}
+            <div class="product-info__block product-info-tabs" {{ block.shopify_attributes }}>
+              <div class="product-info-tabs__buttons">
+                <button type="button" class="product-info-tabs__button" data-offcanvas-target="description">
+                  {{ 'products.product.description' | t }}
+                </button>
+                {%- if block.settings.tab_1_title != blank -%}
+                  <button type="button" class="product-info-tabs__button" data-offcanvas-target="tab1">
+                    {{ block.settings.tab_1_title }}
+                  </button>
+                {%- endif -%}
+              </div>
+
+              <div class="product-info-tabs__overlay" data-offcanvas-overlay></div>
+
+              <div class="product-offcanvas" id="offcanvas-description" tabindex="-1" aria-hidden="true">
+                <button class="product-offcanvas__close" type="button" data-offcanvas-close>
+                  {% render 'icon-close' %}
+                </button>
+                <h2 class="h5">{{ 'products.product.description' | t }}</h2>
+                <div class="product-offcanvas__content rte">
+                  {{ product.description }}
+                </div>
+              </div>
+
+              {%- if block.settings.tab_1_title != blank -%}
+                <div class="product-offcanvas" id="offcanvas-tab1" tabindex="-1" aria-hidden="true">
+                  <button class="product-offcanvas__close" type="button" data-offcanvas-close>
+                    {% render 'icon-close' %}
+                  </button>
+                  <h2 class="h5">{{ block.settings.tab_1_title }}</h2>
+                  <div class="product-offcanvas__content rte">
+                    {{ block.settings.tab_1_text }}
+                    {{ block.settings.tab_1_page.content }}
+                  </div>
+                </div>
+              {%- endif -%}
+
+              <script src="{{ 'product-tabs.js' | asset_url }}" defer></script>
+            </div>
+
           {% when 'custom-option' %}
             {%- if block.settings.label != blank -%}
               {%- liquid
@@ -2383,6 +2424,30 @@
           "label": "Options",
           "default": "Option 1\nOption 2\nOption 3",
           "info": "One option on each line"
+        }
+      ]
+    }
+    ,
+    {
+      "type": "tabs",
+      "name": "Info tabs",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_1_title",
+          "label": "Tab 1 title",
+          "default": "Herstellerinformationen"
+        },
+        {
+          "type": "richtext",
+          "id": "tab_1_text",
+          "label": "Tab 1 content"
+        },
+        {
+          "type": "page",
+          "id": "tab_1_page",
+          "label": "Tab 1 page"
         }
       ]
     }
