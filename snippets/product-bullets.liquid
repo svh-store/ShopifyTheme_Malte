@@ -1,0 +1,8 @@
+{%- assign bullets = product.metafields.custom.bullet_points | newline_to_br | strip_newlines | split: '<br />' -%}
+{%- if bullets.size > 0 and bullets[0] != '' -%}
+<ul class="product-bullets">
+  {%- for bullet in bullets -%}
+  <li>{{ bullet }}</li>
+  {%- endfor -%}
+</ul>
+{%- endif -%}

@@ -1,0 +1,19 @@
+{% assign recs = recommendations.products | slice: 0,1 %}
+{% if recs.size > 0 %}
+<div class="fbt-wrapper">
+  <div class="fbt-item">
+    {% render 'product-card', product: product %}
+  </div>
+  <span class="fbt-symbol">+</span>
+  <div class="fbt-item">
+    {% render 'product-card', product: recs[0] %}
+  </div>
+  <span class="fbt-symbol">=</span>
+  <div class="fbt-total">
+    {% assign total_price = product.price | plus: recs[0].price %}
+    <div class="fbt-total-price">{{ total_price | money }}</div>
+    <button type="button" class="btn fbt-add" data-products="{{ product.id }},{{ recs[0].id }}">Add all to cart</button>
+  </div>
+</div>
+<script src="{{ 'product-fbt.js' | asset_url }}" defer></script>
+{% endif %}
