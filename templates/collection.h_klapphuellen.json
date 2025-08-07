@@ -35,7 +35,7 @@
           "type": "logo",
           "settings": {
             "image": "shopify://shop_images/FlipStyleIcon_1a4948de-f336-44b2-9b71-ad80bd7108f2.png",
-            "url": "",
+            "url": "shopify://collections/flip-style",
             "logo_width": 155,
             "text": "Flip Style"
           }
