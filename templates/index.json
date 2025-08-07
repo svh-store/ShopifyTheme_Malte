@@ -1067,9 +1067,7 @@
         "div {font-size: 15px;}",
         "p {font-size: 12px;}",
         ".slider-nav__btn {border: 1px solid #f19222; background: none !important; color: #f19222 !important; background-image: none !important; box-shadow: none;}",
-        ".slider-nav__btn:hover {background-color: #f19222 !important; color: #fff !important;}",
-        ".cc-collection-list .card__media.relative {padding-top: 0 !important; width: 20rem; height: 20rem; overflow: hidden;}",
-        ".cc-collection-list .card__media.relative img {width: 100%; height: 100%; object-fit: cover;}"
+        ".slider-nav__btn:hover {background-color: #f19222 !important; color: #fff !important;}"
       ],
       "name": "Collection list",
       "settings": {
@@ -1335,9 +1333,7 @@
       "custom_css": [
         ".os-scrollbar-horizontal {height: 25px !important;}",
         ".slider-nav__btn {border: 1px solid #f19222; background: none !important; color: #f19222 !important; background-image: none !important; box-shadow: none;}",
-        ".slider-nav__btn:hover {background-color: #f19222 !important; color: #fff !important;}",
-        ".cc-collection-list .card__media.relative {padding-top: 0 !important; width: 20rem; height: 20rem; overflow: hidden;}",
-        ".cc-collection-list .card__media.relative img {width: 100%; height: 100%; object-fit: cover;}"
+        ".slider-nav__btn:hover {background-color: #f19222 !important; color: #fff !important;}"
       ],
       "settings": {
         "title": "",
@@ -1426,9 +1422,7 @@
       "custom_css": [
         ".os-scrollbar-horizontal {height: 25px !important;}",
         ".slider-nav__btn {border: 1px solid #f19222; background: none !important; color: #f19222 !important; background-image: none !important; box-shadow: none;}",
-        ".slider-nav__btn:hover {background-color: #f19222 !important; color: #fff !important;}",
-        ".cc-collection-list .card__media.relative {padding-top: 0 !important; width: 20rem; height: 20rem; overflow: hidden;}",
-        ".cc-collection-list .card__media.relative img {width: 100%; height: 100%; object-fit: cover;}"
+        ".slider-nav__btn:hover {background-color: #f19222 !important; color: #fff !important;}"
       ],
       "settings": {
         "title": "",
