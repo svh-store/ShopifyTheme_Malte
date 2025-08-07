@@ -154,17 +154,6 @@
         "media_grouping_option": "Color,Colour,Couleur,Farbe"
       }
     },
-    "custom_liquid_G7GjDU": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<style>\n  .toggle-btn {\n    background-color: #f2f2f2;\n    border: 2px solid #f2f2f2;\n    font-weight: bold;\n    padding: 10px 20px;\n    cursor: pointer;\n    border-radius: 5px;\n    margin-bottom: 10px;\n    transition: all 0.3s ease;\n    width: 100%;\n    text-align: left;\n    color: black;\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    position: relative;\n  }\n\n  .toggle-btn:hover {\n    background-color: #e0e0e0;\n    box-shadow: 0 2px 8px rgba(0,0,0,0.1);\n    transform: translateY(-1px);\n  }\n\n  .toggle-btn .arrow {\n    transition: transform 0.3s ease;\n    font-size: 14px;\n    margin-right: 5px;\n  }\n\n  .toggle-btn.active .arrow {\n    transform: rotate(180deg);\n  }\n\n  .toggle-content {\n    overflow: hidden;\n    max-height: 0;\n    transition: max-height 0.4s ease, padding 0.4s ease;\n    background-color: #f2f2f2;\n    border-radius: 5px;\n    margin-bottom: 20px;\n    padding: 0 15px;\n  }\n\n  .toggle-content.open {\n    padding: 15px;\n  }\n\n  .product-description-toggle,\n  .product-vendor-toggle {\n    margin-bottom: 20px;\n  }\n\n  .product-description-toggle {\n    margin-top: 30px;\n  }\n</style>\n\n<div class=\"product-description-toggle\">\n  <button class=\"toggle-btn\" onclick=\"toggleDetails('desc', this)\">\n    <span class=\"arrow\">⯆</span> Produktbeschreibung anzeigen\n  </button>\n  <div id=\"desc\" class=\"toggle-content\">\n    {{ product.description }}\n  </div>\n</div>\n\n{% if product.metafields.custom.herstellerinformationen or product.metafields.custom.importeur or product.metafields.custom.eu_verantwortliche_person %}\n  <div class=\"product-vendor-toggle\">\n    <button class=\"toggle-btn\" onclick=\"toggleDetails('vendor', this)\">\n      <span class=\"arrow\">⯆</span> Herstellerinformationen\n    </button>\n    <div id=\"vendor\" class=\"toggle-content\">\n      {% if product.metafields.custom.herstellerinformationen %}\n        <p><strong>Herstellerinformationen:</strong> {{ product.metafields.custom.herstellerinformationen | metafield_tag }}</p>\n      {% endif %}\n      {% if product.metafields.custom.importeur %}\n        <p><strong>Importeur:</strong> {{ product.metafields.custom.importeur | metafield_tag }}</p>\n      {% endif %}\n      {% if product.metafields.custom.eu_verantwortliche_person %}\n        <p><strong>EU-Verantwortliche Person:</strong> {{ product.metafields.custom.eu_verantwortliche_person | metafield_tag }}</p>\n      {% endif %}\n    </div>\n  </div>\n{% endif %}\n\n<script>\n  function toggleDetails(id, btn) {\n    const content = document.getElementById(id);\n    const isOpen = content.classList.contains(\"open\");\n\n    if (isOpen) {\n      // Schließen\n      content.style.maxHeight = 0;\n      content.classList.remove(\"open\");\n      btn.classList.remove(\"active\");\n    } else {\n      // Öffnen mit dynamischer Höhe\n      content.classList.add(\"open\");\n      const scrollHeight = content.scrollHeight;\n      content.style.maxHeight = scrollHeight + \"px\";\n      btn.classList.add(\"active\");\n    }\n  }\n\n  // Sicherheitsmaßnahme: Setzt maxHeight auf auto bei Fenstergröße-Änderung\n  window.addEventListener('resize', () => {\n    document.querySelectorAll('.toggle-content.open').forEach(content => {\n      content.style.maxHeight = content.scrollHeight + \"px\";\n    });\n  });\n</script>",
-        "section_height": "default",
-        "full_width": false,
-        "dividers": "none",
-        "prevent_animation": false
-      }
-    },
     "details": {
       "type": "product-details",
       "blocks": {
@@ -232,7 +221,6 @@
   },
   "order": [
     "main",
-    "custom_liquid_G7GjDU",
     "details",
     "recommendations",
     "1743585275ab058f49"
