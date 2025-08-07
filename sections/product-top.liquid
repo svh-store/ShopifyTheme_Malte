@@ -1,0 +1,92 @@
+{{ 'product-top.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'product-top.js' | asset_url }}" defer="defer"></script>
+
+<div class="product-top">
+  <div class="product-top__gallery">
+    <div class="product-top__main-image">
+      {% if product.images.size > 0 %}
+        {% assign first_image = product.images.first %}
+        <img id="productTopMain" src="{{ first_image | image_url: width: 500, height: 500, crop: 'center' }}" alt="{{ first_image.alt | escape }}" width="500" height="500">
+        <button class="product-top__arrow product-top__arrow--prev" type="button" aria-label="Vorheriges Bild">{% render 'icon-chevron-left' %}</button>
+        <button class="product-top__arrow product-top__arrow--next" type="button" aria-label="Nächstes Bild">{% render 'icon-chevron-right' %}</button>
+      {% else %}
+        {{ 'image' | placeholder_svg_tag }}
+      {% endif %}
+    </div>
+    {% if product.images.size > 1 %}
+      <div class="product-top__thumbs">
+        {% for image in product.images %}
+          <img class="product-top__thumb{% if forloop.first %} is-active{% endif %}" src="{{ image | image_url: width: 60, height: 60, crop: 'center' }}" data-full="{{ image | image_url: width: 500, height: 500, crop: 'center' }}" data-index="{{ forloop.index0 }}" alt="{{ image.alt | escape }}" width="60" height="60">
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="product-info-card">
+    <h1 class="product-info-card__title">{{ product.title }}</h1>
+    <div class="product-info-card__rating">
+      {% if product.metafields.reviews.rating.value %}
+        {% render 'rating', rating_value: product.metafields.reviews.rating.value, rating_count: product.metafields.reviews.rating_count %}
+      {% else %}
+        {% for i in (1..5) %}
+          <span class="product-info-card__star">{% render 'icon', icon: 'star' %}</span>
+        {% endfor %}
+      {% endif %}
+      <span class="product-info-card__rating-text">{{ product.metafields.reviews.rating.value | default: '5.0' }}</span>
+    </div>
+
+    {% assign features = product.metafields.custom.features | default: '' | split: '\n' %}
+    {% if features != blank %}
+      <ul class="product-info-card__features">
+        {% for feature in features limit:5 %}
+          <li class="product-info-card__feature"><span class="product-info-card__feature-icon">{% render 'icon', icon: 'check_mark' %}</span>{{ feature | strip }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <div class="product-info-card__price">{{ product.price | money }}</div>
+    <div class="product-info-card__availability{% unless product.available %} is-unavailable{% endunless %}">
+      {% if product.available %}
+        Verfügbar – Lieferung in 5–7 Werktagen
+      {% else %}
+        Nicht verfügbar
+      {% endif %}
+    </div>
+
+    {% if product.variants.size > 1 %}
+    <form id="productTopForm" class="product-info-card__form" method="post" action="/cart/add">
+      <div class="product-info-card__variants">
+        {% for variant in product.variants %}
+          {% if variant.available %}
+          <label class="product-info-card__variant">
+            <input type="radio" name="id" value="{{ variant.id }}" {% if forloop.first %}checked{% endif %} data-index="{{ forloop.index0 }}">
+            {% if variant.featured_image %}
+              <img src="{{ variant.featured_image | image_url: width: 40, height: 40, crop: 'center' }}" alt="{{ variant.title | escape }}" width="40" height="40">
+            {% endif %}
+          </label>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <button type="submit" class="product-info-card__atc">In den Warenkorb</button>
+    </form>
+    {% else %}
+    <form id="productTopForm" class="product-info-card__form" method="post" action="/cart/add">
+      <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+      <button type="submit" class="product-info-card__atc">In den Warenkorb</button>
+    </form>
+    {% endif %}
+
+    <div class="product-info-card__services">
+      <div class="product-info-card__service"><span class="product-info-card__service-icon">{% render 'icon', icon: 'truck' %}</span>Schneller Versand</div>
+      <div class="product-info-card__service"><span class="product-info-card__service-icon">{% render 'icon', icon: 'return' %}</span>30 Tage Rückgabe</div>
+      <div class="product-info-card__service"><span class="product-info-card__service-icon">{% render 'icon', icon: 'lock' %}</span>Sichere Zahlung</div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product top",
+  "settings": []
+}
+{% endschema %}
