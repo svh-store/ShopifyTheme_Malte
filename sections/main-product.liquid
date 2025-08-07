@@ -127,6 +127,9 @@
       <script src="{{ 'sticky-scroll-direction.js' | asset_url }}" defer="defer"></script>
       <sticky-scroll-direction data-min-sticky-size="md">
         <div class="product-info__sticky">
+          <div class="product-info-card">
+      {%- else -%}
+        <div class="product-info-card">
       {%- endif -%}
 
       {%- assign has_variant_picker = false -%}
@@ -684,10 +687,25 @@
       {%- endfor -%}
 
       {%- if section.settings.stick_on_scroll -%}
+          {% render 'product-bullets', product: product %}
+          {% render 'variant-thumbnails', product: product, product_form_id: product_form_id %}
+          {% render 'service-icons' %}
+        </div>
         </div>
       </sticky-scroll-direction>
+      {%- else -%}
+          {% render 'product-bullets', product: product %}
+          {% render 'variant-thumbnails', product: product, product_form_id: product_form_id %}
+          {% render 'service-icons' %}
+        </div>
       {%- endif -%}
     </div>
+  </div>
+  <div class="product-fbt-section">
+    {% render 'product-fbt', product: product %}
+  </div>
+  <div class="product-accordion-section">
+    {% render 'product-accordion', product: product %}
   </div>
 </div>
 
