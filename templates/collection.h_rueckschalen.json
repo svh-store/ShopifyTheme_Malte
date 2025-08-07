@@ -19,6 +19,95 @@
         "prevent_animation": false
       }
     },
+    "logo_list_U9Pe7A": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_3qy8Kw": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/TransparentIcon.png",
+            "url": "shopify://collections/transparente-hullen-1",
+            "logo_width": 155,
+            "text": "Transparente Hüllen"
+          }
+        },
+        "logo_j8F7K7": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/MagSafeIcon.png",
+            "url": "shopify://collections/magsafe",
+            "logo_width": 155,
+            "text": "MagSafe"
+          }
+        },
+        "logo_mpfL9t": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/OutdoorIcon4.png",
+            "url": "shopify://collections/outdoor",
+            "logo_width": 155,
+            "text": "Outdoor"
+          }
+        },
+        "logo_krgx6i": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/FarbigIcon_5aad22d5-f128-4482-99d4-03cbafdca67c.png",
+            "url": "shopify://collections/farbige-hullen-1",
+            "logo_width": 155,
+            "text": "Farbige Hüllen"
+          }
+        },
+        "logo_8kgC3X": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Motiv_Icon_92aca091-fb3c-412e-9f94-8948fd0b10a2.png",
+            "url": "shopify://collections/motiv",
+            "logo_width": 155,
+            "text": "Motiv"
+          }
+        },
+        "logo_zpb94m": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/zumUmhaengenIcon_699f0a9b-6643-4ee8-80a8-15947dac7f2d.png",
+            "url": "shopify://collections/zum-umhangen",
+            "logo_width": 155,
+            "text": "Zum Umhängen"
+          }
+        },
+        "logo_npDK4i": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/360Icon.png",
+            "url": "shopify://collections/360-grad",
+            "logo_width": 155,
+            "text": "360 Grad"
+          }
+        }
+      },
+      "block_order": [
+        "logo_3qy8Kw",
+        "logo_j8F7K7",
+        "logo_mpfL9t",
+        "logo_krgx6i",
+        "logo_8kgC3X",
+        "logo_zpb94m",
+        "logo_npDK4i"
+      ],
+      "name": "Logo list",
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "spacing": 32,
+        "logo_grid_align": "justify-center",
+        "color_scheme": "none",
+        "full_width": true
+      }
+    },
     "collection-products": {
       "type": "main-collection-products",
       "disabled": true,
@@ -83,6 +172,7 @@
   },
   "order": [
     "custom_liquid_n3yUBQ",
+    "logo_list_U9Pe7A",
     "collection-products",
     "1742389071a541eca3",
     "collection-banner"
