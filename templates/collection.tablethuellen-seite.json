@@ -33,8 +33,8 @@
         "logo_BCJ6nY": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/SecurityStyleIcon.png",
-            "url": "",
+            "image": "shopify://shop_images/TransparenteTabletHuellenIcon.png",
+            "url": "shopify://collections/transparente-tablet-hullen",
             "logo_width": 155,
             "text": "Transparent"
           }
@@ -42,8 +42,8 @@
         "logo_9VeUWH": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/TransparentIcon.png",
-            "url": "",
+            "image": "shopify://shop_images/TabletOutdoorHuellenIcon.png",
+            "url": "shopify://collections/tablet-outdoor-hullen",
             "logo_width": 155,
             "text": "Outdoor"
           }
@@ -51,8 +51,8 @@
         "logo_LEHbpV": {
           "type": "logo",
           "settings": {
-            "image": "shopify://shop_images/MagSafeIcon.png",
-            "url": "",
+            "image": "shopify://shop_images/TabletHuellenSchwarzIcon.png",
+            "url": "shopify://collections/tablet-hullen-schwarz",
             "logo_width": 155,
             "text": "Schwarz"
           }
