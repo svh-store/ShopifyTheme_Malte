@@ -1,0 +1,80 @@
+/* Nur auf der Suchseite anwenden */
+body.template-search,
+.search-page {
+  --sp-max: 1200px;
+  --sp-pad: 16px;
+  background: #f6f7f9; /* leicht grau */
+}
+
+/* Header-/Leistenbereich über der Liste */
+body.template-search .search-header,
+.search-page .search-header {
+  position: sticky;
+  top: 0; /* falls Header sticky ist, ggf. + Headerhöhe */
+  z-index: 5;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+/* Suchbox groß & zentriert */
+body.template-search .search-header .search-form,
+.search-page .search-header .search-form {
+  max-width: min(720px, 92vw);
+  margin: 16px auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+body.template-search .search-header input[type="search"],
+.search-page .search-header input[type="search"] {
+  flex: 1 1 auto;
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+}
+
+/* Seitenbreite & Abstände der Treffer/Filter */
+body.template-search main .page-width,
+.search-page .page-width {
+  max-width: var(--sp-max);
+  padding: 12px var(--sp-pad) 40px;
+  margin-inline: auto;
+}
+
+/* Grid der Produkte luftiger */
+body.template-search .grid,
+.search-page .grid {
+  gap: 18px;
+}
+
+/* Filterspalte optisch aufhellen (falls vorhanden) */
+body.template-search .facets,
+.search-page .facets {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+/* Karten dezent schweben lassen */
+body.template-search .card,
+.search-page .card {
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 16px rgba(0,0,0,.05);
+}
+
+/* Mobile Feinschliff */
+@media (max-width: 767px){
+  body.template-search .search-header .search-form{
+    margin: 8px auto;
+  }
+}
