@@ -1,0 +1,48 @@
+.product-info__tabs {
+  margin-top: 1rem;
+}
+.product-info__tab-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.product-info__tab-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+}
+.product-info__tab-button + li .product-info__tab-button {
+  border-top: none;
+}
+.product-info__offcanvas[hidden] {
+  display: none;
+}
+.product-info__offcanvas {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+}
+.product-info__offcanvas-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+.product-info__offcanvas-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90%;
+  max-width: 400px;
+  height: 100%;
+  background: #fff;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+.product-info__offcanvas-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
