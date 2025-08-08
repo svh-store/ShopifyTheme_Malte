@@ -299,6 +299,8 @@
     {{- settings.custom_html_head -}}
     <!-- CC Custom Head End -->
   {%- endif -%}
+
+  
 </head>
 
 <body{% if settings.animations_enabled != "disabled" %} class="cc-animate-enabled"{% endif %}>
@@ -472,6 +474,10 @@
     <input type="search" placeholder="Suche nach Produkten…" id="SearchInput">
   </div>
 </div>
+
+{{ 'custom-search.css' | asset_url | stylesheet_tag }}
+{{ 'custom-search.js' | asset_url | script_tag }}
+
 
 </body>
 </html>
