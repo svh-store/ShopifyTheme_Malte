@@ -1,20 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const trigger = document.querySelector('.header .js-show-search, .header a.header__icon[href*="/search"]');
-  const ps = document.querySelector('predictive-search') || document.querySelector('.header predictive-search');
+document.addEventListener("DOMContentLoaded", function() {
+  const searchIcon = document.querySelector(".header__right .search-icon");
+  const searchOverlay = document.querySelector(".search-overlay");
+  const searchInput = document.querySelector(".search-overlay input");
+  const overlayBg = document.querySelector(".search-overlay");
 
-  if (!trigger || !ps) return;
+  if (searchIcon && searchOverlay) {
+    searchIcon.addEventListener("click", function(e) {
+      e.preventDefault();
+      searchOverlay.classList.add("active");
+      setTimeout(() => searchInput.focus(), 100);
+    });
+  }
 
-  trigger.addEventListener('click', (e) => {
-    e.preventDefault();
-    ps.setAttribute('open', '');
-    const input = ps.querySelector('.js-search-input');
-    if (input) input.focus();
+  // Klick außerhalb schließt Overlay
+  overlayBg.addEventListener("click", function(e) {
+    if (e.target === overlayBg) {
+      searchOverlay.classList.remove("active");
+    }
   });
 
-  // Overlay-Klick oder ESC schließt
-  const overlay = ps.querySelector('.overlay');
-  if (overlay) overlay.addEventListener('click', () => ps.removeAttribute('open'));
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') ps.removeAttribute('open');
+  // ESC-Taste schließt Overlay
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") {
+      searchOverlay.classList.remove("active");
+    }
   });
 });
