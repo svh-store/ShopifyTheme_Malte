@@ -30,23 +30,47 @@
   document.addEventListener('shopify:section:select', run);
 })();
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', initSearchOverlay);
+document.addEventListener('shopify:section:load', initSearchOverlay);
+
+function initSearchOverlay(){
   const header = document.querySelector('store-header.header');
-  if (!header) return;
-  const ps = header.querySelector('predictive-search') || document.querySelector('predictive-search');
-  if (!ps) return;
+  if(!header) return;
+
+  const ps      = header.querySelector('predictive-search') || document.querySelector('predictive-search');
+  if(!ps) return;
 
   const trigger = header.querySelector('.js-show-search, .header__icons a[href*="/search"], .header__icons button');
-  const input = ps.querySelector('.js-search-input');
+  const input   = ps.querySelector('.js-search-input');
   const overlay = ps.querySelector('.overlay');
+  const form    = ps.querySelector('.search__form');
+  const results = ps.querySelector('.js-search-results');
 
+  // Öffnen
   if (trigger) {
     trigger.addEventListener('click', (e) => {
       e.preventDefault();
-      ps.setAttribute('open', '');
+      e.stopPropagation();             // WICHTIG: sonst schließt der globale Click sofort wieder
+      ps.setAttribute('open','');
       if (input) setTimeout(() => input.focus(), 20);
     });
   }
+
+  // Overlay-Klick schließt
   if (overlay) overlay.addEventListener('click', () => ps.removeAttribute('open'));
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') ps.removeAttribute('open'); });
-});
+
+  // Klick irgendwo außerhalb von Formular/Ergebnissen schließt
+  document.addEventListener('click', (e) => {
+    if (!ps.hasAttribute('open')) return;
+    const insideForm    = form && form.contains(e.target);
+    const insideResults = results && results.contains(e.target);
+    const insideTrigger = trigger && trigger.contains(e.target);
+    if (insideForm || insideResults || insideTrigger) return;
+    ps.removeAttribute('open');
+  });
+
+  // ESC schließt
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') ps.removeAttribute('open');
+  });
+}
