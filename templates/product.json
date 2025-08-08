@@ -68,34 +68,6 @@
             "show_gift_card_recipient": false
           }
         },
-        "tab_description": {
-          "type": "text",
-          "settings": {
-            "tab_heading": "Beschreibung",
-            "tab_content": "<p>Produktbeschreibung</p>"
-          }
-        },
-        "tab_manufacturer": {
-          "type": "text",
-          "settings": {
-            "tab_heading": "Herstellerinformationen",
-            "tab_content": "<p>Informationen zum Hersteller</p>"
-          }
-        },
-        "tab_material": {
-          "type": "text",
-          "settings": {
-            "tab_heading": "Material",
-            "tab_content": "<p>Materialangaben</p>"
-          }
-        },
-        "tab_faq": {
-          "type": "text",
-          "settings": {
-            "tab_heading": "FAQ",
-            "tab_content": "<p>Häufig gestellte Fragen</p>"
-          }
-        },
         "custom_liquid_kKPgLF": {
           "type": "custom-liquid",
           "settings": {
@@ -126,10 +98,6 @@
         "price",
         "variant-picker",
         "buy-buttons",
-        "tab_description",
-        "tab_manufacturer",
-        "tab_material",
-        "tab_faq",
         "custom_liquid_kKPgLF",
         "product-labels",
         "complementary_rx84bf"
