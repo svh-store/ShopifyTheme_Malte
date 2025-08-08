@@ -1,34 +1,65 @@
-/* Eine Zeile, alles vertikal mittig, kein Wrap */
-.header .header__grid.container{
-  display:flex !important;
-  align-items:center !important;
-  justify-content:space-between !important;
-  gap:16px;
-  flex-wrap:nowrap !important;
-  min-height:64px;
+:root{
+  --cg-header-h: 64px;          /* Header-Zeilenhöhe nach Wunsch */
+  --cg-header-edge: 16px;        /* Abstand zu den Seitenrändern */
+  --cg-pad-left:  140px;         /* Fallback – wird per JS überschrieben */
+  --cg-pad-right: 160px;         /* Fallback – wird per JS überschrieben */
 }
 
-/* Alle Bereiche gleich hoch & mittig */
-.header .header__logo,
-.header .main-menu__content,
-.header .header__search,
-.header .header__icons{
-  display:flex !important;
-  align-items:center !important;
-  min-height:64px;
+/* Der Hauptcontainer des Headers – NICHT ersetzen, nur ergänzen */
+store-header.header .header__grid.container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;              /* Menü zentriert unabhängig von Logo/Icons */
+  min-height: var(--cg-header-h);
+  padding-left:  var(--cg-pad-left);    /* Platz für Logo-Cluster */
+  padding-right: var(--cg-pad-right);   /* Platz für Icon-Cluster */
+  gap: 0 !important;                    /* kein Grid-Wrap mehr */
 }
 
-/* Menü mittig ausrichten */
-.header .main-menu__content{ flex:1 1 auto; justify-content:center; }
-
-/* Icons rechts schön in einer Linie */
-.header .header__icons{
-  flex:0 0 auto;
-  display:flex; gap:12px; align-items:center;
+/* Logo-Cluster fix links */
+store-header.header .header__logo{
+  position: absolute;
+  left: var(--cg-header-edge);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex; align-items: center;
 }
-.header .header__icons a,
-.header .header__icons button{ display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:9999px; }
-.header .header__icons svg{ width:22px; height:22px; }
 
-/* Logo konsistent */
-.header .header__logo img{ height:28px; width:auto; display:block; }
+/* Icons-Cluster fix rechts */
+store-header.header .header__icons{
+  position: absolute;
+  right: var(--cg-header-edge);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex; align-items: center; gap: 12px;
+}
+
+/* Konsistente Hitboxen & Optik */
+store-header.header .header__icons a,
+store-header.header .header__icons button{
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: 9999px; line-height: 0;
+}
+store-header.header .header__icons svg{ width: 22px; height: 22px; }
+
+/* Logo-Höhe anpassen (optional) */
+store-header.header .header__logo img{
+  height: 28px; width: auto; display: block;
+}
+
+/* Menü-Wrapper immer mittig & auf Zeilenhöhe ausrichten */
+store-header.header .main-menu__content{
+  display: flex; align-items: center; height: var(--cg-header-h);
+}
+
+/* Mobile: bei sehr schmalen Screens Icons nicht aus dem Viewport schieben */
+@media (max-width: 768px){
+  :root{
+    --cg-header-h: 56px;
+  }
+  store-header.header .header__grid.container{
+    padding-left:  calc(var(--cg-header-edge) + 100px); /* grobe Logobreite */
+    padding-right: calc(var(--cg-header-edge) + 120px); /* grobe Iconbreite */
+  }
+}
