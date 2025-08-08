@@ -461,7 +461,9 @@
     <script src="{{ 'instant-page.js' | asset_url }}" type="module" defer="defer"></script>
   {%- endif -%}
 
-  {{ 'custom-header.css' | asset_url | stylesheet_tag }}
+
+  
+{{ 'custom-header.css' | asset_url | stylesheet_tag }}
 
 </body>
 </html>
