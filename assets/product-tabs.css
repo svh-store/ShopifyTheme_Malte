@@ -1,0 +1,48 @@
+.product-tab-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 0;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.product-tab-button:not(:last-child) {
+  margin-bottom: 0.25rem;
+}
+
+.product-tab-offcanvas {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 50;
+}
+
+.product-tab-offcanvas[hidden] {
+  display: none;
+}
+
+.product-tab-offcanvas__overlay {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.product-tab-offcanvas__drawer {
+  position: relative;
+  width: 80%;
+  max-width: 400px;
+  background: #fff;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+.product-tab-offcanvas__close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+}

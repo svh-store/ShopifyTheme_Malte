@@ -3,6 +3,9 @@
 {{ 'product.css' | asset_url | stylesheet_tag }}
 {{ 'product-page.css' | asset_url | stylesheet_tag }}
 
+{{ 'product-tabs.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'product-tabs.js' | asset_url }}" defer="defer"></script>
+
 
 {%- assign messages = section.blocks | where: "type", "message" -%}
 {%- if messages -%}
@@ -349,6 +352,21 @@
               {%- if block.settings.show_pickup_availability -%}
                 {% render 'pickup-availability', current_variant: current_variant %}
               {%- endif -%}
+            </div>
+
+          {%- when 'text' -%}
+            <div class="product-info__block" {{ block.shopify_attributes }}>
+              <button type="button" class="product-tab-button" data-tab-target="tab-{{ block.id }}">
+                {{ block.settings.tab_heading }}
+              </button>
+              <div id="tab-{{ block.id }}" class="product-tab-offcanvas" hidden>
+                <div class="product-tab-offcanvas__overlay" data-tab-close></div>
+                <div class="product-tab-offcanvas__drawer">
+                  <button type="button" class="product-tab-offcanvas__close" data-tab-close aria-label="{{ 'general.close' | t }}">&times;</button>
+                  <h2 class="product-tab-offcanvas__title">{{ block.settings.tab_heading }}</h2>
+                  <div class="product-tab-offcanvas__content rte">{{ block.settings.tab_content }}</div>
+                </div>
+              </div>
             </div>
 
           {%- when 'complementary' -%}
@@ -1183,6 +1201,23 @@
           "default": false,
           "label": "Show recipient information form for gift cards",
           "info": "Allow customers to send gift cards to a recipient along with a personal message. When enabled, the dynamic checkout button will be disabled for gift cards. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Tab",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "tab_content",
+          "label": "Content"
         }
       ]
     },
