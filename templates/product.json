@@ -145,6 +145,17 @@
         "products_to_show": 8
       }
     },
+    "custom_liquid_Jbkb6k": {
+      "type": "custom-liquid",
+      "name": "Custom HTML/Liquid",
+      "settings": {
+        "custom_liquid": "Add HTML or Liquid code to create advanced customizations.",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
     "1743585275ab058f49": {
       "type": "apps",
       "blocks": {
@@ -166,6 +177,7 @@
   "order": [
     "main",
     "recommendations",
+    "custom_liquid_Jbkb6k",
     "1743585275ab058f49"
   ]
 }
