@@ -70,7 +70,20 @@
       endif
     endfor
   endif
+
+  assign tab_block_ids = ''
+  for b in section.blocks
+    if b.type == 'description' or b.settings.tab_heading != blank
+      assign tab_block_ids = tab_block_ids | append: b.id | append: ','
+    endif
+  endfor
+  assign tab_block_ids = tab_block_ids | split: ',' | reject: ''
 -%}
+
+{%- if tab_block_ids.size > 0 -%}
+  {{ 'product-tabs.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'product-tabs.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
 
 {%- style -%}
   {%- if section.settings.media_layout == 'stacked' -%}
@@ -490,7 +503,9 @@
             </div>
 
           {%- when 'richtext' -%}
-            {%- if block.settings.text != blank -%}
+            {%- if block.settings.tab_heading != blank -%}
+              <div {{ block.shopify_attributes }} hidden></div>
+            {%- elsif block.settings.text != blank -%}
               <div class="product-info__block rte" {{ block.shopify_attributes }}>
                 {{ block.settings.text }}
               </div>
@@ -574,38 +589,7 @@
             {%- endif -%}
 
           {%- when 'description' -%}
-            {%- if block.settings.show_as_collapsible_content -%}
-              <details-disclosure {{ block.shopify_attributes }}>
-                <details class="disclosure disclosure--row"{% if block.settings.open %} open{% endif %}>
-                  <summary>
-                    <div class="flex justify-between items-center">
-                      <h2 class="disclosure__title product-info__disclosure font-body font-bold text-body flex flex-auto items-center mb-0">
-                        {%- if block.settings.icon != 'none' -%}
-                          {% render 'icon', icon: block.settings.icon, width: 22, height: 22 %}
-                        {%- endif -%}
-                        {{ 'products.product.description' | t }}
-                      </h2>
-                      <span class="disclosure__toggle">
-                          {%- if settings.disclosure_toggle == 'plus' -%}
-                            {% render 'icon-plus' %}
-                          {%- else -%}
-                            {% render 'icon-chevron-down' %}
-                          {%- endif -%}
-                        </span>
-                    </div>
-                  </summary>
-                  <div class="disclosure__panel has-motion">
-                    <div class="disclosure__content rte">
-                      {{ product.description }}
-                    </div>
-                  </div>
-                </details>
-              </details-disclosure>
-            {%- else -%}
-              <div class="product-info__block product-info__block--sm rte product-description" {{ block.shopify_attributes }}>
-                {{ product.description }}
-              </div>
-            {%- endif -%}
+            <div {{ block.shopify_attributes }} hidden></div>
 
           {%- when 'product-labels' -%}
             {%- capture variant_labels -%}
@@ -680,8 +664,52 @@
                 </div>
               </div>
             {%- endif -%}
-        {%- endcase -%}
-      {%- endfor -%}
+      {%- endcase -%}
+    {%- endfor -%}
+      {%- if tab_block_ids.size > 0 -%}
+        <div class="product-info__tabs">
+          <ul class="product-info__tab-list">
+            {%- for id in tab_block_ids -%}
+              {%- assign tab_block = section.blocks | where: 'id', id | first -%}
+              <li>
+                <button type="button" class="product-info__tab-button" data-offcanvas-target="offcanvas-{{ tab_block.id }}">
+                  {%- if tab_block.type == 'description' -%}
+                    {{ 'products.product.description' | t }}
+                  {%- else -%}
+                    {{ tab_block.settings.tab_heading }}
+                  {%- endif -%}
+                </button>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </div>
+
+        {%- for id in tab_block_ids -%}
+          {%- assign tab_block = section.blocks | where: 'id', id | first -%}
+          <div id="offcanvas-{{ tab_block.id }}" class="product-info__offcanvas" hidden>
+            <div class="product-info__offcanvas-overlay"></div>
+            <div class="product-info__offcanvas-panel">
+              <button type="button" class="product-info__offcanvas-close tap-target">
+                <span class="visually-hidden">{{ 'accessibility.close' | t }}</span>
+                {% render 'icon-close' %}
+              </button>
+              <div class="product-info__offcanvas-body rte">
+                {%- case tab_block.type -%}
+                  {%- when 'description' -%}
+                    {{ product.description }}
+                  {%- when 'richtext' -%}
+                    {{ tab_block.settings.text }}
+                  {%- when 'custom-liquid' -%}
+                    {{ tab_block.settings.custom_liquid }}
+                  {%- when 'html' -%}
+                    {{ tab_block.settings.html }}
+                {%- endcase -%}
+              </div>
+            </div>
+          </div>
+        {%- endfor -%}
+      {%- endif -%}
+
       </div>
 
       {%- if section.settings.stick_on_scroll -%}
@@ -1744,6 +1772,12 @@
       "type": "richtext",
       "name": "Rich text",
       "settings": [
+        {
+          "type": "text",
+          "id": "tab_heading",
+          "label": "Tab heading",
+          "info": "Leave empty to output content directly."
+        },
         {
           "type": "richtext",
           "id": "text",
