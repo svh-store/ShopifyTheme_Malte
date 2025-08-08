@@ -1,0 +1,94 @@
+/* ---------- HEADER IN EINER LINIE ---------- */
+.header__grid.container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Logo links */
+.header .header__logo {
+  flex: 0 0 auto;
+}
+
+/* Hauptmenü mittig (Main menu Komponente) */
+.header .main-menu__content {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* Icons rechts */
+.header .header__icons {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: auto; /* schiebt Icons ganz rechts hin */
+}
+
+/* Wenn Suchleiste minimiert ist, soll sie keinen Platz wegnehmen */
+.header .header__search.header__search--collapsible-desktop {
+  flex: 0 0 auto;
+}
+
+/* ---------- SUCH-OVERLAY / MODAL-LOOK (wie Horizon) ---------- */
+/* predictive-search bringt ein <div class="overlay"> schon mit.
+   Wir stylen es wie ein dimmendes Modal. */
+.header predictive-search .overlay,
+predictive-search .overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  display: none;
+  z-index: 2147482000;
+}
+
+/* Wenn predictive-search geöffnet ist, Overlay zeigen */
+predictive-search[open] .overlay {
+  display: block;
+}
+
+/* Die Form sitzt standardmäßig oben – wir zentrieren & stylen sie */
+.header predictive-search .search__form,
+predictive-search .search__form {
+  position: fixed;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(720px, 92vw);
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.2);
+  z-index: 2147482002; /* über Overlay */
+}
+
+/* Suchinput etwas „Card-iger“ */
+predictive-search .search__input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+/* Ergebnisse-Panel passend zentriert halten */
+predictive-search .js-search-results {
+  position: fixed;
+  top: calc(10vh + 74px); /* Box + Input-Höhe grob */
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(720px, 92vw);
+  max-height: 60vh;
+  overflow: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.2);
+  z-index: 2147482001;
+}
+
+/* Mobile Feinheiten */
+@media (max-width: 767px) {
+  .header .main-menu__content { display: none; } /* falls du mobile Burger nutzt */
+  predictive-search .search__form { top: 6vh; }
+  predictive-search .js-search-results { top: calc(6vh + 68px); }
+}
