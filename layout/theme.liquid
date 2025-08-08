@@ -258,13 +258,7 @@
   <link rel="stylesheet" href="{{ 'main.css' | asset_url }}">
   <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
 
-  {%- unless settings.body_font.system? -%}
-    <link rel="preload" href="{{ settings.body_font | font_url }}" as="font" type="font/woff2" crossorigin fetchpriority="high">
-  {%- endunless -%}
 
-  {%- unless settings.heading_font.system? -%}
-    <link rel="preload" href="{{ settings.heading_font | font_url }}" as="font" type="font/woff2" crossorigin fetchpriority="high">
-  {%- endunless -%}
 
   {%- if request.page_type contains 'customers' -%}
     <link rel="stylesheet" href="{{ 'customer.css' | asset_url }}">
