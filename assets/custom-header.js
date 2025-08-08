@@ -1,41 +1,28 @@
-document.addEventListener('DOMContentLoaded', initHeaderSearch);
-document.addEventListener('shopify:section:load', initHeaderSearch);
+(function fixHeaderOrder(){
+  function apply(){
+    const header = document.querySelector('store-header.header');
+    if(!header) return;
 
-function initHeaderSearch() {
-  const header = document.querySelector('store-header.header');
-  if (!header) return;
+    const grid  = header.querySelector('.header__grid.container') || header;
+    const logo  = grid.querySelector('.header__logo');
+    const menu  = grid.querySelector('.main-menu__content');
+    const icons = grid.querySelector('.header__icons');
 
-  // 1) Lupen-Trigger finden (minimierte Suche)
-  const trigger = header.querySelector('.js-show-search, .header__icons a[href*="/search"]');
-
-  // 2) Predictive Search Element + Teile
-  const ps = header.querySelector('predictive-search') || document.querySelector('predictive-search');
-  if (!trigger || !ps) return;
-
-  const input = ps.querySelector('.js-search-input');
-  const overlay = ps.querySelector('.overlay');
-
-  // Klick auf Lupe -> Overlay sicher öffnen
-  trigger.addEventListener('click', (e) => {
-    e.preventDefault();
-
-    // Manche Themes togglen erst die "inline"-Suche – wir erzwingen das Modal:
-    ps.setAttribute('open', '');
-
-    // Fokus ins Eingabefeld
-    if (input) {
-      // Kleiner Timeout, falls CSS/DOM noch transitioned
-      setTimeout(() => input.focus(), 20);
+    // Nur wenn vorhanden – dann Reihenfolge hart festlegen
+    if(logo)  logo.style.order  = 1;
+    if(menu)  menu.style.order  = 2;
+    // minimierte Suche (falls dazwischen) bekommt auch Order 2
+    grid.querySelectorAll('.header__search').forEach(el => el.style.order = 2);
+    if(icons){
+      icons.style.order = 3;
+      // Falls irgendein anderes CSS die Icons „zieht“
+      icons.style.marginLeft = 'auto';
+      icons.style.justifyContent = 'flex-end';
     }
-  });
-
-  // Overlay-Klick schließt
-  if (overlay) {
-    overlay.addEventListener('click', () => ps.removeAttribute('open'));
   }
 
-  // ESC schließt
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') ps.removeAttribute('open'));
-  });
-}
+  // beim ersten Load
+  document.addEventListener('DOMContentLoaded', apply);
+  // wenn der Theme-Editor Sektionen neu rendert
+  document.addEventListener('shopify:section:load', apply);
+})();
