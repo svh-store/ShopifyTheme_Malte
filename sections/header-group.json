@@ -363,7 +363,7 @@
       ],
       "custom_css": [],
       "settings": {
-        "enable_sticky": false,
+        "enable_sticky": true,
         "mobile_menu_position": "burger-left",
         "logo_text": "Coolgadget - Dein Spezialist für Handy- und Tabletzubehör",
         "logo_type_scale": "2",
