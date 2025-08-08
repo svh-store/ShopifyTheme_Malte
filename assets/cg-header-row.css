@@ -63,3 +63,82 @@ store-header.header .main-menu__content{
     padding-right: calc(var(--cg-header-edge) + 120px); /* grobe Iconbreite */
   }
 }
+
+/* --- Der Header-Suchcontainer soll KEINEN Platz mehr reservieren --- */
+.header .header__search {
+  position: absolute;        /* nimmt nicht am flex/grid-Flow teil */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;                  /* keine Breite im Layout */
+  height: 0;                 /* keine Höhe im Layout */
+  pointer-events: none;      /* Klicks gehen nicht an den Container */
+}
+
+/* --- Overlay dimmt die Seite (predictive-search bringt .overlay mit) --- */
+.header predictive-search .overlay,
+predictive-search .overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2147482000;
+  transition: opacity .15s ease;
+}
+predictive-search[open] .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* --- Suchformular/Ergebnisse als zentriertes Overlay (kein Layout-Shift) --- */
+.header predictive-search .search__form,
+predictive-search .search__form {
+  position: fixed;
+  top: 10vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(720px, 92vw);
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.2);
+  z-index: 2147482002;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .12s ease, visibility 0s linear .12s;
+}
+predictive-search[open] .search__form {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity .12s ease;
+}
+predictive-search .js-search-results {
+  position: fixed;
+  top: calc(10vh + 74px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(720px, 92vw);
+  max-height: 60vh;
+  overflow: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.2);
+  z-index: 2147482001;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .12s ease, visibility 0s linear .12s;
+}
+predictive-search[open] .js-search-results {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Mobile Feinschliff */
+@media (max-width: 767px) {
+  predictive-search .search__form { top: 6vh; }
+  predictive-search .js-search-results { top: calc(6vh + 68px); }
+}
