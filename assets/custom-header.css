@@ -1,135 +1,34 @@
-/* === Einfache, robuste Reihe + gleiche Höhe === */
-:root{
-  --header-row-h: 64px;   /* Gesamthöhe Header-Zeile -> nach Geschmack anpassen */
-  --icon-hit:    40px;    /* Click-Fläche Icons */
-  --logo-h:      28px;    /* sichtbare Logohöhe */
-}
-
-/* Hauptreihe */
+/* Eine Zeile, alles vertikal mittig, kein Wrap */
 .header .header__grid.container{
   display:flex !important;
   align-items:center !important;
   justify-content:space-between !important;
-  flex-wrap:nowrap !important;
   gap:16px;
-  min-height:var(--header-row-h);
+  flex-wrap:nowrap !important;
+  min-height:64px;
 }
 
-/* Alle direkten Bereiche in gleicher Höhe ausrichten */
+/* Alle Bereiche gleich hoch & mittig */
 .header .header__logo,
 .header .main-menu__content,
 .header .header__search,
 .header .header__icons{
   display:flex !important;
   align-items:center !important;
-  min-height:var(--header-row-h);
+  min-height:64px;
 }
 
-/* Logo konsistent skalieren */
-.header .header__logo img{
-  height:var(--logo-h);
-  width:auto;
-  display:block;
-}
+/* Menü mittig ausrichten */
+.header .main-menu__content{ flex:1 1 auto; justify-content:center; }
 
-/* Menü mittig wirklich vertikal mittig (auch wenn Grid/UL verwendet wird) */
-.header .main-menu__content > nav,
-.header .main-menu__content > *{
-  display:flex;
-  align-items:center;
-  height:100%;
-}
-
-/* Suche (falls sichtbar) nimmt keinen Extra-Blockraum ein */
-.header .header__search{
-  margin:0 8px;
-}
-
-/* Icons rechts: gleiche Hitbox, sauber mittig */
+/* Icons rechts schön in einer Linie */
 .header .header__icons{
-  gap:12px;
-  margin-left:auto !important;       /* treibt sie nach rechts */
-  justify-content:flex-end !important;
+  flex:0 0 auto;
+  display:flex; gap:12px; align-items:center;
 }
 .header .header__icons a,
-.header .header__icons button{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  width:var(--icon-hit);
-  height:var(--icon-hit);
-  border-radius:9999px;
-  line-height:0;                     /* keine Baseline-Verschiebung */
-}
-.header .header__icons svg{
-  width:22px;
-  height:22px;
-}
+.header .header__icons button{ display:inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:9999px; }
+.header .header__icons svg{ width:22px; height:22px; }
 
-/* Kleiner Feinschliff */
-.header a,
-.header button{
-  vertical-align:middle;
-}
-/* Icons immer ganz rechts */
-.header .header__grid.container {
-  display: grid !important;
-  grid-template-columns: auto 1fr auto; /* Logo | Menü/Suche | Icons */
-  align-items: center !important;
-}
-
-/* Logo links fix */
-.header .header__logo {
-  grid-column: 1;
-}
-
-/* Menü und Suche mittig */
-.header .main-menu__content,
-.header .header__search {
-  grid-column: 2;
-  justify-self: center;
-}
-
-/* Icons rechts fix */
-.header .header__icons {
-  grid-column: 3;
-  justify-self: end;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-/* Haupt-Header auf Flex umstellen */
-.header .header__grid.container {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-}
-
-/* Logo links */
-.header .header__logo {
-  flex: 0 0 auto;
-}
-
-/* Menü + Suche mittig */
-.header .main-menu__content {
-  flex: 1 1 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Icons rechts */
-.header .header__icons {
-  flex: 0 0 auto;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
-
-/* Damit alles gleich hoch bleibt */
-.header .main-menu__content,
-.header .header__icons,
-.header .header__logo {
-  height: 100%;
-}
+/* Logo konsistent */
+.header .header__logo img{ height:28px; width:auto; display:block; }
