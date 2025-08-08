@@ -1,67 +1,82 @@
-/* Grundlayout: Logo links – Navigation mittig – Icons rechts */
-.header-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+/* === Header: 3-Spalten-Grid (Logo | Menü | Icons) === */
+.header .header__grid.container{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  align-items:center;
+  column-gap:16px;
 }
 
-.header__left,
-.header__center,
-.header__right {
-  display: flex;
-  align-items: center;
+/* Logo links fix */
+.header .header__logo{ justify-self:start; }
+
+/* Menü mittig */
+.header .main-menu__content{
+  justify-self:center;
+  display:flex;
+  justify-content:center;
 }
 
-/* Logo links */
-.header__left {
-  flex: 1;
+/* Suche (minimiert) darf dazwischen stehen, nimmt aber keinen Platz weg */
+.header .header__search{ justify-self:center; }
+
+/* Icons sicher ganz rechts */
+.header .header__icons{
+  justify-self:end;
+  display:flex; align-items:center; gap:14px;
 }
 
-/* Navigation mittig */
-.header__center {
-  flex: 2;
-  justify-content: center;
+/* Falls ein anderes CSS reinfunkt: erzwinge Rechtsausrichtung */
+.header .header__icons{ margin-left:0 !important; justify-content:flex-end !important; }
+
+/* ===== Predictive Search: Overlay/Modal ohne Springen ===== */
+
+/* Overlay */
+.header predictive-search .overlay,
+predictive-search .overlay{
+  position:fixed; inset:0;
+  background:rgba(0,0,0,.6);
+  opacity:0; pointer-events:none;
+  z-index:2147482000;
+  transition:opacity .15s ease;
+}
+predictive-search[open] .overlay{ opacity:1; pointer-events:auto; }
+
+/* Formular fix & initial unsichtbar, damit kein Flicker unten links */
+.header predictive-search .search__form,
+predictive-search .search__form{
+  position:fixed;
+  top:10vh; left:50%; transform:translateX(-50%);
+  width:min(720px,92vw);
+  background:#fff; border-radius:12px; padding:20px;
+  box-shadow:0 12px 40px rgba(0,0,0,.2);
+  z-index:2147482002;
+  visibility:hidden; opacity:0; pointer-events:none;
+  transition:opacity .12s ease, visibility 0s linear .12s;
+}
+predictive-search[open] .search__form{
+  visibility:visible; opacity:1; pointer-events:auto;
+  transition:opacity .12s ease;
 }
 
-/* Icons rechts */
-.header__right {
-  flex: 1;
-  justify-content: flex-end;
-  gap: 18px;
+/* Ergebnisliste zentriert unter der Box */
+predictive-search .js-search-results{
+  position:fixed;
+  top:calc(10vh + 74px);
+  left:50%; transform:translateX(-50%);
+  width:min(720px,92vw);
+  max-height:60vh; overflow:auto;
+  background:#fff; border-radius:12px;
+  box-shadow:0 12px 40px rgba(0,0,0,.2);
+  z-index:2147482001;
+  visibility:hidden; opacity:0; pointer-events:none;
+  transition:opacity .12s ease, visibility 0s linear .12s;
+}
+predictive-search[open] .js-search-results{
+  visibility:visible; opacity:1; pointer-events:auto;
 }
 
-/* Such-Overlay Styling */
-.search-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-
-.search-overlay.active {
-  display: flex;
-}
-
-.search-overlay__box {
-  background: #fff;
-  padding: 20px;
-  border-radius: 6px;
-  width: 90%;
-  max-width: 600px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.search-overlay__box input {
-  width: 100%;
-  padding: 14px 16px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+/* Mobile */
+@media (max-width:767px){
+  predictive-search .search__form{ top:6vh; }
+  predictive-search .js-search-results{ top:calc(6vh + 68px); }
 }
