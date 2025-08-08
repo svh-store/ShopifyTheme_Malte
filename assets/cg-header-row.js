@@ -29,3 +29,24 @@
   document.addEventListener('shopify:section:load', run);
   document.addEventListener('shopify:section:select', run);
 })();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('store-header.header');
+  if (!header) return;
+  const ps = header.querySelector('predictive-search') || document.querySelector('predictive-search');
+  if (!ps) return;
+
+  const trigger = header.querySelector('.js-show-search, .header__icons a[href*="/search"], .header__icons button');
+  const input = ps.querySelector('.js-search-input');
+  const overlay = ps.querySelector('.overlay');
+
+  if (trigger) {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      ps.setAttribute('open', '');
+      if (input) setTimeout(() => input.focus(), 20);
+    });
+  }
+  if (overlay) overlay.addEventListener('click', () => ps.removeAttribute('open'));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') ps.removeAttribute('open'); });
+});
