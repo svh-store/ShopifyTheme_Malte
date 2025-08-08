@@ -292,7 +292,7 @@
     <!-- CC Custom Head End -->
   {%- endif -%}
 
-  {{ 'cg-header-row.css' | asset_url | stylesheet_tag }}
+  {{ 'custom-header.css' | asset_url | stylesheet_tag }}
 
 
 </head>
@@ -463,9 +463,9 @@
 
 
 
-{{ 'cg-header-row.css' | asset_url | stylesheet_tag }}
-{{ 'cg-header-row.js'  | asset_url | script_tag }}
-
-
+{{ 'custom-header.css' | asset_url | stylesheet_tag }}
+{{ 'custom-header.js' | asset_url | script_tag }}
+{{ 'search-hero.css' | asset_url | stylesheet_tag }}
+{{ 'search-hero.js'  | asset_url | script_tag }}
 </body>
 </html>
