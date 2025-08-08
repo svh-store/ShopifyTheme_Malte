@@ -98,3 +98,38 @@
   gap: 12px;
   align-items: center;
 }
+
+/* Haupt-Header auf Flex umstellen */
+.header .header__grid.container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+/* Logo links */
+.header .header__logo {
+  flex: 0 0 auto;
+}
+
+/* Menü + Suche mittig */
+.header .main-menu__content {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Icons rechts */
+.header .header__icons {
+  flex: 0 0 auto;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Damit alles gleich hoch bleibt */
+.header .main-menu__content,
+.header .header__icons,
+.header .header__logo {
+  height: 100%;
+}
