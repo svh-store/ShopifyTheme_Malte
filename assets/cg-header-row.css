@@ -17,14 +17,7 @@ store-header.header .header__grid.container{
   gap: 0 !important;                    /* kein Grid-Wrap mehr */
 }
 
-/* Logo-Cluster fix links */
-store-header.header .header__logo{
-  position: absolute;
-  left: var(--cg-header-edge);
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex; align-items: center;
-}
+
 
 /* Icons-Cluster fix rechts */
 store-header.header .header__icons{
