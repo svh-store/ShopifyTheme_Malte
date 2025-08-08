@@ -45,7 +45,7 @@ store-header.header .header__icons svg{ width: 22px; height: 22px; }
 
 /* Logo-Höhe anpassen (optional) */
 store-header.header .header__logo img{
-  height: 80px; width: auto; display: block;
+  height: 110px; width: auto; display: block;
 }
 
 /* Menü-Wrapper immer mittig & auf Zeilenhöhe ausrichten */
