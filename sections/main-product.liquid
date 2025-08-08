@@ -32,7 +32,6 @@
 {%- endif -%}
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'product-tabs.js' | asset_url }}" defer="defer"></script>
 
 {%- liquid
   # constants
@@ -542,25 +541,6 @@
                 </button>
               </modal-opener>
               <a href="{{ block.settings.page.url }}" class="link js-hidden">{{ block.settings.link_text }}</a>
-            </div>
-
-          {%- when 'tab' -%}
-            <div class="product-info__block product-info__tab" {{ block.shopify_attributes }}>
-              <button type="button" class="product-tab-btn js-product-tab" data-target="tab-drawer-{{ block.id }}">
-                {{ block.settings.title }}
-              </button>
-              <side-drawer id="tab-drawer-{{ block.id }}" class="drawer" data-name="product-tab" aria-hidden="true">
-                <header class="drawer__header flex justify-between items-center">
-                  <h2 class="h4 mb-0">{{ block.settings.title }}</h2>
-                  <button type="button" class="drawer__close-btn js-close-drawer">
-                    {% render 'icon-close' %}
-                    <span class="visually-hidden">{{ 'accessibility.close' | t }}</span>
-                  </button>
-                </header>
-                <div class="drawer__content flex-auto rte">
-                  {{ block.settings.content }}
-                </div>
-              </side-drawer>
             </div>
 
           {%- when 'custom-liquid' -%}
@@ -1638,22 +1618,6 @@
         {
           "type": "paragraph",
           "content": "Customers who subscribe will have an account created for them. [Learn more](https://help.shopify.com/en/manual/customers/manage-customers)"
-        }
-      ]
-    },
-    {
-      "type": "tab",
-      "name": "Tab",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Title"
-        },
-        {
-          "type": "richtext",
-          "id": "content",
-          "label": "Content"
         }
       ]
     },
